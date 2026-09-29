@@ -219,8 +219,19 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
     margin: 2px 0 22px;
   }
+  .check-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    cursor: pointer;
+    user-select: none;
+  }
+  .check-label input { accent-color: var(--ink); cursor: pointer; }
   .town-row label {
     font-size: 13px;
     color: var(--ink-soft);
@@ -563,6 +574,8 @@
     <div class="town-row">
       <label for="townSelect">Town</label>
       <select id="townSelect"><option value="">All towns</option></select>
+      <label class="check-label"><input type="checkbox" id="scuCheck"> Dementia special care unit</label>
+      <label class="check-label"><input type="checkbox" id="lhsCheck"> Limited health services</label>
     </div>
   </div>
 
@@ -624,7 +637,7 @@
     return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
   }
 
-  var state = { query: '', filter: 'all', town: '', selected: {} };
+  var state = { query: '', filter: 'all', town: '', scuOnly: false, lhsOnly: false, selected: {} };
 
   function populateTowns() {
     var towns = Array.from(new Set(DATA.map(function (f) { return f.city; }).filter(Boolean))).sort();
@@ -638,6 +651,31 @@
       state.town = sel.value;
       renderList();
     });
+
+    document.getElementById('scuCheck').addEventListener('change', function (e) {
+      state.scuOnly = e.target.checked;
+      renderList();
+    });
+    document.getElementById('lhsCheck').addEventListener('change', function (e) {
+      state.lhsOnly = e.target.checked;
+      renderList();
+    });
+  }
+
+  function isYes(v) {
+    if (!v) return false;
+    var s = String(v).trim().toLowerCase();
+    return s === 'y' || s === 'yes';
+  }
+
+  function matchesScu(f) {
+    if (!state.scuOnly) return true;
+    return f.profile && isYes(f.profile.dementia_scu);
+  }
+
+  function matchesLhs(f) {
+    if (!state.lhsOnly) return true;
+    return f.profile && isYes(f.profile.limited_health_svcs);
   }
 
   function counts() {
@@ -870,7 +908,7 @@
 
   function renderList() {
     var list = document.getElementById('list');
-    var filtered = DATA.filter(function (f) { return matchesFilter(f) && matchesQuery(f) && matchesTown(f); });
+    var filtered = DATA.filter(function (f) { return matchesFilter(f) && matchesQuery(f) && matchesTown(f) && matchesScu(f) && matchesLhs(f); });
 
     document.getElementById('resultCount').textContent =
       filtered.length + (filtered.length === 1 ? ' facility' : ' facilities');
