@@ -611,6 +611,12 @@
 
   body.view-map ul#list, body.view-map .compare-hint { display: none; }
   .row-dist { white-space: nowrap; }
+  .addr-link { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+  .addr-link:hover { color: var(--accent); }
+  .addr-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .addr-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .near-lead { font-weight: 600; color: var(--ink); }
+  .near-filter:empty { display: none; }
 
   #mapPanel { margin: 0 0 20px; }
   .map-status { font-size: 13px; color: var(--ink-soft); margin: 0 0 8px; }
@@ -779,15 +785,17 @@
       <label class="check-label"><input type="checkbox" id="nhcCheck"> Nursing home co-located</label>
     </div>
     <div class="near-row" id="nearRow" hidden>
-      <button type="button" class="btn-quiet" id="nearBtn">Near me</button>
+      <span class="near-or near-lead">Sort by distance from</span>
+      <button type="button" class="btn-quiet" id="nearBtn">My location</button>
       <span class="near-or" id="nearOr">or</span>
       <span id="zipGroup">
-        <label class="near-or" for="zipInput">ZIP code</label>
+        <label class="near-or" for="zipInput">a ZIP code</label>
         <input id="zipInput" type="text" inputmode="numeric" maxlength="5" autocomplete="postal-code" placeholder="02903">
-        <button type="button" class="btn-quiet" id="zipGo">Find</button>
+        <button type="button" class="btn-quiet" id="zipGo">Sort</button>
       </span>
-      <button type="button" class="btn-quiet" id="nearClear" hidden>Clear distance</button>
+      <button type="button" class="btn-quiet" id="nearClear" hidden>Stop sorting by distance</button>
       <p class="near-status" id="nearStatus" role="status" aria-live="polite"></p>
+      <p class="near-status near-filter" id="nearFilterNote" role="status" aria-live="polite"></p>
     </div>
   </div>
 
@@ -1122,7 +1130,7 @@
     }).join('');
 
     var addrLine = f.address
-      ? '<div class="detail-address">' + escapeHtml(f.address) + ', ' + escapeHtml(f.city) + ', RI ' + escapeHtml(f.zip) +
+      ? '<div class="detail-address"><a class="addr-link" target="_blank" rel="noopener" title="Open in a map (new tab)" href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(f.address + ', ' + f.city + ', RI ' + zip5(f.zip)) + '">' + escapeHtml(f.address) + ', ' + escapeHtml(f.city) + ', RI ' + escapeHtml(zip5(f.zip)) + '<span class="addr-sr"> (opens map in a new tab)</span></a>' +
         (f.capacity ? ' &nbsp;·&nbsp; Licensed capacity: ' + f.capacity + ' beds' : '') +
         (f.license_no ? ' &nbsp;·&nbsp; License ' + escapeHtml(f.license_no) : '') +
         '</div>'
@@ -1367,6 +1375,13 @@
 
   function afterRender(filtered) {
     lastFiltered = filtered;
+    var fn = document.getElementById('nearFilterNote');
+    if (fn) {
+      var tv = document.getElementById('townSelect').value;
+      fn.textContent = (nearLoc && tv)
+        ? 'Only ' + tv + ' is showing because of the Town filter above. Choose \u201cAll towns\u201d to see homes everywhere.'
+        : '';
+    }
     if (nearLoc) {
       var byKey = {};
       filtered.forEach(function (f) { byKey[f.key] = f; });
@@ -1887,7 +1902,7 @@
       var d = miles(lat, lng, f.lat, f.lng);
       if (best === null || d < best) best = d;
     });
-    var msg = 'Showing the closest residences to ' + label + ' first, by straight-line distance, not driving distance.';
+    var msg = 'Closest residences to ' + label + ' are listed first (straight-line distance, not driving distance).';
     if (label === 'your location') msg += ' Your location stays in your browser; we don’t receive or store it.';
     if (best !== null && best > 40) msg += ' Note: the nearest residence is ' + Math.round(best) + ' miles away, so you may be outside Rhode Island.';
     nearStatus(msg);
