@@ -1130,7 +1130,7 @@
     }).join('');
 
     var addrLine = f.address
-      ? '<div class="detail-address"><a class="addr-link" target="_blank" rel="noopener" title="Open in a map (new tab)" href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(f.address + ', ' + f.city + ', RI ' + zip5(f.zip)) + '">' + escapeHtml(f.address) + ', ' + escapeHtml(f.city) + ', RI ' + escapeHtml(zip5(f.zip)) + '<span class="addr-sr"> (opens map in a new tab)</span></a>' +
+      ? '<div class="detail-address"><a class="addr-link" target="_blank" rel="noopener" title="Open in a map (new tab)" href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(mapName(f.name) + ', ' + f.address + ', ' + f.city + ', RI ' + zip5(f.zip)) + '">' + escapeHtml(f.address) + ', ' + escapeHtml(f.city) + ', RI ' + escapeHtml(zip5(f.zip)) + '<span class="addr-sr"> (opens map in a new tab)</span></a>' +
         (f.capacity ? ' &nbsp;·&nbsp; Licensed capacity: ' + f.capacity + ' beds' : '') +
         (f.license_no ? ' &nbsp;·&nbsp; License ' + escapeHtml(f.license_no) : '') +
         '</div>'
@@ -1146,6 +1146,9 @@
       '<div class="timeline">' + reports + '</div>'
     );
   }
+
+  // "Highlands On The East Side, The" -> "The Highlands On The East Side" so Google finds the business listing
+  function mapName(n) { return String(n || '').replace(/^(.*),\s*The$/i, 'The $1'); }
 
   function renderList() {
     var list = document.getElementById('list');
