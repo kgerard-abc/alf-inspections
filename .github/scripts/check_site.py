@@ -231,7 +231,7 @@ def check_alf():
     newest = None
     for f in data:
         nm = f["name"]
-        if f["badge"] not in ("most_serious", "serious", "minor", "clean", "unlicensed"):
+        if f["badge"] not in ("most_serious", "serious", "minor", "clean"):
             err(f"{nm}: unknown badge {f['badge']}")
         if f.get("license_no") and not re.fullmatch(r"ALR\d{5}", f["license_no"]):
             err(f"{nm}: license number looks wrong: {f['license_no']}")
@@ -259,7 +259,7 @@ def check_alf():
             warn(f"{nm}: no map coordinates")
         elif not (41.12 <= lat <= 42.03 and -71.92 <= lng <= -71.08):
             err(f"{nm}: map coordinates fall outside Rhode Island ({lat}, {lng})")
-        if not f.get("address") and f["badge"] != "unlicensed":
+        if not f.get("address"):
             warn(f"{nm}: no address")
     m = re.search(r"Data last updated <strong>([^<]+)</strong>", html)
     if m:
