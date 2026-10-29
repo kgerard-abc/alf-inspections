@@ -9044,7 +9044,7 @@
    {
     "date": "2026-04-30",
     "type": "Complaint/Incident Investigation",
-    "tier": "most_serious",
+    "tier": "serious",
     "no_findings": false,
     "headline": "Special Care Unit Safety / Accessible Chemicals",
     "paragraphs": [
@@ -9074,7 +9074,7 @@
      },
      {
       "text": "Special Care Unit Safety / Accessible Chemicals\nIn the dementia special care unit, hazardous chemicals (a bottle of \"Satin Shine\" bearing a deliberate-inhalation-misuse warning, nail polish remover, laundry detergent, and disinfectant) were found unsecured and accessible to residents in unlocked kitchenette cabinets, an unattended activity cart, and an unattended laundry room.",
-      "tier": "most_serious"
+      "tier": "serious"
      }
     ],
     "link": "https://drive.google.com/file/d/1PbZ7R2K1pFPwCEI0ujAobUNqx0Sq07aP/view?usp=drivesdk"
