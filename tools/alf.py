@@ -3,6 +3,7 @@
 data/facilities.json is the master copy of everything the site shows.
 tools/build.py writes it into index.html; never edit the data in index.html by hand.
 """
+import datetime
 import json
 import re
 from pathlib import Path
@@ -17,6 +18,17 @@ SCRIPT_RE = re.compile(r'(<script id="facility-data" type="application/json">)(.
 TIER_RANK = {"minor": 1, "serious": 2, "most_serious": 3}
 REPORT_KEYS = {"date", "type", "tier", "no_findings", "headline", "paragraphs", "link"}
 NO_FINDINGS = "No deficiencies identified"
+BADGE_WINDOW_YEARS = 3  # badges reflect only reports from this many years back; index.html applies the same rule live
+
+
+def badge_cutoff(today=None):
+    """ISO date BADGE_WINDOW_YEARS before today (Feb 29 becomes Feb 28)."""
+    t = today or datetime.date.today()
+    try:
+        c = t.replace(year=t.year - BADGE_WINDOW_YEARS)
+    except ValueError:
+        c = t.replace(year=t.year - BADGE_WINDOW_YEARS, day=28)
+    return c.isoformat()
 TYPES = [
     "Complaint/Incident Investigation",
     "Routine/Biennial Inspection",
@@ -52,12 +64,15 @@ def from_index(path=INDEX):
 
 
 def recompute(facilities):
-    """Report order, counts, most recent date, and badge all follow from the reports."""
+    """Report order, counts, most recent date, and badge all follow from the reports.
+
+    The badge looks only at reports from the last BADGE_WINDOW_YEARS years. Older reports
+    stay on the site but no longer change the badge."""
+    cutoff = badge_cutoff()
     for f in facilities:
         f["reports"].sort(key=lambda r: r["date"], reverse=True)  # stable: same-date order is kept
         f["report_count"] = len(f["reports"])
         f["most_recent_date"] = f["reports"][0]["date"] if f["reports"] else None
-        if f.get("badge") != "unlicensed":
-            top = max((TIER_RANK.get(r["tier"], 0) for r in f["reports"]), default=0)
-            f["badge"] = {3: "most_serious", 2: "serious"}.get(top, "minor")
+        top = max((TIER_RANK.get(r["tier"], 0) for r in f["reports"] if r["date"] >= cutoff), default=0)
+        f["badge"] = {3: "most_serious", 2: "serious"}.get(top, "minor")
     return facilities
