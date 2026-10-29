@@ -46,6 +46,21 @@ inside `index.html` by hand; `tools/build.py` writes it there.
    `python3 tools/build.py --xlsx ../alf-reports/master/ALF_reports_master.xlsx`
    (it reflects the pull request's version; kg's copy to work from).
 
+## Standing site rules (do not undo these)
+
+- **Badges use the last 3 years only.** Most serious, Serious, Minor, and No concerns found
+  count only reports from the last 3 years. Older reports stay in each timeline. The page
+  recomputes badges live from the report dates, `recompute()` in `tools/alf.py` does the same
+  for the stored badge, and the footer and hover text say so. Do not change one without the others.
+  A stored badge can lag as reports age out; `build.py` refreshes it without changing the
+  "Data last updated" date. That date changes only when real report data changes.
+- **No "Operating without a license" label, filter, or note.** Removed at kg's request.
+- **Heather Gardens** (key `SCANDINAVIAN HOME`) shows the line "(Formerly Scandinavian Home,
+  under new ownership by PACE since 2026)" under its name. It lives in that facility's
+  `name_note` in `data/facilities.json`. Any facility can have a `name_note`.
+- `check_site.py` fails if any of these are lost. If kg asks to change one on purpose, update
+  the check and this section in the same pull request.
+
 ## Writing an entry
 
 - `date`: the "(X3) Date survey completed" on the form. Use the file name's date only if the form's is unreadable.

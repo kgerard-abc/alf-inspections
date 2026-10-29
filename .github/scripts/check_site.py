@@ -220,6 +220,15 @@ def check_alf():
     if data is None:
         return
     stray_tokens(json.dumps(data), "facility data")
+    # Guard rails for site changes kg asked for: a future edit must not quietly undo them.
+    if "BADGE_HOVER" not in html or "function badgeCutoff" not in html:
+        err("index.html lost the 3-year window code for the severity tags")
+    if "reflect only inspection reports from the last 3 years" not in html:
+        err("index.html footer no longer says the tags cover only the last 3 years")
+    if "unlicensed" in html.split('<script id="facility-data"')[0] or "Operating without a license" in html:
+        err("index.html brings back the removed 'Operating without a license' label")
+    if not any(f.get("key") == "SCANDINAVIAN HOME" and f.get("name_note") for f in data):
+        err("Heather Gardens lost its 'Formerly Scandinavian Home' line (name_note)")
     if os.path.exists("maptest.html"):
         warn("maptest.html (a test copy of the site) is public in the repo: delete it when no longer needed")
     keys = [f["key"] for f in data]
