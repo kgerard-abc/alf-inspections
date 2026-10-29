@@ -8,6 +8,7 @@ Errors stop the build. Warnings are printed but don't stop it.
 """
 import argparse
 import datetime
+import json
 import re
 import sys
 from zoneinfo import ZoneInfo
@@ -120,11 +121,19 @@ def main():
     m = SCRIPT_RE.search(html)
     new_json = compact(facilities)
     changed = m.group(2) != new_json
+    # Badges are a snapshot: they drift as reports pass the 3-year mark, and the page recomputes
+    # them live anyway. Only a change in the actual data counts as "changed" (and bumps the date).
+    def no_badges(text):
+        return [{k: v for k, v in f.items() if k != "badge"} for f in json.loads(text)]
+    content_changed = changed and no_badges(m.group(2)) != no_badges(new_json)
     if args.check:
-        if changed:
+        if content_changed:
             print("ERROR: index.html does not match data/facilities.json (run python3 tools/build.py)")
             sys.exit(1)
         print("index.html matches the data")
+    elif changed and not content_changed:
+        INDEX.write_text(html[:m.start(2)] + new_json + html[m.end(2):], encoding="utf-8")
+        print("index.html: badges refreshed for the 3-year window; 'Data last updated' left alone")
     elif changed:
         html = html[:m.start(2)] + new_json + html[m.end(2):]
         today = datetime.datetime.now(ZoneInfo("America/New_York")).date()
