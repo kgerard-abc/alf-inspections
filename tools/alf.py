@@ -73,6 +73,10 @@ def recompute(facilities):
         f["reports"].sort(key=lambda r: r["date"], reverse=True)  # stable: same-date order is kept
         f["report_count"] = len(f["reports"])
         f["most_recent_date"] = f["reports"][0]["date"] if f["reports"] else None
-        top = max((TIER_RANK.get(r["tier"], 0) for r in f["reports"] if r["date"] >= cutoff), default=0)
-        f["badge"] = {3: "most_serious", 2: "serious"}.get(top, "minor")
+        recent = [r for r in f["reports"] if r["date"] >= cutoff]
+        top = max((TIER_RANK.get(r["tier"], 0) for r in recent), default=0)
+        if top:
+            f["badge"] = {3: "most_serious", 2: "serious"}.get(top, "minor")
+        else:  # no findings at all in the window: clean if there are reports to say so
+            f["badge"] = "clean" if recent else "minor"
     return facilities
