@@ -54,6 +54,9 @@ inside `index.html` by hand; `tools/build.py` writes it there.
   for the stored badge, and the footer and hover text say so. Do not change one without the others.
   A stored badge can lag as reports age out; `build.py` refreshes it without changing the
   "Data last updated" date. That date changes only when real report data changes.
+- **Badges show a count.** Each badge reads like "Serious concerns · 3 inspections": how many
+  inspections in the last 3 years had a finding at the facility's top level (clean badges show no
+  number). `badgeText()` in `index.html` computes it live, and the note above the filters explains it.
 - **No "Operating without a license" label, filter, or note.** Removed at kg's request.
 - **Heather Gardens** (key `SCANDINAVIAN HOME`) shows the line "(Formerly Scandinavian Home,
   under new ownership by PACE since 2026)" under its name. It lives in that facility's

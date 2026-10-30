@@ -85,6 +85,11 @@
   }
   @media (max-width: 560px) {
     .wrap { padding: 36px 18px 120px; }
+    /* On phones the rating (with its inspection count) sits on its own line under the name */
+    .row-main { flex-wrap: wrap; row-gap: 8px; }
+    .row-main .row-name-block { flex: 0 0 calc(100% - 70px); }
+    .row-main .chevron { order: 2; }
+    .row-main .badge { order: 3; margin-left: 32px; white-space: normal; }
   }
 
   header.masthead {
@@ -799,7 +804,7 @@
       <input id="search" type="text" placeholder="Search by facility name…" aria-label="Search by facility name" autocomplete="off">
     </div>
     <div class="filters" id="filters"></div>
-    <p class="filter-note" id="filterNote">Ratings and filters use only inspection reports from the last 3 years. Older reports are still listed in each residence's timeline.</p>
+    <p class="filter-note" id="filterNote">Ratings and filters use only inspection reports from the last 3 years. The number next to a rating is how many inspections in that time had a finding at that level. Older reports are still listed in each residence's timeline.</p>
     <div class="town-row">
       <label for="townSelect">Town</label>
       <select id="townSelect"><option value="">All towns</option></select>
@@ -879,13 +884,15 @@
   var CUTOFF = badgeCutoff();
   function inWindow(r) { return r.date >= CUTOFF; }
   DATA.forEach(function (f) {
-    var top = 0, recent = 0;
+    var top = 0, recent = 0, atTop = 0;
     f.reports.forEach(function (r) {
       if (!inWindow(r)) return;
       recent++;
       var t = r.tier === 'most_serious' ? 3 : r.tier === 'serious' ? 2 : r.tier ? 1 : 0;
-      if (t > top) top = t;
+      if (t > top) { top = t; atTop = 0; }
+      if (t === top) atTop++;
     });
+    f.badge_count = top > 0 ? atTop : 0;
     f.badge = top === 3 ? 'most_serious' : top === 2 ? 'serious' : top === 1 ? 'minor' : recent ? 'clean' : 'minor';
   });
 
@@ -895,6 +902,11 @@
     serious: 'Serious concerns',
     most_serious: 'Most serious concerns'
   };
+  // "Serious concerns · 3 inspections": how many inspections in the last 3 years had a finding at the facility's top level
+  function badgeText(f) {
+    var n = f.badge_count;
+    return BADGE_LABEL[f.badge] + (n ? ' · ' + n + (n === 1 ? ' inspection' : ' inspections') : '');
+  }
   var BADGE_NOTE = {
     clean: 'No deficiencies were identified in any inspection in the last 3 years.',
     minor: 'Inspectors have documented findings here, but none in the last 3 years rose to a serious level.',
@@ -1184,7 +1196,7 @@
     return (
       addrLine +
       buildProfileHtml(f) +
-      '<div class="' + noteCls + '"><strong>' + BADGE_LABEL[f.badge] + '.</strong> ' + noteText + '</div>' +
+      '<div class="' + noteCls + '"><strong>' + badgeText(f) + '.</strong> ' + noteText + '</div>' +
       '<div class="timeline">' + reports + '</div>'
     );
   }
@@ -1215,7 +1227,7 @@
             (f.name_note ? '<div class="row-sub row-name-note">' + escapeHtml(f.name_note) + '</div>' : '') +
             '<div class="row-sub">' + (f.city ? escapeHtml(f.city) + ' · ' : '') + f.report_count + ' inspection' + (f.report_count === 1 ? '' : 's') + ' on file · most recent ' + fmtDate(f.most_recent_date) + '</div>' +
           '</div>' +
-          '<span class="badge ' + f.badge + '" title="' + BADGE_HOVER + '"><span class="dot"></span>' + BADGE_LABEL[f.badge] + '</span>' +
+          '<span class="badge ' + f.badge + '" title="' + BADGE_HOVER + '"><span class="dot"></span>' + badgeText(f) + '</span>' +
           '<svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><polyline points="9 6 15 12 9 18"/></svg>' +
         '</div>' +
         '<div class="detail"></div>';
@@ -1328,7 +1340,7 @@
         '<div class="compare-card">' +
           '<h3>' + escapeHtml(f.name) + '</h3>' +
           (f.address ? '<div class="cc-row">' + escapeHtml(f.address) + ', ' + escapeHtml(f.city) + '</div>' : '') +
-          '<div class="cc-row"><span class="badge ' + f.badge + '" title="' + BADGE_HOVER + '"><span class="dot"></span>' + BADGE_LABEL[f.badge] + '</span></div>' +
+          '<div class="cc-row"><span class="badge ' + f.badge + '" title="' + BADGE_HOVER + '"><span class="dot"></span>' + badgeText(f) + '</span></div>' +
           (f.capacity ? '<div class="cc-row">Licensed capacity: <strong>' + f.capacity + ' beds</strong></div>' : '') +
           '<div class="cc-row"><strong>' + f.report_count + '</strong> inspections on file</div>' +
           '<div class="cc-row">Most recent inspection: <strong>' + fmtDate(f.most_recent_date) + '</strong></div>' +
