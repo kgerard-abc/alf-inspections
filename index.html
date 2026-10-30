@@ -233,6 +233,12 @@
   .filter-btn .count { opacity: 0.6; margin-left: 4px; }
   .filter-btn.active .count { opacity: 0.75; }
 
+  .filter-note {
+    margin: 8px 0 0;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    max-width: 70ch;
+  }
   .town-row {
     display: flex;
     align-items: center;
@@ -793,6 +799,7 @@
       <input id="search" type="text" placeholder="Search by facility name…" aria-label="Search by facility name" autocomplete="off">
     </div>
     <div class="filters" id="filters"></div>
+    <p class="filter-note" id="filterNote">Ratings and filters use only inspection reports from the last 3 years. Older reports are still listed in each residence's timeline.</p>
     <div class="town-row">
       <label for="townSelect">Town</label>
       <select id="townSelect"><option value="">All towns</option></select>
