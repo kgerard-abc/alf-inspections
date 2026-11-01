@@ -14,6 +14,20 @@ folder it came from).
 `data/facilities.json` in this repo is the master copy of the site's data. Never edit the data
 inside `index.html` by hand; `tools/build.py` writes it there.
 
+## Where facility details and services live
+
+Each facility in `data/facilities.json` carries its details next to its inspection reports:
+`license_no`, `address`, `city`, `zip`, `phone`, `website`, `capacity`, `lat`, and `lng`, plus a
+`profile` block with the services information (limited health services, dementia special care
+unit and its beds, Medicaid accepted and exceptions, payment and care level codes, fire code and
+medication level, total capacity, and whether a nursing home is on the same site). The site's
+"Facility details & services" toggle reads from `profile`.
+
+The `profile` data came from the ABLTC-compiled facility listing (last updated October 2026), and
+the page footer says so. It is not part of the weekly report update and does not change when
+reports are added. To correct a facility's details, edit `data/facilities.json` and run
+`python3 tools/build.py`. Where the address differs from RIDOH's licensee extract, use RIDOH's.
+
 ## Steps
 
 1. Clone `kgerard-abc/alf-inspections` and `kgerard-abc/alf-reports` side by side, with push access.
