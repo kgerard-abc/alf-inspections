@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Most Serious Findings | Rhode Island Assisted Living Inspection Records</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F6F3EA;
+    --paper-dim: #EAE5D7;
+    --ink: #1E2A32;
+    --ink-soft: #4E5860;
+    --line: #8F8570;
+    --accent: #93701F;
+    --brick: #7A1F26;
+    --brick-deep: #5E141B;
+    font-size: 17px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #191E1A;
+      --paper-dim: #20251F;
+      --ink: #E8E4D8;
+      --ink-soft: #A2A99C;
+      --line: #6E6F5A;
+      --accent: #C9A44C;
+      --brick: #D98891;
+      --brick-deep: #EBA9AF;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #191E1A;
+    --paper-dim: #20251F;
+    --ink: #E8E4D8;
+    --ink-soft: #A2A99C;
+    --line: #6E6F5A;
+    --accent: #C9A44C;
+    --brick: #D98891;
+    --brick-deep: #EBA9AF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Public Sans', system-ui, sans-serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  a { color: var(--accent); }
+  a:focus-visible, select:focus-visible, input:focus-visible {
+    outline: 3px solid var(--ink);
+    outline-offset: 2px;
+  }
+  .back { display: inline-block; font-size: 14px; font-weight: 600; margin: 0 0 18px; }
+  h1 {
+    font-weight: 800;
+    font-size: clamp(26px, 5vw, 36px);
+    line-height: 1.12;
+    margin: 0 0 14px;
+    letter-spacing: -0.015em;
+  }
+  .lede { color: var(--ink-soft); max-width: 640px; margin: 0 0 10px; }
+  .controls {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px;
+    margin: 22px 0 8px; padding: 12px 0;
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    font-size: 15px;
+  }
+  .controls label { display: inline-flex; align-items: center; gap: 8px; }
+  .controls select {
+    font-family: inherit; font-size: 15px; color: var(--ink);
+    background: var(--paper); border: 1px solid var(--line); border-radius: 3px; padding: 6px 8px;
+  }
+  .controls input[type="checkbox"] { width: 18px; height: 18px; }
+  .count { font-weight: 600; margin: 14px 0; }
+  .note { font-size: 14px; color: var(--ink-soft); }
+  ul.items { list-style: none; margin: 0; padding: 0; }
+  .item {
+    border: 1px solid var(--line);
+    border-left: 5px solid var(--brick);
+    border-radius: 3px;
+    padding: 14px 16px;
+    margin: 0 0 14px;
+    background: var(--paper);
+  }
+  .item h2 { font-size: 18px; line-height: 1.25; margin: 0 0 2px; }
+  .item h2 a { color: var(--ink); }
+  .meta { font-size: 14px; color: var(--ink-soft); margin: 0 0 10px; }
+  .finding { margin: 0 0 10px; }
+    .report-link { font-size: 14px; font-weight: 600; margin: 4px 0 0; }
+  .state { padding: 24px 0; color: var(--ink-soft); }
+  footer { margin-top: 32px; font-size: 14px; color: var(--ink-soft); }
+  footer p { margin: 0 0 10px; max-width: 640px; }
+  .nb { white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./">&larr; Back to all residences</a>
+
+  <h1>Most serious findings at all residences</h1>
+  <p class="lede">These are findings where RIDOH found actual harm to a resident, or a documented immediate risk of harm. This is the department&rsquo;s highest level of concern, often called &ldquo;immediate jeopardy&rdquo; or IJ.</p>
+  <p class="lede">The short descriptions below are our own plain-language summaries of RIDOH&rsquo;s inspection reports. Each one links to the original report.</p>
+
+  <div class="controls">
+    <label for="sortBy">Sort by
+      <select id="sortBy">
+        <option value="date">Newest first</option>
+        <option value="name">Residence name</option>
+      </select>
+    </label>
+    <label for="includeOld"><input type="checkbox" id="includeOld"> Include reports older than 3 years</label>
+  </div>
+
+  <p class="count" id="count" role="status" aria-live="polite"></p>
+  <p class="note" id="windowNote"></p>
+
+  <div class="state" id="state">Loading&hellip;</div>
+  <ul class="items" id="items"></ul>
+
+  <footer>
+    <p>This page is published by Advocates for Better Care in Rhode&nbsp;Island (ABC-RI), a grassroots community advocacy organization. It is not produced or endorsed by the Rhode Island Department of Health (RIDOH).</p>
+    <p>Think something here is wrong? Email us at <a href="mailto:corrections@abc-ri.org">corrections@abc-ri.org</a> with the residence name and what looks off.</p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var DATA = [];
+  var itemsEl = document.getElementById('items');
+  var stateEl = document.getElementById('state');
+  var countEl = document.getElementById('count');
+  var noteEl = document.getElementById('windowNote');
+  var sortEl = document.getElementById('sortBy');
+  var oldEl = document.getElementById('includeOld');
+
+  function cutoff() {
+    var d = new Date();
+    d.setFullYear(d.getFullYear() - 3);
+    var m = d.getMonth() + 1, day = d.getDate();
+    return d.getFullYear() + '-' + (m < 10 ? '0' : '') + m + '-' + (day < 10 ? '0' : '') + day;
+  }
+  var CUTOFF = cutoff();
+
+  function fmtDate(iso) {
+    var p = iso.split('-');
+    return new Date(Date.UTC(+p[0], +p[1] - 1, +p[2]))
+      .toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
+  }
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  function collect() {
+    var rows = [];
+    DATA.forEach(function (f) {
+      f.reports.forEach(function (r) {
+        var paras = (r.paragraphs || []).filter(function (p) { return p.tier === 'most_serious'; });
+        if (!paras.length) return;
+        if (/duplicate/i.test(r.type || '')) return; // placeholder rows, not real findings
+        rows.push({ f: f, r: r, paras: paras });
+      });
+    });
+    return rows;
+  }
+
+  function render() {
+    var all = collect();
+    var includeOld = oldEl.checked;
+    var rows = all.filter(function (x) { return includeOld || x.r.date >= CUTOFF; });
+    if (sortEl.value === 'name') {
+      rows.sort(function (a, b) {
+        return a.f.name.localeCompare(b.f.name) || (a.r.date < b.r.date ? 1 : -1);
+      });
+    } else {
+      rows.sort(function (a, b) {
+        return a.r.date < b.r.date ? 1 : a.r.date > b.r.date ? -1 : a.f.name.localeCompare(b.f.name);
+      });
+    }
+
+    var homes = {};
+    rows.forEach(function (x) { homes[x.f.key] = true; });
+    var nHomes = Object.keys(homes).length;
+    countEl.textContent = rows.length + (rows.length === 1 ? ' inspection' : ' inspections') +
+      ' with a most serious finding, at ' + nHomes + (nHomes === 1 ? ' residence' : ' residences') + '.';
+    noteEl.textContent = includeOld
+      ? 'Showing every report on this site, including older ones.'
+      : 'Showing reports from the last 3 years, the same period used for the ratings on the main page.';
+
+    itemsEl.textContent = '';
+    stateEl.style.display = rows.length ? 'none' : '';
+    if (!rows.length) stateEl.textContent = 'No most serious findings to show.';
+
+    rows.forEach(function (x) {
+      var li = el('li', 'item');
+      var h = el('h2');
+      var a = el('a', null, x.f.name);
+      a.href = './' + (x.f.license_no ? '#' + encodeURIComponent(x.f.license_no) : '');
+      h.appendChild(a);
+      li.appendChild(h);
+
+      var where = [x.f.city].filter(Boolean).join(', ');
+      li.appendChild(el('p', 'meta', (where ? where + ' · ' : '') + fmtDate(x.r.date) + (x.r.type ? ' · ' + x.r.type : '')));
+
+      x.paras.forEach(function (p) {
+        var para = el('p', 'finding');
+        para.textContent = p.text;
+        li.appendChild(para);
+      });
+
+      if (x.r.link) {
+        var lp = el('p', 'report-link');
+        var rl = el('a', null, 'Read the RIDOH report');
+        rl.href = x.r.link;
+        rl.target = '_blank';
+        rl.rel = 'noopener';
+        lp.appendChild(rl);
+        li.appendChild(lp);
+      }
+      itemsEl.appendChild(li);
+    });
+  }
+
+  sortEl.addEventListener('change', render);
+  oldEl.addEventListener('change', render);
+
+  fetch('data/facilities.json', { cache: 'no-cache' })
+    .then(function (res) { if (!res.ok) throw new Error(res.status); return res.json(); })
+    .then(function (json) { DATA = json; render(); })
+    .catch(function () {
+      stateEl.textContent = 'Sorry, the list could not be loaded. Please go back to the main page and try again.';
+    });
+})();
+</script>
+</body>
+</html>
