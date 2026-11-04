@@ -90,7 +90,9 @@
   .item h2 { font-size: 18px; line-height: 1.25; margin: 0 0 2px; }
   .item h2 a { color: var(--ink); }
   .meta { font-size: 14px; color: var(--ink-soft); margin: 0 0 10px; }
-  .finding { margin: 0 0 10px; }
+  .finding { margin: 0 0 12px; }
+  .finding .f-head { font-weight: 700; }
+  .finding .f-body { white-space: pre-wrap; }
     .report-link { font-size: 14px; font-weight: 600; margin: 4px 0 0; }
   .state { padding: 24px 0; color: var(--ink-soft); }
   footer { margin-top: 32px; font-size: 14px; color: var(--ink-soft); }
@@ -160,6 +162,22 @@
     return e;
   }
 
+  // Split a finding into a headline and the text under it (same rule as the main page).
+  function splitFinding(text) {
+    var t = String(text || '').trim(), head = '', body = t, m;
+    var nl = t.indexOf('\n');
+    var sl = t.indexOf(' / ');
+    if (nl > 0 && nl <= 140) {
+      head = t.slice(0, nl).trim(); body = t.slice(nl + 1).trim();
+    } else if (sl > 0 && sl <= 140 && (nl < 0 || sl < nl)) {
+      head = t.slice(0, sl).trim(); body = t.slice(sl + 3).trim();
+    } else {
+      m = t.match(/^(S\s?\d+(?:\s*(?:\/|,|&|and)\s*S?\s?\d+)*)\s*(?::|[\u2013\u2014-])?\s*/);
+      if (m && m[0].length < t.length) { head = m[1]; body = t.slice(m[0].length).trim(); }
+    }
+    return { head: head, body: body };
+  }
+
   function collect() {
     var rows = [];
     DATA.forEach(function (f) {
@@ -215,8 +233,10 @@
       li.appendChild(el('p', 'meta', (where ? where + ' · ' : '') + fmtDate(x.r.date) + (x.r.type ? ' · ' + x.r.type : '')));
 
       x.paras.forEach(function (p) {
-        var para = el('p', 'finding');
-        para.textContent = p.text;
+        var para = el('div', 'finding');
+        var f = splitFinding(p.text);
+        if (f.head) para.appendChild(el('div', 'f-head', f.head));
+        if (f.body) para.appendChild(el('div', 'f-body', f.body));
         li.appendChild(para);
       });
 
