@@ -89,7 +89,8 @@
     .row-main { flex-wrap: wrap; row-gap: 8px; }
     .row-main .row-name-block { flex: 0 0 calc(100% - 70px); }
     .row-main .chevron { order: 2; }
-    .row-main .badge { order: 3; margin-left: 32px; white-space: normal; }
+    .row-main .badges { order: 3; margin-left: 32px; align-items: flex-start; }
+    .row-main .badge { white-space: normal; }
   }
 
   header.masthead {
@@ -334,6 +335,8 @@
     border-radius: 2px;
     border-left: 3px solid transparent;
   }
+  .badges { flex: none; display: flex; flex-direction: column; align-items: stretch; gap: 4px; }
+  .compare-card .badges { align-items: flex-start; }
   .badge .dot { display: none; }
   .badge.clean { background: var(--sage-bg); color: var(--sage); border-left-color: var(--sage); }
   .badge.minor { background: var(--amber-bg); color: var(--amber); border-left-color: var(--amber); }
@@ -805,7 +808,7 @@
       <input id="search" type="text" placeholder="Search by facility name…" aria-label="Search by facility name" autocomplete="off">
     </div>
     <div class="filters" id="filters"></div>
-    <p class="filter-note" id="filterNote">Ratings and filters use only inspection reports from the last 3 years. The number next to a rating is how many inspections in that time had a finding at that level. Older reports are still listed in each residence's timeline.</p>
+    <p class="filter-note" id="filterNote">Ratings and filters use only inspection reports from the last 3 years. A residence with findings at more than one level shows a rating for each. The number next to a rating is how many violations in that time were at that level. The filter buttons use each residence's most serious rating. Older reports are still listed in each residence's timeline.</p>
     <div class="town-row">
       <label for="townSelect">Town</label>
       <select id="townSelect"><option value="">All towns</option></select>
@@ -886,13 +889,16 @@
   function inWindow(r) { return r.date >= CUTOFF; }
   DATA.forEach(function (f) {
     var top = 0, recent = 0, atTop = 0;
+    var perLevel = { most_serious: 0, serious: 0, minor: 0 };
     f.reports.forEach(function (r) {
       if (!inWindow(r)) return;
       recent++;
       var t = r.tier === 'most_serious' ? 3 : r.tier === 'serious' ? 2 : r.tier ? 1 : 0;
+      (r.paragraphs || []).forEach(function (p) { if (perLevel[p.tier] !== undefined) perLevel[p.tier]++; });
       if (t > top) { top = t; atTop = 0; }
       if (t === top) atTop++;
     });
+    f.level_counts = perLevel;
     f.badge_count = top > 0 ? atTop : 0;
     f.badge = top === 3 ? 'most_serious' : top === 2 ? 'serious' : top === 1 ? 'minor' : recent ? 'clean' : 'minor';
   });
@@ -903,10 +909,30 @@
     serious: 'Serious concerns',
     most_serious: 'Most serious concerns'
   };
-  // "Serious concerns · 3 inspections": how many inspections in the last 3 years had a finding at the facility's top level
+  // "Serious concerns · 3 violations": how many findings in the last 3 years were at that level
   function badgeText(f) {
-    var n = f.badge_count;
-    return BADGE_LABEL[f.badge] + (n ? ' · ' + n + (n === 1 ? ' inspection' : ' inspections') : '');
+    var n = (f.level_counts && f.level_counts[f.badge]) || 0;
+    return BADGE_LABEL[f.badge] + (n ? ' · ' + n + (n === 1 ? ' violation' : ' violations') : '');
+  }
+  // A residence with findings at more than one level gets one tag per level, e.g.
+  // "Most serious concerns · 2 inspections", "Serious concerns · 3 inspections", "Minor findings · 8 inspections".
+  // The number is how many violations (findings) in the last 3 years were at that level. Residences with no findings keep the single badgeText tag.
+  var LEVELS = ['most_serious', 'serious', 'minor'];
+  function levelText(level, n) {
+    return BADGE_LABEL[level] + ' · ' + n + (n === 1 ? ' violation' : ' violations');
+  }
+  function badgesHtml(f) {
+    var present = LEVELS.filter(function (l) { return f.level_counts[l] > 0; });
+    var tags = present.length
+      ? present.map(function (l) {
+          return '<span class="badge ' + l + '" title="' + BADGE_HOVER + '"><span class="dot"></span>' + levelText(l, f.level_counts[l]) + '</span>';
+        })
+      : ['<span class="badge ' + f.badge + '" title="' + BADGE_HOVER + '"><span class="dot"></span>' + badgeText(f) + '</span>'];
+    return '<span class="badges">' + tags.join('') + '</span>';
+  }
+  function badgeSummaryText(f) {
+    var present = LEVELS.filter(function (l) { return f.level_counts[l] > 0; });
+    return present.length ? present.map(function (l) { return levelText(l, f.level_counts[l]); }).join('; ') : badgeText(f);
   }
   var BADGE_NOTE = {
     clean: 'No deficiencies were identified in any inspection in the last 3 years.',
@@ -1197,7 +1223,7 @@
     return (
       addrLine +
       buildProfileHtml(f) +
-      '<div class="' + noteCls + '"><strong>' + badgeText(f) + '.</strong> ' + noteText + '</div>' +
+      '<div class="' + noteCls + '"><strong>' + badgeSummaryText(f) + '.</strong> ' + noteText + '</div>' +
       '<div class="timeline">' + reports + '</div>'
     );
   }
@@ -1228,7 +1254,7 @@
             (f.name_note ? '<div class="row-sub row-name-note">' + escapeHtml(f.name_note) + '</div>' : '') +
             '<div class="row-sub">' + (f.city ? escapeHtml(f.city) + ' · ' : '') + f.report_count + ' inspection' + (f.report_count === 1 ? '' : 's') + ' on file · most recent ' + fmtDate(f.most_recent_date) + '</div>' +
           '</div>' +
-          '<span class="badge ' + f.badge + '" title="' + BADGE_HOVER + '"><span class="dot"></span>' + badgeText(f) + '</span>' +
+          badgesHtml(f) +
           '<svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><polyline points="9 6 15 12 9 18"/></svg>' +
         '</div>' +
         '<div class="detail"></div>';
@@ -1341,7 +1367,7 @@
         '<div class="compare-card">' +
           '<h3>' + escapeHtml(f.name) + '</h3>' +
           (f.address ? '<div class="cc-row">' + escapeHtml(f.address) + ', ' + escapeHtml(f.city) + '</div>' : '') +
-          '<div class="cc-row"><span class="badge ' + f.badge + '" title="' + BADGE_HOVER + '"><span class="dot"></span>' + badgeText(f) + '</span></div>' +
+          '<div class="cc-row">' + badgesHtml(f) + '</div>' +
           (f.capacity ? '<div class="cc-row">Licensed capacity: <strong>' + f.capacity + ' beds</strong></div>' : '') +
           '<div class="cc-row"><strong>' + f.report_count + '</strong> inspections on file</div>' +
           '<div class="cc-row">Most recent inspection: <strong>' + fmtDate(f.most_recent_date) + '</strong></div>' +
