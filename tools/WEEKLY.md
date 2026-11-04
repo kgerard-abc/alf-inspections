@@ -62,6 +62,12 @@ inside `index.html` by hand; `tools/build.py` writes it there.
   `badgesHtml()` in `index.html` computes it live, and the note above the filters explains it. The
   filter buttons still use each residence's top level. Write each finding entry so it covers one
   violation, because the badge counts entries.
+- **Violations not tied to a residence on the site** live in `data/other_violations.json` and show
+  in their own section at the bottom of `most-serious.html`, counted in that page's total. They are
+  violations RIDOH reported without naming the residence, plus any at closed residences. They are
+  not in any residence's badge. Each entry has `label`, `when`, `sort_date`, `tier`, `headline`, and
+  `text`; add a `link` field later when kg has the RIDOH report (the page does not show links for
+  these yet).
 - **No "Operating without a license" label, filter, or note.** Removed at kg's request.
 - **Heather Gardens** (key `SCANDINAVIAN HOME`) shows the line "(Formerly Scandinavian Home,
   under new ownership by PACE since 2026)" under its name. It lives in that facility's
