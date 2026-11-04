@@ -1,0 +1,82 @@
+[
+ {
+  "label": "Residence not identified by RIDOH",
+  "when": "April and July 2025",
+  "sort_date": "2025-07-01",
+  "tier": "most_serious",
+  "headline": "Three-bay sink sanitizer out of range",
+  "text": "The three-bay sink did not meet the sanitizer range required for safe food service, and there was no protocol for testing it. Cited under the Rhode Island food code."
+ },
+ {
+  "label": "Residence not identified by RIDOH",
+  "when": "October 2025",
+  "sort_date": "2025-10-01",
+  "tier": "most_serious",
+  "headline": "Medication lockers left unlocked",
+  "text": "Residents' lockers for medication storage were unlocked, which let other residents reach their medications. Cited under medication storage."
+ },
+ {
+  "label": "Residence not identified by RIDOH",
+  "when": "December 2025",
+  "sort_date": "2025-12-01",
+  "tier": "most_serious",
+  "headline": "Three-bay sink sanitizer out of range",
+  "text": "The three-bay sink did not meet the sanitizer range required for safe food service, and there was no protocol for testing it. Cited under the Rhode Island food code."
+ },
+ {
+  "label": "Residence not identified by RIDOH",
+  "when": "December 2025",
+  "sort_date": "2025-12-01",
+  "tier": "most_serious",
+  "headline": "Staff member and resident in a sexual relationship",
+  "text": "A resident and a certified nursing assistant had an inappropriate sexual relationship while the staff member worked at the residence and the resident still lived there. Cited under reporting and rights of residents."
+ },
+ {
+  "label": "Residence not identified by RIDOH",
+  "when": "December 2025",
+  "sort_date": "2025-12-01",
+  "tier": "most_serious",
+  "headline": "Blood thinner not given; resident hospitalized with a blood clot",
+  "text": "A resident with a history of stroke left the hospital on blood thinning medication. Record review showed the resident did not get the medication at the residence and was hospitalized with a pulmonary embolism (a blood clot in the lungs). There was a problem in the admission process. Cited under resident records."
+ },
+ {
+  "label": "Residence not identified by RIDOH",
+  "when": "October 2025",
+  "sort_date": "2025-10-01",
+  "tier": "most_serious",
+  "headline": "Unsecured medications in a dementia unit",
+  "text": "A resident in the special care unit (dementia care) had numerous bottles of unsecured medications with labels in a foreign language and contents that could not be identified."
+ },
+ {
+  "label": "Residence not identified by RIDOH",
+  "when": "December 2025",
+  "sort_date": "2025-12-01",
+  "tier": "most_serious",
+  "headline": "Low blood pressure not rechecked; resident found dead",
+  "text": "A resident who was ill with low blood pressure had a physician's order to check blood pressure before getting blood pressure medication. A staff note said to check on the resident later in the day, and there was no record that anyone did. The resident was found dead in the apartment the next morning, when family asked for a wellness check because they could not reach the resident."
+ },
+ {
+  "label": "Residence not identified by RIDOH",
+  "when": "December 2025",
+  "sort_date": "2025-12-01",
+  "tier": "most_serious",
+  "headline": "Fall not reported; pelvic fractures found later",
+  "text": "A different resident had a fall that no one saw. Staff on duty did not report the fall when they found the resident, and no registered nurse assessed the resident. The resident's primary care provider later found numerous pelvic fractures, and the investigation into those fractures is how the unreported fall came to light. Cited under administrative management, management of services, and reporting."
+ },
+ {
+  "label": "Residence not identified by RIDOH",
+  "when": "July 2025",
+  "sort_date": "2025-07-01",
+  "tier": "most_serious",
+  "headline": "Dish machine not reaching a safe temperature",
+  "text": "The dish machine's temperature dials were cracked and discolored, which made them hard to read, and the test strip used to check the machine had expired in May 2025. Temperature logs showed the machine did not reach a sanitizing temperature many times, and nothing was done about it before the surveyor noticed."
+ },
+ {
+  "label": "Andrew Matthew Assisted Living (closed)",
+  "when": "April 29, 2026",
+  "sort_date": "2026-04-29",
+  "tier": "most_serious",
+  "headline": "Space heaters in use",
+  "text": "Space heaters, which are prohibited, were in use in two residents' or staff bedrooms. A Fire Marshal complaint said a staff member's clothing placed on a space heater began smoking and set off the alarm, and a second space heater was found during the walkthrough. Cited under safety requirements."
+ }
+]

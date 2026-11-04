@@ -98,6 +98,8 @@
   footer { margin-top: 32px; font-size: 14px; color: var(--ink-soft); }
   footer p { margin: 0 0 10px; max-width: 640px; }
   .nb { white-space: nowrap; }
+  .section-head { font-size: 22px; line-height: 1.2; margin: 36px 0 8px; }
+  .item .who { font-weight: 700; font-size: 18px; line-height: 1.25; margin: 0 0 2px; }
 </style>
 </head>
 <body>
@@ -125,6 +127,12 @@
   <div class="state" id="state">Loading&hellip;</div>
   <ul class="items" id="items"></ul>
 
+  <section id="otherSection" hidden>
+    <h2 class="section-head">Not tied to a residence on this site</h2>
+    <p class="note">These violations are in RIDOH inspection reports, but RIDOH did not say which residence they were at, or the residence has closed. They are counted in the total above. We will add the RIDOH reports here when we have them.</p>
+    <ul class="items" id="otherItems"></ul>
+  </section>
+
   <footer>
     <p>This page is published by Advocates for Better Care in Rhode&nbsp;Island (ABC-RI), a grassroots community advocacy organization. It is not produced or endorsed by the Rhode Island Department of Health (RIDOH).</p>
     <p>Think something here is wrong? Email us at <a href="mailto:corrections@abc-ri.org">corrections@abc-ri.org</a> with the residence name and what looks off.</p>
@@ -134,6 +142,9 @@
 <script>
 (function () {
   var DATA = [];
+  var OTHER = [];
+  var otherEl = document.getElementById('otherItems');
+  var otherSection = document.getElementById('otherSection');
   var itemsEl = document.getElementById('items');
   var stateEl = document.getElementById('state');
   var countEl = document.getElementById('count');
@@ -210,9 +221,26 @@
     var nHomes = Object.keys(homes).length;
     var nFind = 0;
     rows.forEach(function (x) { nFind += x.paras.length; });
-    countEl.textContent = nFind + (nFind === 1 ? ' most serious violation' : ' most serious violations') +
-      ' in ' + rows.length + (rows.length === 1 ? ' inspection' : ' inspections') +
-      ', at ' + nHomes + (nHomes === 1 ? ' residence' : ' residences') + '.';
+    var others = OTHER.filter(function (o) { return includeOld || o.sort_date >= CUTOFF; });
+    var nOther = others.length, total = nFind + nOther;
+    countEl.textContent = total + (total === 1 ? ' most serious violation' : ' most serious violations') + '. ' +
+      nFind + ' in ' + rows.length + (rows.length === 1 ? ' inspection' : ' inspections') +
+      ' at ' + nHomes + (nHomes === 1 ? ' residence' : ' residences') + ' on this site' +
+      (nOther ? ', and ' + nOther + ' not tied to a residence on this site (listed below).' : '.');
+
+    otherEl.textContent = '';
+    otherSection.hidden = !nOther;
+    others.sort(function (a, b) { return a.sort_date < b.sort_date ? 1 : a.sort_date > b.sort_date ? -1 : 0; });
+    others.forEach(function (o) {
+      var li = el('li', 'item');
+      li.appendChild(el('p', 'who', o.label));
+      li.appendChild(el('p', 'meta', o.when));
+      var para = el('div', 'finding');
+      para.appendChild(el('div', 'f-head', o.headline));
+      para.appendChild(el('div', 'f-body', o.text));
+      li.appendChild(para);
+      otherEl.appendChild(li);
+    });
     noteEl.textContent = includeOld
       ? 'Showing every report on this site, including older ones.'
       : 'Showing reports from the last 3 years, the same period used for the ratings on the main page.';
@@ -256,9 +284,11 @@
   sortEl.addEventListener('change', render);
   oldEl.addEventListener('change', render);
 
-  fetch('data/facilities.json', { cache: 'no-cache' })
-    .then(function (res) { if (!res.ok) throw new Error(res.status); return res.json(); })
-    .then(function (json) { DATA = json; render(); })
+  function getJson(url) {
+    return fetch(url, { cache: 'no-cache' }).then(function (res) { if (!res.ok) throw new Error(res.status); return res.json(); });
+  }
+  Promise.all([getJson('data/facilities.json'), getJson('data/other_violations.json').catch(function () { return []; })])
+    .then(function (both) { DATA = both[0]; OTHER = both[1]; render(); })
     .catch(function () {
       stateEl.textContent = 'Sorry, the list could not be loaded. Please go back to the main page and try again.';
     });
