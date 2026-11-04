@@ -80,16 +80,26 @@ inside `index.html` by hand; `tools/build.py` writes it there.
 
 ### Severity (kg reviews every serious and most serious call)
 
-- **most_serious**: a resident was harmed or put in real danger, or abuse or neglect occurred.
-  Examples: injury; a dangerous event that actually happened (fire, a lit cigarette, an
-  elopement); a medication error that reached a resident; a doctor's safety order not followed;
-  immediate jeopardy cited by RIDOH; repeat kitchen violations with pests or contamination.
-- **serious**: a failure in a resident's care or safety that could lead to harm. Examples: an
-  abuse allegation or incident not investigated or reported; a service plan missing a resident's
-  safety or care needs (wander alarms, care being given by another resident); outbreak
-  infection control not followed; no CPR-certified staff on a shift; a resident's scheduled
-  medication unavailable or unsafely shared; chemicals reachable in a dementia unit; no
-  background check for direct-care staff.
+- **most_serious**: kg's judgment of what would very likely have been an immediate jeopardy (IJ)
+  citation had it happened in a nursing home. The standard is noncompliance that caused, or was
+  likely to cause, serious injury, harm, impairment, or death to a resident (42 CFR 489.3; CMS
+  levels J, K, L). Assisted living rules do not use the term "immediate jeopardy," which is why
+  the site calls this "most serious" and says it is ABC-RI's own judgment using the nursing home
+  standard. Never describe it as RIDOH's own rating. kg's four sheets of IJ-level findings (2023,
+  2024, 2025, 2026 to date) are the reference. Findings she put there include: injury,
+  hospitalization, or death after a care failure; abuse, sexual abuse, or abuse not investigated;
+  elopements, and a secure-unit resident placed in an unsecured setting; physician orders not
+  followed or medications missed or wrong (when it reached a resident); unsecured hazardous
+  chemicals or medications in a dementia unit; code status errors (DNR vs. full code); a missed
+  response to stroke or other acute change; unlicensed staff giving medications; no medication
+  staff on a shift; resident threats with weapons not investigated; fire hazards. When a new
+  report has a finding like these, tag it most_serious and put it at the top of the review list
+  for kg, who makes the final call.
+- **serious**: a failure in a resident's care or safety that could lead to harm but kg has not
+  judged to be at the level above. Examples: an assessment or service plan missing a safety need
+  with no event; outbreak infection control not followed; no CPR-certified staff on a shift; no
+  background check for direct-care staff; door locks that block emergency entry; abuse or
+  neglect allegations handled late or incompletely with no harm described.
 - **minor**: everything else: paperwork, assessments not updated without a safety gap, food
   code, postings, fire drills, quality plans, as-needed or expired medications.
 
