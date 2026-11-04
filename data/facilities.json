@@ -2489,13 +2489,13 @@
    {
     "date": "2025-10-08",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S 565 — Medication Administration",
     "paragraphs": [
      {
       "text": "S 565 — Medication Administration\nA resident with leukodystrophy (a serious neurological condition) was administered 60 mg of Baclofen — three times the ordered dose of 20 mg. The error occurred because a CMT was confused by a medication packaging system that dispensed multiple days' worth of medications together, and administered both the old 40 mg dose and the new 20 mg dose simultaneously. Resident hospitalized following the overdose.",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/file/d/17RpnS_mtogbYpm9okWuPFXVCf4FGfl2V/view?usp=drive_link"
@@ -3097,11 +3097,11 @@
     "type": "Complaint/Incident Investigation",
     "tier": "most_serious",
     "no_findings": false,
-    "headline": "Unsecured Medications Most serious",
+    "headline": "Treatments Without Physician Orders Most serious",
     "paragraphs": [
      {
       "text": "Treatments Without Physician Orders Most serious\nResident #1 (COPD) was receiving oxygen set at 3L on the concentrator but believed she received 2L — no physician order for oxygen existed. Resident #2 (Type 2 diabetes) had blood sugars documented twice weekly with no physician order; values of 598 and 600 (normal 70–100) were never communicated to the physician. Resident harm: Resident #1 receiving incorrect oxygen dose without oversight; Resident #2 with critically elevated blood sugars with no physician notification.",
-      "tier": "serious"
+      "tier": "most_serious"
      },
      {
       "text": "Resident Records\nResident #1's medication list had not been updated since move-in (January 2025); when hospitalized in November for altered mental status, toxicology showed benzodiazepine, fentanyl, and opiates — none on the facility's medication list. Hospital noted no medication list was received on transfer. Resident #2 had no physician order for finger sticks, multiple dates with no values recorded, and abnormal readings never communicated to the physician. Resident harm: inaccurate medication records contributed to incomplete hospital transfer and unmonitored dangerous blood sugar levels.",
@@ -5429,13 +5429,13 @@
    {
     "date": "2025-09-05",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S 230 — Standard of Care/Inappropriate Placement (two residents)",
     "paragraphs": [
      {
       "text": "S 230 — Standard of Care/Inappropriate Placement (two residents)\nTwo residents were determined to be inappropriately placed in a traditional assisted living setting:\n\nResident #1 (schizophrenia): Received the wrong dose of Clozapine (an antipsychotic) — 100 mg instead of the ordered 200 mg — from 7/8/2025 through 8/1/2025 due to physician orders not being followed. Resident sent to a higher level of care as a result of the medication error.\nResident #2 (memory loss and seizures): Was moved from a secured memory care unit to an unsecured traditional assisted living unit without a physician order documenting this was safe and appropriate.\nResident #3 (major depressive disorder with psychotic features): Was found wandering a beach in Massachusetts, found with multiple knives and drugs in her room, and tested positive for cannabis and amphetamines at the hospital. The facility failed to contact the physician regarding the resident being found out of state, and failed to document the appropriateness of her placement.\n\nDarlington Assisted Living had the same resident (#3) flagged in both the 9/5/2025 and 10/22/2025 surveys — and re-admitted her between them despite documented safety concerns.",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/file/d/1ROvAhO3wKsZ38Uz9Y7l6LhgxtM7cujyw/view?usp=drive_link"
@@ -9816,13 +9816,13 @@
    {
     "date": "2026-02-12",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S250: Resident got about a quarter of the prescribed lactulose for two weeks",
     "paragraphs": [
      {
       "text": "S250: Resident got about a quarter of the prescribed lactulose for two weeks / A resident was ordered 45 mL of lactulose (used to treat hepatic encephalopathy) three times a day. A medication aide measured it with an ordinary plastic eating spoon. Pharmacy records and the bottle show the resident received about 420 mL instead of the 1,800 mL ordered from 1/27/2026 to 2/9/2026. The resident was hospitalized 2/9/2026. Separately, a resident who fell and was hospitalized never had the hospital's physical and occupational therapy recommendations followed up with the doctor. And a staff member who had to be physically held back from a resident during a verbal altercation was told to finish passing medications before leaving, contrary to the residence's own abuse policy.",
-      "tier": "serious"
+      "tier": "most_serious"
      },
      {
       "text": "S225: No national criminal background check for a medication aide / The certified medication aide involved in the abuse incident had no national criminal background check on file from her hire in 2024.",
@@ -10866,20 +10866,20 @@
  {
   "name": "Spring Villa Memory Care",
   "key": "SPRING VILLA",
-  "badge": "serious",
+  "badge": "most_serious",
   "report_count": 17,
   "most_recent_date": "2026-03-03",
   "reports": [
    {
     "date": "2026-03-03",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S295: Resident put a lit cigarette in a coat pocket; smokers left unsupervised",
     "paragraphs": [
      {
       "text": "S295: Resident put a lit cigarette in a coat pocket; smokers left unsupervised / A resident went to the nurses' station asking for help because his/her coat was smoking. The resident said s/he \"thought\" the cigarette was out before putting it in the pocket. Residents smoked on the balcony without supervision and kept their own cigarettes, even though the smoking assessments for all 4 smokers reviewed said they were not safe to smoke without staff managing it.",
-      "tier": "serious"
+      "tier": "most_serious"
      },
      {
       "text": "S405: Service plans missing smoking, day program, and behavior needs / Service plans for all 4 smokers did not address smoking. One resident's plan left out a twice-weekly adult day program. Two residents with repeated behavioral and physical disturbances toward other residents had nothing in their plans to address them.",
