@@ -808,7 +808,7 @@
       <input id="search" type="text" placeholder="Search by facility name…" aria-label="Search by facility name" autocomplete="off">
     </div>
     <div class="filters" id="filters"></div>
-    <p class="filter-note" id="filterNote">Ratings and filters use only inspection reports from the last 3 years. A residence with findings at more than one level shows a rating for each. The number next to a rating is how many inspections in that time had their most serious finding at that level, so each inspection is counted once. The filter buttons use each residence's most serious rating. Older reports are still listed in each residence's timeline.</p>
+    <p class="filter-note" id="filterNote">Ratings and filters use only inspection reports from the last 3 years. A residence with findings at more than one level shows a rating for each. The number next to a rating is how many violations in that time were at that level. The filter buttons use each residence's most serious rating. Older reports are still listed in each residence's timeline.</p>
     <div class="town-row">
       <label for="townSelect">Town</label>
       <select id="townSelect"><option value="">All towns</option></select>
@@ -894,7 +894,7 @@
       if (!inWindow(r)) return;
       recent++;
       var t = r.tier === 'most_serious' ? 3 : r.tier === 'serious' ? 2 : r.tier ? 1 : 0;
-      if (t > 0) perLevel[r.tier]++;
+      (r.paragraphs || []).forEach(function (p) { if (perLevel[p.tier] !== undefined) perLevel[p.tier]++; });
       if (t > top) { top = t; atTop = 0; }
       if (t === top) atTop++;
     });
@@ -909,17 +909,17 @@
     serious: 'Serious concerns',
     most_serious: 'Most serious concerns'
   };
-  // "Serious concerns · 3 inspections": how many inspections in the last 3 years had a finding at the facility's top level
+  // "Serious concerns · 3 violations": how many findings in the last 3 years were at that level
   function badgeText(f) {
-    var n = f.badge_count;
-    return BADGE_LABEL[f.badge] + (n ? ' · ' + n + (n === 1 ? ' inspection' : ' inspections') : '');
+    var n = (f.level_counts && f.level_counts[f.badge]) || 0;
+    return BADGE_LABEL[f.badge] + (n ? ' · ' + n + (n === 1 ? ' violation' : ' violations') : '');
   }
   // A residence with findings at more than one level gets one tag per level, e.g.
   // "Most serious concerns · 2 inspections", "Serious concerns · 3 inspections", "Minor findings · 8 inspections".
-  // Each inspection is counted once, at its most serious level. Residences with no findings keep the single badgeText tag.
+  // The number is how many violations (findings) in the last 3 years were at that level. Residences with no findings keep the single badgeText tag.
   var LEVELS = ['most_serious', 'serious', 'minor'];
   function levelText(level, n) {
-    return BADGE_LABEL[level] + ' · ' + n + (n === 1 ? ' inspection' : ' inspections');
+    return BADGE_LABEL[level] + ' · ' + n + (n === 1 ? ' violation' : ' violations');
   }
   function badgesHtml(f) {
     var present = LEVELS.filter(function (l) { return f.level_counts[l] > 0; });

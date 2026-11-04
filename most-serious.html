@@ -190,8 +190,11 @@
     var homes = {};
     rows.forEach(function (x) { homes[x.f.key] = true; });
     var nHomes = Object.keys(homes).length;
-    countEl.textContent = rows.length + (rows.length === 1 ? ' inspection' : ' inspections') +
-      ' with a most serious finding, at ' + nHomes + (nHomes === 1 ? ' residence' : ' residences') + '.';
+    var nFind = 0;
+    rows.forEach(function (x) { nFind += x.paras.length; });
+    countEl.textContent = nFind + (nFind === 1 ? ' most serious violation' : ' most serious violations') +
+      ' in ' + rows.length + (rows.length === 1 ? ' inspection' : ' inspections') +
+      ', at ' + nHomes + (nHomes === 1 ? ' residence' : ' residences') + '.';
     noteEl.textContent = includeOld
       ? 'Showing every report on this site, including older ones.'
       : 'Showing reports from the last 3 years, the same period used for the ratings on the main page.';
