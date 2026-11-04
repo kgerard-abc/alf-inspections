@@ -456,7 +456,12 @@
     display: none;
   }
   .tl-body p { margin: 0 0 10px; white-space: pre-wrap; }
-  .tl-body p.tier-most-serious { font-weight: 600; color: var(--brick-deep); }
+  /* Every finding uses the same type: bold headline, regular text below. Most serious findings are red with a warning triangle. */
+  .tl-body .finding { margin: 0 0 12px; font-size: 14.5px; line-height: 1.6; font-weight: 400; }
+  .tl-body .finding .f-head { font-weight: 700; }
+  .tl-body .finding .f-body { white-space: pre-wrap; }
+  .tl-body .finding.finding-most { color: var(--brick-deep); }
+  .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
   .tl-item.expanded .tl-body { display: block; }
 
   .minor-toggle {
@@ -1060,9 +1065,35 @@
     var elevated = report.paragraphs.filter(function (p) { return p.tier === 'most_serious' || p.tier === 'serious'; });
     var minor = report.paragraphs.filter(function (p) { return p.tier !== 'most_serious' && p.tier !== 'serious'; });
 
+    // Split a finding into a headline and the text under it. Newer entries start with a title line
+    // (or "Title / Subtitle"); older ones start with a RIDOH tag such as "S230:".
+    function splitFinding(text) {
+      var t = String(text || '').trim(), head = '', body = t, m;
+      var nl = t.indexOf('\n');
+      var sl = t.indexOf(' / ');
+      if (nl > 0 && nl <= 140) {
+        head = t.slice(0, nl).trim(); body = t.slice(nl + 1).trim();
+      } else if (sl > 0 && sl <= 140 && (nl < 0 || sl < nl)) {
+        head = t.slice(0, sl).trim(); body = t.slice(sl + 3).trim();
+      } else {
+        m = t.match(/^(S\s?\d+(?:\s*(?:\/|,|&|and)\s*S?\s?\d+)*)\s*(?::|[\u2013\u2014-])?\s*/);
+        if (m && m[0].length < t.length) { head = m[1]; body = t.slice(m[0].length).trim(); }
+      }
+      return { head: head, body: body };
+    }
+
     function paraHtml(p) {
-      var cls = p.tier === 'most_serious' ? ' class="tier-most-serious"' : '';
-      return '<p' + cls + '>' + escapeHtml(p.text) + '</p>';
+      var most = p.tier === 'most_serious';
+      var f = splitFinding(p.text);
+      if (!f.head && !f.body && !most) return '';
+      var h = '<div class="finding' + (most ? ' finding-most' : '') + '">';
+      if (f.head || most) {
+        h += '<div class="f-head">' +
+          (most ? '<span aria-hidden="true">\u26A0\uFE0F </span><span class="sr-only">Most serious: </span>' : '') +
+          escapeHtml(f.head) + '</div>';
+      }
+      if (f.body) h += '<div class="f-body">' + escapeHtml(f.body) + '</div>';
+      return h + '</div>';
     }
 
     // If nothing is elevated, just show everything plainly (routine report).

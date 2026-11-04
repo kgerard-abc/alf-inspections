@@ -1,0 +1,11 @@
+<!doctype html><html><body style="margin:0"><iframe id="f" src="http://localhost:8770/index.html" style="width:900px;height:1700px;border:0"></iframe>
+<script>
+var f=document.getElementById('f');
+f.onload=function(){setTimeout(function(){
+ var d=f.contentDocument;
+ var rows=[].slice.call(d.querySelectorAll('.row'));
+ var row=rows.filter(function(r){return /Atria Harborhill/.test(r.textContent)})[0];
+ row.querySelector('.row-main').click();
+ setTimeout(function(){ var t=row.getBoundingClientRect().top+f.contentWindow.scrollY; f.contentWindow.scrollTo(0,t-10);},600);
+},900);};
+</script></body></html>
