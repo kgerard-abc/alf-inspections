@@ -80,16 +80,24 @@ inside `index.html` by hand; `tools/build.py` writes it there.
 
 ### Severity (kg reviews every serious and most serious call)
 
-- **most_serious**: a resident was harmed or put in real danger, or abuse or neglect occurred.
-  Examples: injury; a dangerous event that actually happened (fire, a lit cigarette, an
-  elopement); a medication error that reached a resident; a doctor's safety order not followed;
-  immediate jeopardy cited by RIDOH; repeat kitchen violations with pests or contamination.
-- **serious**: a failure in a resident's care or safety that could lead to harm. Examples: an
-  abuse allegation or incident not investigated or reported; a service plan missing a resident's
-  safety or care needs (wander alarms, care being given by another resident); outbreak
-  infection control not followed; no CPR-certified staff on a shift; a resident's scheduled
-  medication unavailable or unsafely shared; chemicals reachable in a dementia unit; no
-  background check for direct-care staff.
+- **most_serious**: the nursing home immediate jeopardy (IJ) standard. Noncompliance that caused,
+  or was likely to cause, serious injury, harm, impairment, or death to a resident (42 CFR 489.3;
+  CMS levels J, K, L). Assisted living rules do not use the term "immediate jeopardy," which is why
+  the site calls this "most serious" and says it is ABC-RI's own judgment using the nursing home
+  standard. Never describe it as RIDOH's own rating. Use it when: a resident was injured,
+  hospitalized, or died because of the failure; abuse or sexual abuse occurred, or an allegation was
+  not protected against or investigated; a resident was exposed to a serious danger (an elopement
+  that ended with the resident outside in danger, a fire, a hazardous ingestion, a stockpile of a
+  dangerous drug, a weapon threat); emergency care was withheld; or a medication error or missed
+  medication reached a resident and plausibly risked serious harm. If nothing happened and no
+  serious harm was likely, it is not most_serious.
+- **serious**: a failure in a resident's care or safety that could lead to harm but did not meet the
+  standard above. Examples: an elopement where the resident was found unharmed; a medication error
+  or missed dose with no stated harm; a service plan or assessment missing a safety need (code
+  status, wandering, smoking); a resident kept who needs a higher level of care; unlicensed staff
+  giving medications; no medication aide on shift; outbreak infection control not followed; no
+  CPR-certified staff on a shift; chemicals reachable in a dementia unit; no background check for
+  direct-care staff; door locks that block emergency entry.
 - **minor**: everything else: paperwork, assessments not updated without a safety gap, food
   code, postings, fire drills, quality plans, as-needed or expired medications.
 
