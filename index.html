@@ -441,12 +441,15 @@
     font-size: 13px;
     color: var(--ink-soft);
   }
+  /* Every inspection headline uses the same type: bold, same size and spacing. Most serious ones are red with a warning triangle. */
   .tl-headline {
     font-size: 15.5px;
     margin: 4px 0 0;
     line-height: 1.45;
+    font-weight: 700;
+    color: var(--ink);
   }
-  .tl-headline.most-serious-text { color: var(--brick-deep); font-weight: 600; }
+  .tl-headline.most-serious-text { color: var(--brick-deep); }
 
   .tl-body {
     margin-top: 10px;
@@ -1212,6 +1215,16 @@
     );
   }
 
+  // Older reports have the whole RIDOH wording as their headline. Show a short first line instead;
+  // the full text is in the finding below it.
+  function shortHeadline(t) {
+    t = String(t || '').replace(/\s+/g, ' ').trim();
+    if (t.length <= 140) return t;
+    var cut = t.slice(0, 140), sp = cut.lastIndexOf(' ');
+    if (sp > 80) cut = cut.slice(0, sp);
+    return cut.replace(/[\s,;:(\u2013\u2014-]+$/, '') + '\u2026';
+  }
+
   function renderDetail(f) {
     var reports = f.reports.map(function (r, i) {
       var elevated = reportIsElevated(r);
@@ -1231,7 +1244,7 @@
       return (
         '<div class="' + itemCls + '" data-idx="' + i + '">' +
           '<div class="tl-date">' + fmtDate(r.date) + '<span class="tl-type"> · ' + escapeHtml(r.type) + '</span></div>' +
-          '<div class="' + headlineCls + '">' + warningIcon + escapeHtml(r.headline) + '</div>' +
+          '<div class="' + headlineCls + '">' + warningIcon + escapeHtml(shortHeadline(r.headline)) + '</div>' +
           '<div class="tl-body">' + buildParagraphsHtml(r, i) + '</div>' +
           '<div class="tl-actions">' +
             (r.paragraphs && r.paragraphs.length && !elevated ? '<button class="tl-link-btn" data-toggle="' + i + '">Read full finding</button>' : '') +
