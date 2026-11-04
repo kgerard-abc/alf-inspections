@@ -160,13 +160,13 @@
    {
     "date": "2023-08-30",
     "type": "Complaint/Incident Investigation",
-    "tier": "minor",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S230: \"failed to provide all care and services to all residents in accordance with the prevailing community standard of care, relative to accurate documentation for medication administration for 1 of 3 residente reviewed\" (RESIDENT WAS NOT GIVEN MEDICATION BC IT WAS NOT AVAILABLE BUT WAS MARKED ON CHART AS BEING GIVEN FOR AT LEAST 6 DAYS, PHYSICIAN NOT NOTIFIED, RESIDENT SENT TO ER WITH CRITICALLY LOW POTASSIUM LEVELS); S565: failed to ensure all medications were administered in accordance with written physician's orders for 1 of 3 residents reviewed;",
     "paragraphs": [
      {
       "text": "S230: \"failed to provide all care and services to all residents in accordance with the prevailing community standard of care, relative to accurate documentation for medication administration for 1 of 3 residente reviewed\" (RESIDENT WAS NOT GIVEN MEDICATION BC IT WAS NOT AVAILABLE BUT WAS MARKED ON CHART AS BEING GIVEN FOR AT LEAST 6 DAYS, PHYSICIAN NOT NOTIFIED, RESIDENT SENT TO ER WITH CRITICALLY LOW POTASSIUM LEVELS); S565: failed to ensure all medications were administered in accordance with written physician's orders for 1 of 3 residents reviewed;",
-      "tier": "minor"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1I6qmWR_78HIbudD_GKht0PkmiSswITC3&usp=drive_copy"
@@ -174,13 +174,13 @@
    {
     "date": "2023-08-23",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S565: \"failed to ensure that medications shall be stored securely and in such a manner to prevent spollage, dosage errors, administration errors, and/or Inapproprlate access, for the singular resident reviewed for medication administration errors\"; (RESIDENT GIVEN WRONG MEDICATION MEANT FOR ANOTHER RESIDENT)",
     "paragraphs": [
      {
       "text": "S565: \"failed to ensure that medications shall be stored securely and in such a manner to prevent spollage, dosage errors, administration errors, and/or Inapproprlate access, for the singular resident reviewed for medication administration errors\"; (RESIDENT GIVEN WRONG MEDICATION MEANT FOR ANOTHER RESIDENT)",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=16k0XmHnyn42XqXM8yXB_hXUUaYbiHPqV&usp=drive_copy"
@@ -426,13 +426,13 @@
    {
     "date": "2023-05-03",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S815: \"failed to operate and provide services to all residents of the Special Care Unit (SCU) in accordance with the prevailing community standard of care for residents with needs and behaviors due to dementia related to safety rounds conducted for 2 of 2 sample residents reviewed...(TWO RESIDENTS, HIGH FALL RISKS, ASSESSED/DOCUMENTED TO REQUIRE NIGHTLY SAFETY CHECKS, NEITHER WERE CHECKED MOST NIGHTS OVER 2, 3 MONTH PERIOD, BOTH HOSPITALIZED FOR FALLS/FRACTURES)",
     "paragraphs": [
      {
       "text": "S815: \"failed to operate and provide services to all residents of the Special Care Unit (SCU) in accordance with the prevailing community standard of care for residents with needs and behaviors due to dementia related to safety rounds conducted for 2 of 2 sample residents reviewed...(TWO RESIDENTS, HIGH FALL RISKS, ASSESSED/DOCUMENTED TO REQUIRE NIGHTLY SAFETY CHECKS, NEITHER WERE CHECKED MOST NIGHTS OVER 2, 3 MONTH PERIOD, BOTH HOSPITALIZED FOR FALLS/FRACTURES)",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1BL674c96Pj6c6cmUfS_m9icGV7jR4aFP&usp=drive_copy"
@@ -572,7 +572,7 @@
  {
   "name": "Anchor Bay At Greenwich",
   "key": "ANCHOR BAY AT GREENWICH",
-  "badge": "serious",
+  "badge": "most_serious",
   "report_count": 27,
   "most_recent_date": "2026-07-07",
   "reports": [
@@ -588,9 +588,9 @@
    {
     "date": "2026-06-29",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
-    "headline": "Comprehensive Assessments/Nurse Reviews Incomplete or Unsigned",
+    "headline": "Service Plan Inaccurate on Code Status (DNR vs. Full Code)",
     "paragraphs": [
      {
       "text": "Comprehensive Assessments/Nurse Reviews Incomplete or Unsigned\nFor 4-5 of 5 sample residents, comprehensive assessments were incomplete (blank medication sections) and/or unsigned by the required Nurse and Administrator; 90-day nurse reviews for 4 of 4 residents reviewed lacked the required RN signature.",
@@ -598,7 +598,7 @@
      },
      {
       "text": "Service Plan Inaccurate on Code Status (DNR vs. Full Code)\nFor 5 of 5 sample residents, service plans lacked required signatures; additionally, one resident's MOLST form documented Do Not Resuscitate (DNR) status, but the resident's service plan inaccurately listed the resident as \"Full Code\" — a code-status discrepancy between records.",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/file/d/1sO5ZMvJdbe1633_Yt6c-RXLrGkxB6NNz/view?usp=drivesdk"
@@ -606,13 +606,13 @@
    {
     "date": "2026-06-29",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "CONTINUED Failure to Address SCU Wandering/Aggression Risk in Service Plans",
     "paragraphs": [
      {
       "text": "CONTINUED Failure to Address SCU Wandering/Aggression Risk in Service Plans\nA follow-up survey to a 3/4/2026 complaint investigation found the residence continued to fail to accurately reflect safety interventions on service plans for 3 of 4 Special Care Unit (dementia/memory care) residents, despite all SCU residents wearing wanderguard monitors for exit-seeking risk. Progress notes documented an escalating pattern the service plans never incorporated: one resident repeatedly attempting to exit the unit; another with documented altercations including trying to push a walker into another resident (intercepted by that resident's hands) and, separately, grabbing/hitting another resident's arm during a verbal altercation, plus multiple episodes of aggression toward staff (grabbing a staff member's wrist, yelling, refusing to relinquish a butter knife, requiring a hospital send-out for a mental status change). This was cited as a repeat/continued deficiency from the prior survey.",
-      "tier": "serious"
+      "tier": "most_serious"
      },
      {
       "text": "Kitchen Sanitation (Continued)\nContinued food-code violations: dust accumulation on kitchen exhaust fans, trash receptacles with damaged (holed) lids, and food prep without a hair restraint.",
@@ -719,13 +719,13 @@
    {
     "date": "2025-09-12",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "Elopement Prevention",
     "paragraphs": [
      {
       "text": "Elopement Prevention\nA memory care resident with a documented history of elopement was admitted without that history being communicated to the facility. Approximately one hour after being identified as missing, the resident was found by police at a nearby church, unharmed. The resident had followed other visitors onto the elevator and exited the building undetected while staff were resetting wanderguard devices for nearby residents.",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/file/d/1NgE6s8U6iZQ_oHA3TyjtbuDQumrhnchQ/view?usp=drive_link"
@@ -1414,13 +1414,13 @@
    {
     "date": "2023-05-10",
     "type": "Routine/Biennial Inspection",
-    "tier": "minor",
+    "tier": "most_serious",
     "no_findings": false,
-    "headline": "S080: failed to ensure that at least half of the safe resident handling committee members are hourly, non-managerial employees who provide direct resident care; S230: failed to provide care and services in accordance with prevailing community standards of care relative to: skin assessment for \"at risk\" residents and following assessment protocol for two of two residents reviewed relative to wounds, ID #s 1 and 2, and following physician's orders for two of three residents relative to self-administration of medication, ID #s 2 and 3.; S370: failed to complete assessment within 5 days of readmission, WENT 1 WEEK+ WITHOUT CARE FOR 5 WOUNDS; S270: failed to complete quarterly smoking survey for resident; S285: WOUND NOT ASSESSED/ADDRESSED, SENT TO ER, STAGE 3 PRESSURE ULCER, DECEMBER 2021, NOT INVESTIGATED UNTIL MAY 2023, NOT APPROPRIATE FOR AL; S320: failed to complete a discharge summary, as required for 5 of 5 closed records, ; S360: failed to utilize the Department-approved assessment form, completing an assessment on each resident who is admitted to the residence for 1 of 12 sample residents, ID #8 and for reassessments of the remainder of the sample. S365: failed to review the resident's comprehensive assessment at intervals not to exceed (12) months and each time a resident's condition changes significantly for seven of seven sample residents, S375: failed to ensure nurse reviews were completed at least once every ninety (90) days for two of four sample residents reviewed relative to nurse reviews, S380: failed to document a description of the services and interventions needed on the service plan, and to ensure the service plan was reviewed at intervals not to exceed twelve (12) months, for seven of seven sample residents, S510: failed to employ managers certified in food safety as required. S705: failed to ensure drills simulating fire emergencies, with at least fifty percent (50%) obstructed drills,",
+    "headline": "S080: failed to ensure that at least half of the safe resident handling committee members are hourly, non-managerial employees who provide direct resident care; S230:  failed to provide care and services in accordance with prevailing community standards of care relative to: skin assessment for \"at risk\" residents and following assessment protocol for two of two residents reviewed relative to wounds, ID #s 1 and 2, and following physician's orders for two of three residents relative to self-administration of medication, ID #s 2 and 3.; S370: failed to complete assessment within 5 days of readmission, WENT 1 WEEK+ WITHOUT CARE FOR 5 WOUNDS; S270: failed to complete quarterly smoking survey for resident; S285: WOUND NOT ASSESSED/ADDRESSED, SENT TO ER, STAGE 3 PRESSURE ULCER, DECEMBER 2021, NOT INVESTIGATED UNTIL MAY 2023, NOT APPROPRIATE FOR AL; S320: failed to complete a discharge summary, as required for 5 of 5 closed records, ; S360: failed to utilize the Department-approved assessment form, completing an assessment on each resident who is admitted to the residence for 1 of 12 sample residents, ID #8 and for reassessments of the remainder of the sample. S365:  failed to review the resident's comprehensive assessment at intervals not to exceed (12) months and each time a resident's condition changes significantly for seven of seven sample residents, S375: failed to ensure nurse reviews were completed at least once every ninety (90) days for two of four sample residents reviewed relative to nurse reviews, S380: failed to document a description of the services and interventions needed on the service plan, and to ensure the service plan was reviewed at intervals not to exceed twelve (12) months, for seven of seven sample residents, S510: failed to employ managers certified in food safety as required. S705:  failed to ensure drills simulating fire emergencies, with at least fifty percent (50%)  obstructed drills,",
     "paragraphs": [
      {
       "text": "S080: failed to ensure that at least half of the safe resident handling committee members are hourly, non-managerial employees who provide direct resident care; S230:  failed to provide care and services in accordance with prevailing community standards of care relative to: skin assessment for \"at risk\" residents and following assessment protocol for two of two residents reviewed relative to wounds, ID #s 1 and 2, and following physician's orders for two of three residents relative to self-administration of medication, ID #s 2 and 3.; S370: failed to complete assessment within 5 days of readmission, WENT 1 WEEK+ WITHOUT CARE FOR 5 WOUNDS; S270: failed to complete quarterly smoking survey for resident; S285: WOUND NOT ASSESSED/ADDRESSED, SENT TO ER, STAGE 3 PRESSURE ULCER, DECEMBER 2021, NOT INVESTIGATED UNTIL MAY 2023, NOT APPROPRIATE FOR AL; S320: failed to complete a discharge summary, as required for 5 of 5 closed records, ; S360: failed to utilize the Department-approved assessment form, completing an assessment on each resident who is admitted to the residence for 1 of 12 sample residents, ID #8 and for reassessments of the remainder of the sample. S365:  failed to review the resident's comprehensive assessment at intervals not to exceed (12) months and each time a resident's condition changes significantly for seven of seven sample residents, S375: failed to ensure nurse reviews were completed at least once every ninety (90) days for two of four sample residents reviewed relative to nurse reviews, S380: failed to document a description of the services and interventions needed on the service plan, and to ensure the service plan was reviewed at intervals not to exceed twelve (12) months, for seven of seven sample residents, S510: failed to employ managers certified in food safety as required. S705:  failed to ensure drills simulating fire emergencies, with at least fifty percent (50%)  obstructed drills,",
-      "tier": "minor"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=11jtQBFg4CmIq0HUVkR-IllKKqnDCD6V2&usp=drive_copy"
@@ -1523,7 +1523,7 @@
  {
   "name": "Atria Bay Spring",
   "key": "ATRIA BAY SPRING",
-  "badge": "serious",
+  "badge": "most_serious",
   "report_count": 16,
   "most_recent_date": "2025-12-18",
   "reports": [
@@ -1603,13 +1603,13 @@
    {
     "date": "2024-01-23",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S055: failed to establish a quality assurance committee which shall include at least the Administrator, a registered nurse, and a representative of dietary services. Additionally, the written quality assurance program failed to include all required components; S155: failed to display a posting of the name and contact information for the current administrator in a conspicuous public area of the residence.; S365/S390: failed to review the resident's comprehensive assessment at intervals not to exceed (12) months and each time a resident's condition changes significantly for 1 of 4 sample residents reviewed for falls, failed to reveal evidence the assessment was updated to reflect that the resident had the above-mentioned SERIOUS unwitnessed falls RESULTING IN HOSPITALIZATION. Additionally, the assessment failed to reveal changes were made to the level of assistance provided to the resident.; S450: failed to prominently display a posting of the most recent state licensing survey of the assisted living residence, as required. S565 failed to ensure that medications shall be stored securely and in such a manner to prevent spoilage, dosage errors, administration errors, and/or inappropriate access for the 1 of 3 medication carts observed. 1-3 YEAR EXPIRED MEDICATIONS",
     "paragraphs": [
      {
       "text": "S055: failed to establish a quality assurance committee which shall include at least the Administrator, a registered nurse, and a representative of dietary services. Additionally, the written quality assurance program failed to include all required components; S155: failed to display a posting of the name and contact information for the current administrator in a conspicuous public area of the residence.; S365/S390: failed to review the resident's comprehensive assessment at intervals not to exceed (12) months and each time a resident's condition changes significantly for 1 of 4 sample residents reviewed for falls, failed to reveal evidence the assessment was updated to reflect that the resident had the above-mentioned SERIOUS unwitnessed falls RESULTING IN HOSPITALIZATION. Additionally, the assessment failed to reveal changes were made to the level of assistance provided to the resident.; S450: failed to prominently display a posting of the most recent state licensing survey of the assisted living residence, as required. S565 failed to ensure that medications shall be stored securely and in such a manner to prevent spoilage, dosage errors, administration errors, and/or inappropriate access for the 1 of 3 medication carts observed. 1-3 YEAR EXPIRED MEDICATIONS",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/file/d/1SB61v_k04A7_FJo65sBFdXG3hlt7u1ap/view?usp=drive_link"
@@ -1992,16 +1992,16 @@
  {
   "name": "Atria Lincoln Place",
   "key": "ATRIA LINCOLN PLACE",
-  "badge": "serious",
+  "badge": "most_serious",
   "report_count": 17,
   "most_recent_date": "2026-03-24",
   "reports": [
    {
     "date": "2026-03-24",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
-    "headline": "Resident Records / Allergy Documentation",
+    "headline": "Assessment Not Updated After Suicide Attempt/Ideation",
     "paragraphs": [
      {
       "text": "Resident Records / Allergy Documentation\nResident's allergy lists were inconsistent across the face sheet, comprehensive assessment, and physician's orders (e.g., Tylenol/acetaminophen listed as an allergy on some documents after being removed by the PCP in 2024); resident was later prescribed and given both aspirin and acetaminophen despite listed NSAID/related allergies.",
@@ -2009,7 +2009,7 @@
      },
      {
       "text": "Assessment Not Updated After Suicide Attempt/Ideation\nResident with major depressive disorder and a 2023 suicide attempt (aspirin overdose) had active suicidal ideation with a plan in 7/2025 requiring hospital evaluation; comprehensive assessment was not updated to reflect this. CNAs were unaware the resident had a history of suicidal ideation/attempts. Resident was later found in 2/2026 with altered mental status and a suspected overdose (empty Tylenol and aspirin bottles found); a 5-day investigation report confirmed the resident died at the hospital of aspiration pneumonia and kidney failure due to elevated Tylenol levels.",
-      "tier": "serious"
+      "tier": "most_serious"
      },
      {
       "text": "Service Plan Not Updated\nService plan was never updated to document the resident's suicidal ideation/attempt history or protective interventions, and continued to list NSAIDs as an allergy even after the resident was prescribed aspirin.",
@@ -2080,13 +2080,13 @@
    {
     "date": "2023-05-22",
     "type": "Routine/Biennial Inspection",
-    "tier": "minor",
+    "tier": "most_serious",
     "no_findings": false,
-    "headline": "S230: failed to provide care and services in accordance with standards of care relative to fall risk safety for one resident reviewed, several (6) falls with no documented care coordination for prevention.; S365/S545: failed to review the resident's comprehensive assessment at intervals not to exceed (12) months and each time a resident's condition changes significantly for two of five sample residents, failed to ensure a resident who retains their medication was deemed safe by the resident, the resident's guardian, if appropriate, and the administrator or his/her designee in consultation with the resident's physician for one out of five sample residents reviewed, ID #3.Record review of ID #3's service plan dated 01/26/2023 reveals, \"requires oxygen with exertion.\", medication list fails to reveal oxygen., assessments failed to reveal an assessment for the self-administration of oxygen.",
+    "headline": "S230: failed to provide care and services in accordance with standards of care relative to fall risk safety for one resident reviewed, several (6) falls with no documented care coordination for prevention.; S365/S545: failed to review the resident's comprehensive assessment at intervals not to exceed (12) months and each time a resident's condition changes significantly for two of five sample residents,  failed to ensure a resident who retains their medication was deemed safe by the resident, the resident's guardian, if appropriate, and the administrator or his/her designee in consultation with the resident's physician for one out of five sample residents reviewed, ID #3.Record review of ID #3's service plan dated 01/26/2023 reveals, \"requires oxygen with exertion.\",  medication list fails to reveal oxygen., assessments failed to reveal an assessment for the self-administration of oxygen.",
     "paragraphs": [
      {
       "text": "S230: failed to provide care and services in accordance with standards of care relative to fall risk safety for one resident reviewed, several (6) falls with no documented care coordination for prevention.; S365/S545: failed to review the resident's comprehensive assessment at intervals not to exceed (12) months and each time a resident's condition changes significantly for two of five sample residents,  failed to ensure a resident who retains their medication was deemed safe by the resident, the resident's guardian, if appropriate, and the administrator or his/her designee in consultation with the resident's physician for one out of five sample residents reviewed, ID #3.Record review of ID #3's service plan dated 01/26/2023 reveals, \"requires oxygen with exertion.\",  medication list fails to reveal oxygen., assessments failed to reveal an assessment for the self-administration of oxygen.",
-      "tier": "minor"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1diyb2vbGetWU2RtzgJULnSWiSSgg-5PI&usp=drive_copy"
@@ -2467,9 +2467,9 @@
    {
     "date": "2026-05-07",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
-    "headline": "Confidentiality of Resident Records",
+    "headline": "Medication Services / Storage",
     "paragraphs": [
      {
       "text": "Confidentiality of Resident Records\nFacility released a resident's medical/psychiatric information to the Alliance for Better Long-Term Care and EOHHS (used to support a 30-day eviction notice against another resident) without written consent, and without redacting to only necessary information.",
@@ -2481,7 +2481,7 @@
      },
      {
       "text": "Medication Services / Storage\nA resident twice accessed an unsecured medication cabinet/bin and self-administered medications after staff were delayed during med pass (1/9/2026 and 3/7/2026), despite having no order to self-administer.",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/file/d/1NX_awOr9orJH4onQtasc6x7EWVi9AiXO/view?usp=drivesdk"
@@ -2489,13 +2489,13 @@
    {
     "date": "2025-10-08",
     "type": "Complaint/Incident Investigation",
-    "tier": "most_serious",
+    "tier": "serious",
     "no_findings": false,
     "headline": "S 565 — Medication Administration",
     "paragraphs": [
      {
       "text": "S 565 — Medication Administration\nA resident with leukodystrophy (a serious neurological condition) was administered 60 mg of Baclofen — three times the ordered dose of 20 mg. The error occurred because a CMT was confused by a medication packaging system that dispensed multiple days' worth of medications together, and administered both the old 40 mg dose and the new 20 mg dose simultaneously. Resident hospitalized following the overdose.",
-      "tier": "most_serious"
+      "tier": "serious"
      }
     ],
     "link": "https://drive.google.com/file/d/17RpnS_mtogbYpm9okWuPFXVCf4FGfl2V/view?usp=drive_link"
@@ -2939,13 +2939,13 @@
    {
     "date": "2023-06-07",
     "type": "Routine/Biennial Inspection",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S490: failed to comply with the the Rhode Island Food Code--no hair nets, food not kept at appropriate temps, high dust accumulation in different locations, dishwasher not used properly for sanitizing; S565: failed to ensure that medications are stored securely and in a such a manner to prevent spoilage, dosage errors, administration errors, and failed to properly record each time a medication is being administered to a resident for a singular resident reviewed for narcotics, [MISSING PAGE 8] S815: resident has a pureed texture diet., was not served a pureed diet texture as ordered.",
     "paragraphs": [
      {
       "text": "S490: failed to comply with the the Rhode Island Food Code--no hair nets, food not kept at appropriate temps, high dust accumulation in different locations, dishwasher not used properly for sanitizing; S565: failed to ensure that medications are stored securely and in a such a manner to prevent spoilage, dosage errors, administration errors, and failed to properly record each time a medication is being administered to a resident for a singular resident reviewed for narcotics, [MISSING PAGE 8] S815: resident has a pureed texture diet., was not served a pureed diet texture as ordered.",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1B4rdDGopWvwa5HWqgqPdtq5F4v-zpqFa&usp=drive_copy"
@@ -3097,11 +3097,11 @@
     "type": "Complaint/Incident Investigation",
     "tier": "most_serious",
     "no_findings": false,
-    "headline": "Treatments Without Physician Orders Most serious",
+    "headline": "Unsecured Medications Most serious",
     "paragraphs": [
      {
       "text": "Treatments Without Physician Orders Most serious\nResident #1 (COPD) was receiving oxygen set at 3L on the concentrator but believed she received 2L — no physician order for oxygen existed. Resident #2 (Type 2 diabetes) had blood sugars documented twice weekly with no physician order; values of 598 and 600 (normal 70–100) were never communicated to the physician. Resident harm: Resident #1 receiving incorrect oxygen dose without oversight; Resident #2 with critically elevated blood sugars with no physician notification.",
-      "tier": "most_serious"
+      "tier": "serious"
      },
      {
       "text": "Resident Records\nResident #1's medication list had not been updated since move-in (January 2025); when hospitalized in November for altered mental status, toxicology showed benzodiazepine, fentanyl, and opiates — none on the facility's medication list. Hospital noted no medication list was received on transfer. Resident #2 had no physician order for finger sticks, multiple dates with no values recorded, and abnormal readings never communicated to the physician. Resident harm: inaccurate medication records contributed to incomplete hospital transfer and unmonitored dangerous blood sugar levels.",
@@ -4353,13 +4353,13 @@
    {
     "date": "2025-10-07",
     "type": "Routine/Biennial Inspection",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S840: Cleaning chemicals unlocked in the dementia unit",
     "paragraphs": [
      {
       "text": "S840: Cleaning chemicals unlocked in the dementia unit / An unlocked cabinet in the dementia unit's kitchen held disinfectant sprays, stain remover, and all-purpose cleaner that residents could reach.",
-      "tier": "serious"
+      "tier": "most_serious"
      },
      {
       "text": "S565: Medications unavailable, undated, or expired / A resident's as-needed Tylenol and nystatin powder were not available. Another resident's inhaler was opened and undated. Expired suppositories were stored, including one belonging to a resident discharged in May 2025.",
@@ -4627,13 +4627,13 @@
    {
     "date": "2023-01-25",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S230: failed to provide care and services in accordance with the prevailing community standards of care relative to following physician's orders for 1 of 1 sample resident reviewed, resident missed 7 doses of the above-mentioned medication as ordered from 1/9/2023-1/12/2023.failed to reveal evidence that the NP was notified when the resident did not receive the above-mentioned medication as ordered, and that the resldent's weights were not obtained as ordered. Continulty of care consultation and referral form dated 1/11/2023 completed by the NP during his/her visit with the provider states in part, \"..Pt (patient] presented to my office today in acute CHF [congestive heart failure, a weakened heart condition that causes fluid built up] due to you not checking [his/her] weight...[s/he] is in respiratory distress.\"",
     "paragraphs": [
      {
       "text": "S230: failed to provide care and services in accordance with the prevailing community standards of care relative to following physician's orders for 1 of 1 sample resident reviewed, resident missed 7 doses of the above-mentioned medication as ordered from 1/9/2023-1/12/2023.failed to reveal evidence that the NP was notified when the resident did not receive the above-mentioned medication as ordered, and that the resldent's weights were not obtained as ordered. Continulty of care consultation and referral form dated 1/11/2023 completed by the NP during his/her visit with the provider states in part, \"..Pt (patient] presented to my office today in acute CHF [congestive heart failure, a weakened heart condition that causes fluid built up] due to you not checking [his/her] weight...[s/he] is in respiratory distress.\"",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=13KVs1RsnXh6tSFJ98IhTYgVaQT0aNUZY&usp=drive_copy"
@@ -5429,13 +5429,13 @@
    {
     "date": "2025-09-05",
     "type": "Complaint/Incident Investigation",
-    "tier": "most_serious",
+    "tier": "serious",
     "no_findings": false,
     "headline": "S 230 — Standard of Care/Inappropriate Placement (two residents)",
     "paragraphs": [
      {
       "text": "S 230 — Standard of Care/Inappropriate Placement (two residents)\nTwo residents were determined to be inappropriately placed in a traditional assisted living setting:\n\nResident #1 (schizophrenia): Received the wrong dose of Clozapine (an antipsychotic) — 100 mg instead of the ordered 200 mg — from 7/8/2025 through 8/1/2025 due to physician orders not being followed. Resident sent to a higher level of care as a result of the medication error.\nResident #2 (memory loss and seizures): Was moved from a secured memory care unit to an unsecured traditional assisted living unit without a physician order documenting this was safe and appropriate.\nResident #3 (major depressive disorder with psychotic features): Was found wandering a beach in Massachusetts, found with multiple knives and drugs in her room, and tested positive for cannabis and amphetamines at the hospital. The facility failed to contact the physician regarding the resident being found out of state, and failed to document the appropriateness of her placement.\n\nDarlington Assisted Living had the same resident (#3) flagged in both the 9/5/2025 and 10/22/2025 surveys — and re-admitted her between them despite documented safety concerns.",
-      "tier": "most_serious"
+      "tier": "serious"
      }
     ],
     "link": "https://drive.google.com/file/d/1ROvAhO3wKsZ38Uz9Y7l6LhgxtM7cujyw/view?usp=drive_link"
@@ -5507,13 +5507,13 @@
    {
     "date": "2023-12-07",
     "type": "Complaint/Incident Investigation",
-    "tier": "minor",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S230: failed to follow the community standard of care for two of. three sample residents reviewed relative to incidents and accidents: physician not notified after elopement, 2-hour checks not done after fall; S375 failed to report appropriate information related to the resident's needs relative to elopement risk for. 1 of",
     "paragraphs": [
      {
       "text": "S230: failed to follow the community standard of care for two of. three sample residents reviewed relative to incidents and accidents: physician not notified after elopement, 2-hour checks not done after fall; S375 failed to report appropriate information related to the resident's needs relative to elopement risk for. 1 of\n3 residents reviewed, 2 elopements not included in assessment/service plan (1st elopement was 7 DAYS, 2nd elopement was overnight, hypothermia, ER, had eloped in morning, police not notified until after 10pm); S380: failed to document a description of the services and interventions needed an the service plan for 1 of 3 residents reviewed, S405: reporting requirements: 2 falls resulting in hospital admission not reported to DOH",
-      "tier": "minor"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1X2jWyD9VMHsbspM8dx6fkxNYUvFnRd1b&usp=drive_copy"
@@ -6106,13 +6106,13 @@
    {
     "date": "2024-06-03",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S840: failed to provide a secure environment for two memory care residents reviewed relative to an external gate and staff following the residence's elopement policy, waited too long to call police (does not indicate when that was)",
     "paragraphs": [
      {
       "text": "S840: failed to provide a secure environment for two memory care residents reviewed relative to an external gate and staff following the residence's elopement policy, waited too long to call police (does not indicate when that was)",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1FouEeN7S1Mtc6jl9PvxZ--EF0CQ2OJT9&usp=drive_copy"
@@ -6147,13 +6147,13 @@
    {
     "date": "2023-11-28",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S155: administration failed to staff the residence with qualified personnel assisting the residents with personal care for 4 staff reviewed, 3 expired license cnas, 1 no RI license; S230: failed to provide all care and services in accordance with prevalling community standard of care relative to. medication administration for a singular resident, resident not given seizure medication for 5 days (after having just been admitted specifically for medication management), HOSPITALIZED; S415: failed. to ensure employees who have reasonable cause to believe that a resident has been abused, exploited, neglected, or mistreated shall within twenty-four (24) hours of the receipt of said information make a report to a high managerial agent and to the appropriate state agency for 2 of 3 sample residents reviewed, took 4 days to report resident to resident sexual",
     "paragraphs": [
      {
       "text": "S155: administration failed to staff the residence with qualified personnel assisting the residents with personal care for 4 staff reviewed, 3 expired license cnas, 1 no RI license; S230: failed to provide all care and services in accordance with prevalling community standard of care relative to. medication administration for a singular resident, resident not given seizure medication for 5 days (after having just been admitted specifically for medication management), HOSPITALIZED; S415: failed. to ensure employees who have reasonable cause to believe that a resident has been abused, exploited, neglected, or mistreated shall within twenty-four (24) hours of the receipt of said information make a report to a high managerial agent and to the appropriate state agency for 2 of 3 sample residents reviewed, took 4 days to report resident to resident sexual",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1jZuoKzh3iPt31HeLI5aYe_m9G5U-CE91&usp=drive_copy"
@@ -7495,13 +7495,13 @@
    {
     "date": "2025-11-07",
     "type": "Routine/Biennial Inspection",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S 180 – Administrative Management (Staffing) Staff A was hired 9/13/2025 as a medication aide and administered medications from 9/15/2025 onward without holding a valid RI medication aide license. The DOH license verification page confirmed no active license. Owner acknowledged Staff A was administering medications without a license. Serious deficiency — unlicensed staff administering medications to residents.",
     "paragraphs": [
      {
       "text": "S 180 – Administrative Management (Staffing) Staff A was hired 9/13/2025 as a medication aide and administered medications from 9/15/2025 onward without holding a valid RI medication aide license. The DOH license verification page confirmed no active license. Owner acknowledged Staff A was administering medications without a license. Serious deficiency — unlicensed staff administering medications to residents.\nS 200 – Employee Training\nTwo of three new employees reviewed (Staff B, hired 9/4/2025 as a NA; Staff C, hired 10/23/2025 as a CMT) did not receive the required 2 hours of orientation/training within 10 days of hire and prior to working alone. Required topics including fire prevention, abuse recognition, elopement procedures, and infection control were not documented as completed.\nS 560 – Dietetic Services\nStaff D (food service) used a gloved hand holding a crumpled piece of cellophane to wipe a thermometer between temperature checks, then inserted the same thermometer into a food container without sanitizing it. Staff D acknowledged the noncompliant practice.\nS 640 – Medication Storage\nTwo medication carts had medications stored insecurely: an opened, undated Lantus Solostar insulin pen (manufacturer requires discard 28 days after opening) and an opened, undated Trelegy Elipta inhaler (manufacturer requires discard 6 weeks after opening). Potential resident safety risk from expired/degraded medications.",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/file/d/1KA8eVcSUKBIiQ-9r8egotO-KLicZnRNV/view?usp=drive_link"
@@ -7945,13 +7945,13 @@
    {
     "date": "2025-05-09",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "Resident Not Monitored After a Fall; Facility Kept a Resident It Couldn't Adequately Care For",
     "paragraphs": [
      {
       "text": "Resident Not Monitored After a Fall; Facility Kept a Resident It Couldn't Adequately Care For\nA resident was not monitored as required following a fall. The Administrator acknowledged the facility should have issued a 30-day discharge notice once it became clear the facility could not properly care for the resident, but never did so. Separately, the resident's record was missing health information — including diagnostic and treatment orders — that could be needed in a medical emergency, and the service plan did not clearly document fall-prevention interventions, including conflicting information about whether the resident should be using a walker.",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/file/d/17o_DgwcTxPeNHhTQ9iB1-c7N-fk52xJI/view?usp=drive_link"
@@ -7982,13 +7982,13 @@
    {
     "date": "2024-09-13",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S155: failed to provide qualified staff to administer medications for 5 of 5 residents reviewed, no medication aide on 11-7 for 13 DAYS",
     "paragraphs": [
      {
       "text": "S155: failed to provide qualified staff to administer medications for 5 of 5 residents reviewed, no medication aide on 11-7 for 13 DAYS",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1VCcPjDep55dEdexSOp84l1Vj8PDTI81-&usp=drive_copy"
@@ -8088,13 +8088,13 @@
    {
     "date": "2023-02-16",
     "type": "Complaint/Incident Investigation",
-    "tier": "minor",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S155: staffing schedule for the months of December-February 2023 revealed there is no registered nurse from 11PM-7:00AM., Resident on hospice prescribed Morphine every 4 hours as needed for pain. '",
     "paragraphs": [
      {
       "text": "S155: staffing schedule for the months of December-February 2023 revealed there is no registered nurse from 11PM-7:00AM., Resident on hospice prescribed Morphine every 4 hours as needed for pain. '\nAdministrator acknowledged this resident has a PRN order and there is no qualified staff scheduled to administer the medication at all times.; S365: failed to update the comprehensive assessment annually and/or for change of condition for one out of two residents reviewed,; S555:  failed to ensure all medication in the residence was stored securely to prevent spoilage, dosage errors, administration errors or inappropriate access by other residents, visitors, or unauthorized employees for one resident : resident's prescription medication was missing from cart, could not be found; S565:  failed to administer medications in accordance with written orders of a physician for one of two residents, resident MISSED 5 DOSES of medication",
-      "tier": "minor"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1MoOLb1QdLiVnySkizVispBYlZZRnHUSH&usp=drive_copy"
@@ -8285,20 +8285,20 @@
  {
   "name": "Highlands On The East Side, The",
   "key": "HIGHLANDS ON THE EAST SIDE",
-  "badge": "serious",
+  "badge": "most_serious",
   "report_count": 21,
   "most_recent_date": "2026-07-23",
   "reports": [
    {
     "date": "2026-07-23",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "Physician's Order for Secure Unit Transfer Not Followed",
     "paragraphs": [
      {
       "text": "Physician's Order for Secure Unit Transfer Not Followed\nA resident with dementia, increasing confusion, hallucinations, and a documented safety risk had a Power of Attorney Activation Letter (6/9/2026) explicitly stating the resident needed to reside in a secured assisted living residence due to progressive dementia/cognitive impairment. As of the 7/23/2026 survey — over a month later — the resident remained in traditional (unsecured) assisted living; a surveyor observed the resident alone in his/her room partially undressed. The Executive Director could not provide evidence the physician's order for a secure-unit transfer was ever followed.",
-      "tier": "serious"
+      "tier": "most_serious"
      },
      {
       "text": "Assessments & Service Plans Not Updated for Outside Services\nFor multiple residents reviewed, comprehensive assessments and service plans failed to accurately reflect outside PT/OT/speech/skilled-nursing services (missing start/end-of-care dates, or documenting services never actually received).",
@@ -8709,13 +8709,13 @@
    {
     "date": "2026-05-22",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "Comprehensive Assessments Incomplete/Inaccurate",
     "paragraphs": [
      {
       "text": "Comprehensive Assessments Incomplete/Inaccurate\nFor 4 residents, the \"Code Status\" section of the comprehensive assessment was either left blank (3 residents, despite each having a documented DNR on their MOLST) or, for a 4th resident, inaccurately listed as \"Full Code\" when the resident's MOLST documented DNR — creating a code-status discrepancy risk between records.",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/file/d/1wT1_uv1aU2ss8KJTOKu5qwX-h47u8-RB/view?usp=drivesdk"
@@ -9037,14 +9037,14 @@
  {
   "name": "Loft At Linn Assisted Living Memory Care, The",
   "key": "LOFT AT LINN",
-  "badge": "serious",
+  "badge": "most_serious",
   "report_count": 7,
   "most_recent_date": "2026-04-30",
   "reports": [
    {
     "date": "2026-04-30",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "Special Care Unit Safety / Accessible Chemicals",
     "paragraphs": [
@@ -9074,7 +9074,7 @@
      },
      {
       "text": "Special Care Unit Safety / Accessible Chemicals\nIn the dementia special care unit, hazardous chemicals (a bottle of \"Satin Shine\" bearing a deliberate-inhalation-misuse warning, nail polish remover, laundry detergent, and disinfectant) were found unsecured and accessible to residents in unlocked kitchenette cabinets, an unattended activity cart, and an unattended laundry room.",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/file/d/1PbZ7R2K1pFPwCEI0ujAobUNqx0Sq07aP/view?usp=drivesdk"
@@ -9177,7 +9177,7 @@
  {
   "name": "Pacifica Senior Living Victoria Court",
   "key": "VICTORIA COURT",
-  "badge": "serious",
+  "badge": "most_serious",
   "report_count": 19,
   "most_recent_date": "2026-07-29",
   "reports": [
@@ -9257,13 +9257,13 @@
    {
     "date": "2024-07-31",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S840: failed to provide a secure distinct living environment, relative to a singular resident reviewed for elopement (second elopement this resident, side door left open)",
     "paragraphs": [
      {
       "text": "S840: failed to provide a secure distinct living environment, relative to a singular resident reviewed for elopement (second elopement this resident, side door left open)",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1pqOkiiu0paMj9BtCrWR6cDMW7pUlE0s7&usp=drive_copy"
@@ -9271,13 +9271,13 @@
    {
     "date": "2024-04-25",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S840: failed to provide a secure distinct living environment, relative to a singular resident reviewed for elopement (wanderguard battery dead, left via front door)",
     "paragraphs": [
      {
       "text": "S840: failed to provide a secure distinct living environment, relative to a singular resident reviewed for elopement (wanderguard battery dead, left via front door)",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1adhzqvcLrJ7xvVrvxqFFCQX4MAqLgDcV&usp=drive_copy"
@@ -9299,13 +9299,13 @@
    {
     "date": "2023-05-31",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
-    "headline": "S310: failed to maintain info re health problems of the resident, which may be useful in a medical emergency, including therapeutic orders for 1 of 8 sample residents reviewed, ; S365: failed to review the resident assessment at intervals not to exceed (12) months and each time a resident's condition changes significantly requiring outside services for 2 of 8 sample residents reviewed,; S390: failed to review the service plan each time a resident's condition changes significantly and failed to accurately reflect the residents are receiving outside services for 3 of 8 sample residents reviewed.; S405: failed to report accidents and incidents resulting in out-of-residence emergency medical services which resulted in a hospital admission of any resident for 1 of 2 residents with incidents; S490: food code: cleanliness, sanitation, ; S815: failed to operate and provide services to all residents of the Special Care Unit in accordance with the prevailing community standard of care for residents related to following physician's order for 2 of 8 sample residents reviewed, : Record review of the resident's physician orders dated 5/8/2023 revealed an order which states in part, \"Cleanse right hip ulceration [break in the skin] daily with NS [normal saline], apply bacitracin, cover with dry sterile dressing.\" Record review failed to reveal evidence of the resident receiving a dressing to his/her right hip daily on 5/9/2023 and 5/10/2023 as ordered.",
+    "headline": "S310: failed to maintain info re health problems of the resident, which may be useful in a medical emergency, including therapeutic orders for 1 of 8 sample residents reviewed, ; S365: failed to review the resident assessment at intervals not to exceed (12) months and each time a resident's condition changes significantly requiring outside services for 2 of 8 sample residents reviewed,; S390: failed to review the service plan each time a resident's condition changes significantly and failed to accurately reflect the residents are receiving outside services for 3 of 8 sample residents reviewed.; S405:  failed to report accidents and incidents resulting in out-of-residence emergency medical services which resulted in a hospital admission of any resident for 1 of 2 residents with incidents; S490: food code: cleanliness, sanitation, ; S815: failed to operate and provide services to all residents of the Special Care Unit in accordance with the prevailing community standard of care for residents related to following physician's order for 2 of 8 sample residents reviewed, : Record review of the resident's physician orders dated 5/8/2023 revealed an order which states in part, \"Cleanse right hip ulceration [break in the skin] daily with NS [normal saline], apply bacitracin, cover with dry sterile dressing.\" Record review failed to reveal evidence of the resident receiving a dressing to his/her right hip daily on 5/9/2023 and 5/10/2023 as ordered.",
     "paragraphs": [
      {
       "text": "S310: failed to maintain info re health problems of the resident, which may be useful in a medical emergency, including therapeutic orders for 1 of 8 sample residents reviewed, ; S365: failed to review the resident assessment at intervals not to exceed (12) months and each time a resident's condition changes significantly requiring outside services for 2 of 8 sample residents reviewed,; S390: failed to review the service plan each time a resident's condition changes significantly and failed to accurately reflect the residents are receiving outside services for 3 of 8 sample residents reviewed.; S405:  failed to report accidents and incidents resulting in out-of-residence emergency medical services which resulted in a hospital admission of any resident for 1 of 2 residents with incidents; S490: food code: cleanliness, sanitation, ; S815: failed to operate and provide services to all residents of the Special Care Unit in accordance with the prevailing community standard of care for residents related to following physician's order for 2 of 8 sample residents reviewed, : Record review of the resident's physician orders dated 5/8/2023 revealed an order which states in part, \"Cleanse right hip ulceration [break in the skin] daily with NS [normal saline], apply bacitracin, cover with dry sterile dressing.\" Record review failed to reveal evidence of the resident receiving a dressing to his/her right hip daily on 5/9/2023 and 5/10/2023 as ordered.\nRecord review of a progress note dated 5/12/2023 states in part, \"[Resident] was sent out to the hospital last evening d/t [due/to] to right hip ulceration discover earlier this week...\", Record review of the residents' physician orders revealed an order for blood pressure to be monitored weekly on Wednesday. Record review of the resident's April 2023 Medication Administration Record (MAR) failed to reveal evidence of the resident's blood pressure being monitored as ordered on 4/5/2023, 4/12/2023, 4/19/2023, and 4/26/2023, missing 4 out of 4 opportunities. Record review of the resident's May 2023 MAR failed to reveal evidence of the resident's blood pressure being monitored as ordered on 5/17/2023 and on 5/24/2023, missing 2 out of 4 opportunities.",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1kkP-rvd8hBQzTiBLIhca-GD0PPxaXT_j&usp=drive_copy"
@@ -9816,13 +9816,13 @@
    {
     "date": "2026-02-12",
     "type": "Complaint/Incident Investigation",
-    "tier": "most_serious",
+    "tier": "serious",
     "no_findings": false,
     "headline": "S250: Resident got about a quarter of the prescribed lactulose for two weeks",
     "paragraphs": [
      {
       "text": "S250: Resident got about a quarter of the prescribed lactulose for two weeks / A resident was ordered 45 mL of lactulose (used to treat hepatic encephalopathy) three times a day. A medication aide measured it with an ordinary plastic eating spoon. Pharmacy records and the bottle show the resident received about 420 mL instead of the 1,800 mL ordered from 1/27/2026 to 2/9/2026. The resident was hospitalized 2/9/2026. Separately, a resident who fell and was hospitalized never had the hospital's physical and occupational therapy recommendations followed up with the doctor. And a staff member who had to be physically held back from a resident during a verbal altercation was told to finish passing medications before leaving, contrary to the residence's own abuse policy.",
-      "tier": "most_serious"
+      "tier": "serious"
      },
      {
       "text": "S225: No national criminal background check for a medication aide / The certified medication aide involved in the abuse incident had no national criminal background check on file from her hire in 2024.",
@@ -9942,13 +9942,13 @@
    {
     "date": "2024-08-05",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S150: failed to provide staffing which is sufficient to provide the necessary care and services to attain or maintain the highest practicable physical, mental, and psychosocial well-being of the residents., UNLICENSED STAFF, S310:failed to maintain complete and accurate records for four of four sample residents reviewed, Resident ID #1 was NOT ASSESSED to ensure he/she was appropriate for admission into the residence, NOR REASSESSED AT ANY POINT to ensure continued appropriateness.Review of the records for Resident ID #s 2, 3,and 4 failed to reveal evidence of comprehensive assessments, nurse reviews, and clinical notes I being kept onsite and available for review.Administrator indicated the records for ID #s 2, 3, and 4 were in the nurse's possession out of the residence. She was unable to provide evidence of a comprehensive assessment for Resident ID #1.; S315:  failed to maintain descriptions of all pressure ulcers, or other skin lesions, in the resident's record for two of two residents reviewed relative to wound care,; S365:  failed to complete and update the residents' comprehensive assessments upon admission, annually, and upon changes of condition for three of four residents reviewed,; S510: food safety: no safety certified food manager on site nights and weekends for prep of foods considered hazardous, going forward they won't have hot/hazardous food when certified staff not present. including \"Food of animal origin that is raw or heat-treated, Food of plant origin that is heat-treated or includes raw seed sprouts _x0083_ Cut melons, Garlic and oil mixtures\"WAS THERE FOLLOW UP TO ENSURE STAFF ARE CERTIFIED?;",
     "paragraphs": [
      {
       "text": "S150: failed to provide staffing which is sufficient to provide the necessary care and services to attain or maintain the highest practicable physical, mental, and psychosocial well-being of the residents., UNLICENSED STAFF, S310:failed to maintain complete and accurate records for four of four sample residents reviewed, Resident ID #1 was NOT ASSESSED to ensure he/she was appropriate for admission into the residence, NOR REASSESSED AT ANY POINT to ensure continued appropriateness.Review of the records for Resident ID #s 2, 3,and 4 failed to reveal evidence of comprehensive assessments, nurse reviews, and clinical notes I being kept onsite and available for review.Administrator indicated the records for ID #s 2, 3, and 4 were in the nurse's possession out of the residence. She was unable to provide evidence of a comprehensive assessment for Resident ID #1.; S315:  failed to maintain descriptions of all pressure ulcers, or other skin lesions, in the resident's record for two of two residents reviewed relative to wound care,; S365:  failed to complete and update the residents' comprehensive assessments upon admission, annually, and upon changes of condition for three of four residents reviewed,; S510: food safety: no safety certified food manager on site nights and weekends for prep of foods considered hazardous, going forward they won't have hot/hazardous food when certified staff not present. including \"Food of animal origin that is raw or heat-treated, Food of plant origin that is heat-treated or includes raw seed sprouts _x0083_ Cut melons, Garlic and oil mixtures\"WAS THERE FOLLOW UP TO ENSURE STAFF ARE CERTIFIED?;",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1PwFuaqjUn9YYyJhcyjcKVsnevDrtil8t&usp=drive_copy"
@@ -9956,13 +9956,13 @@
    {
     "date": "2024-04-10",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S450: resident rights: TWO STAFF MEMBERS LIVING IN A RESIDENT'S ROOM WITH THE RESIDENT Admin \"revealed that sometimes Staff A, \"works second shift and is on the schedule again in the morning and sleeps here because she lives far away.\" She further revealed that on a few occasions Staff B has done the same.",
     "paragraphs": [
      {
       "text": "S450: resident rights: TWO STAFF MEMBERS LIVING IN A RESIDENT'S ROOM WITH THE RESIDENT Admin \"revealed that sometimes Staff A, \"works second shift and is on the schedule again in the morning and sleeps here because she lives far away.\" She further revealed that on a few occasions Staff B has done the same.",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=18ypvH_XCtdVrHLIyG61vBcmTmmANiHpN&usp=drive_copy"
@@ -10002,13 +10002,13 @@
    {
     "date": "2023-08-30",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S205: failed to ensure employees having routine contact with a resident or having access to a resident's belongings or funds shall undergo a national criminal BACKGROUND records CHECK for three of ten employees reviewed, ; S230: residence failed to provide all care and services to all residents in accordance with the prevailing community standard of care, relative to accurate documentation for 1 of 2 residents reviewed for medication administration, \"resident indicated Staff D had often administered his/her medications incorrectly. He/she stated the medications Staff D administered were not all of the medications he/she was prescribed.\" record review showed at least 7 instances of missed doses during staff D's shifts; S450: failed to observe the standards stated in R.I. Gen. Laws §23-17.4-16, \"Rights of Residents\" for SIX residents reviewed relative to allegations of verbal abuse. ; S510: failed to employ managers certified in food safety per Department requirements.; S605: failed to have an annual State Fire Marshal inspection which indicates compliance with the Fire Safety Code.",
     "paragraphs": [
      {
       "text": "S205: failed to ensure employees having routine contact with a resident or having access to a resident's belongings or funds shall undergo a national criminal BACKGROUND records CHECK for three of ten employees reviewed, ; S230: residence failed to provide all care and services to all residents in accordance with the prevailing community standard of care, relative to accurate documentation for 1 of 2 residents reviewed for medication administration, \"resident indicated Staff D had often administered his/her medications incorrectly. He/she stated the medications Staff D administered were not all of the medications he/she was prescribed.\" record review showed at least 7 instances of missed doses during staff D's shifts; S450: failed to observe the standards stated in R.I. Gen. Laws §23-17.4-16, \"Rights of Residents\" for SIX residents reviewed relative to allegations of verbal abuse. ; S510: failed to employ managers certified in food safety per Department requirements.; S605: failed to have an annual State Fire Marshal inspection which indicates compliance with the Fire Safety Code.",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1nfsBejmlMwn1Y4BOGfmOaUObHRsDSqeh&usp=drive_copy"
@@ -10030,13 +10030,13 @@
    {
     "date": "2023-03-06",
     "type": "Complaint/Incident Investigation",
-    "tier": "minor",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S365: failed to update comprehensive assessment, resident with esophogeal disorder not getting physician ordered diet, facility doesn't do special diets; S375: failed to complete a nurse review that evaluated the resident's appropriateness of placement, review any new physician orders, and follow up on previous recommendations for one out of three residents reviewed; S545: failed to complete an assessment to ensure a resident with possession and control of his/her medications was deemed safe by the resident, the resident's guardian, if appropriate, and the administrator or his/her designee in consultation with the resident's physician for two out of three residents reviewed; S565: failed to ensure all medication were administered in accordance with written orders of a physician for one out of three residents,, \"Staff revealed that staff \"just know\" the medications have to be held....Record review failed to reveal a physician order for all morning medications to be held until return on dialysis days,\"",
     "paragraphs": [
      {
       "text": "S365: failed to update comprehensive assessment, resident with esophogeal disorder not getting physician ordered diet, facility doesn't do special diets; S375: failed to complete a nurse review that evaluated the resident's appropriateness of placement, review any new physician orders, and follow up on previous recommendations for one out of three residents reviewed; S545: failed to complete an assessment to ensure a resident with possession and control of his/her medications was deemed safe by the resident, the resident's guardian, if appropriate, and the administrator or his/her designee in consultation with the resident's physician for two out of three residents reviewed; S565: failed to ensure all medication were administered in accordance with written orders of a physician for one out of three residents,, \"Staff revealed that staff \"just know\" the medications have to be held....Record review failed to reveal a physician order for all morning medications to be held until return on dialysis days,\"",
-      "tier": "minor"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1Ce4qP0TBDgjWrMVkUpdOyXBPa-RDyg8N&usp=drive_copy"
@@ -10614,13 +10614,13 @@
    {
     "date": "2024-07-22",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S150: 2 staff license expired, (facility self reported) S230: medication: for 33 residents residing on the secure memory care unit, that during a 5-day investigation perlod regarding Staff A, Certified Medication Technician, the facility discovered the associate was administering and signing off on medications to be administered at 8:00 PM between the hours of 5:00 and 6:00 ,Staff A was terminated due to administering medications outside of PCP orders and did not return to work.CPBL?? S230: medications had active physician's orders; however, were not available for the three residents reviewed for medication availability.; S365: residence failed to update the comprehensive assessment each time a resident's condition changed significantly for the singular resident reviewed relative to a change in condition, Resident ID #1 exposed themselves to another resident on 6/5/2024. 5-day investigation \"facility working on discharge for [resident). additional Incident on 6/25/2024; Resident ID #1 was found walking down the road hitch-hiking. Upon return to the residence instructions from management were for him/her to spend the weekend in memory care fo safety, which resulted in the resident becoming combative and ultimately agreeing to an assessment at the hospital. 6/28/2024 the resident returned from the hospital with no new orders. The facility indicated to the resident and family, in order to remain in the facility, the resident needed to go to the secure memory care unit or the family needed to provide a 1:1.assessed at the hospital and returned to the traditional assisted living community on 7/1/2024. 7/2/2024 another incident of Resident ID # exposing themselves to other residents was reported. He/she was sent out to the hospital again and will not be allowed to return to the facility.; S565: the facility failed to ensure medications were appropriately reconciled, administered, and disposed of in accordance with regulations for the singular resident reviewed relative to a medication error, reporting form dated 7/11/2024, \"Resident ID #2] presented to the nurses station indicating [his/her] teet were swollen. Evaluation showed resident had bilateral leg edema 3+ pitting and swelling. During medication audit, it was discovered the resident has not recelved furosemide since medication added on 5/31/2024.\" Record review of the hospital visit report dated 7/11/2024 reveals the resident returned to the facility the same day after being given Lasix 20 MG IV, with an order to \"continue current meds, elevate legs, return if any problems.'",
     "paragraphs": [
      {
       "text": "S150: 2 staff license expired, (facility self reported) S230: medication: for 33 residents residing on the secure memory care unit, that during a 5-day investigation perlod regarding Staff A, Certified Medication Technician, the facility discovered the associate was administering and signing off on medications to be administered at 8:00 PM between the hours of 5:00 and 6:00 ,Staff A was terminated due to administering medications outside of PCP orders and did not return to work.CPBL?? S230: medications had active physician's orders; however, were not available for the three residents reviewed for medication availability.; S365: residence failed to update the comprehensive assessment each time a resident's condition changed significantly for the singular resident reviewed relative to a change in condition, Resident ID #1 exposed themselves to another resident on 6/5/2024. 5-day investigation \"facility working on discharge for [resident). additional Incident on 6/25/2024; Resident ID #1 was found walking down the road hitch-hiking. Upon return to the residence instructions from management were for him/her to spend the weekend in memory care fo safety, which resulted in the resident becoming combative and ultimately agreeing to an assessment at the hospital. 6/28/2024 the resident returned from the hospital with no new orders. The facility indicated to the resident and family, in order to remain in the facility, the resident needed to go to the secure memory care unit or the family needed to provide a 1:1.assessed at the hospital and returned to the traditional assisted living community on 7/1/2024. 7/2/2024 another incident of Resident ID # exposing themselves to other residents was reported. He/she was sent out to the hospital again and will not be allowed to return to the facility.; S565: the facility failed to ensure medications were appropriately reconciled, administered, and disposed of in accordance with regulations for the singular resident reviewed relative to a medication error, reporting form dated 7/11/2024, \"Resident ID #2] presented to the nurses station indicating [his/her] teet were swollen. Evaluation showed resident had bilateral leg edema 3+ pitting and swelling. During medication audit, it was discovered the resident has not recelved furosemide since medication added on 5/31/2024.\" Record review of the hospital visit report dated 7/11/2024 reveals the resident returned to the facility the same day after being given Lasix 20 MG IV, with an order to \"continue current meds, elevate legs, return if any problems.'\nDuring a surveyor record review and medication cart audit on 7/16/2024 from approximately 10:00\nAM-1:00 PM it was discovered that Resident ID #2 has an active order for Furosemide dated 6/5/2024. During the time of the audit the medication was still not available, despite the above-mentioned incident report and subsequent emergency room evaluation of Resident Upon further review, the Administrator revealed Furosemide was ordered on 5/31/2024 and was discontinued on 6/3/2024. A new order was put in place by a staff nurse on 6/5/2024 without documentation from an ordering physician. The staff nurse who entered this order was on vacation and unable to be interviewed. CPBL?? Record review of Resident ID #2's medication administration record revealed Furosemide being signed as administered on, 7/1, 7/3, 7/5, 717, 7/9, 7/11, 7/13 and 7/15, despite the 7/16/2024 cart audit revealing it is not available.",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1UTiCq-mvt6xi7OHFQEIyHyAfm42LI60s&usp=drive_copy"
@@ -10743,13 +10743,13 @@
    {
     "date": "2023-02-03",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S230: failed to provide care and services in accordance with the prevailing community standards of care relative to following physician's orders for 1 of 1 sample resident, MEDICATION ERROR, GIVEN ANOTHER RESIDENT'S MEDICATIONS",
     "paragraphs": [
      {
       "text": "S230: failed to provide care and services in accordance with the prevailing community standards of care relative to following physician's orders for 1 of 1 sample resident, MEDICATION ERROR, GIVEN ANOTHER RESIDENT'S MEDICATIONS",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1KIbNw6Q3ZLvO9akz3Bi9mEV6Uh4vl8Qc&usp=drive_copy"
@@ -10866,20 +10866,20 @@
  {
   "name": "Spring Villa Memory Care",
   "key": "SPRING VILLA",
-  "badge": "most_serious",
+  "badge": "serious",
   "report_count": 17,
   "most_recent_date": "2026-03-03",
   "reports": [
    {
     "date": "2026-03-03",
     "type": "Complaint/Incident Investigation",
-    "tier": "most_serious",
+    "tier": "serious",
     "no_findings": false,
     "headline": "S295: Resident put a lit cigarette in a coat pocket; smokers left unsupervised",
     "paragraphs": [
      {
       "text": "S295: Resident put a lit cigarette in a coat pocket; smokers left unsupervised / A resident went to the nurses' station asking for help because his/her coat was smoking. The resident said s/he \"thought\" the cigarette was out before putting it in the pocket. Residents smoked on the balcony without supervision and kept their own cigarettes, even though the smoking assessments for all 4 smokers reviewed said they were not safe to smoke without staff managing it.",
-      "tier": "most_serious"
+      "tier": "serious"
      },
      {
       "text": "S405: Service plans missing smoking, day program, and behavior needs / Service plans for all 4 smokers did not address smoking. One resident's plan left out a twice-weekly adult day program. Two residents with repeated behavioral and physical disturbances toward other residents had nothing in their plans to address them.",
@@ -10996,13 +10996,13 @@
    {
     "date": "2023-04-03",
     "type": "Complaint/Incident Investigation",
-    "tier": "minor",
+    "tier": "most_serious",
     "no_findings": false,
-    "headline": "S365: failed to ensure assessment reflects resident's condition; S565: failed to ensure all medications were administered in accordance with written orders of physician, resident MISSED 30+ DOSES OF NUMEROUS MEDICATIONS, physician not notified",
+    "headline": "S365: failed to ensure assessment reflects resident's condition; S565:  failed to ensure all medications were administered in accordance with written orders of physician, resident MISSED 30+ DOSES OF NUMEROUS MEDICATIONS, physician not notified",
     "paragraphs": [
      {
       "text": "S365: failed to ensure assessment reflects resident's condition; S565:  failed to ensure all medications were administered in accordance with written orders of physician, resident MISSED 30+ DOSES OF NUMEROUS MEDICATIONS, physician not notified",
-      "tier": "minor"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1vZdIAL3FDn_vsUTuRs80HjTK-v48dIbT&usp=drive_copy"
@@ -11721,13 +11721,13 @@
    {
     "date": "2024-04-12",
     "type": "appears to be duplicate",
-    "tier": "most_serious",
+    "tier": "minor",
     "no_findings": false,
     "headline": "appears to be duplicate",
     "paragraphs": [
      {
       "text": "appears to be duplicate",
-      "tier": "most_serious"
+      "tier": "minor"
      }
     ],
     "link": "https://drive.google.com/open?id=1BYZWr5xV9K8rEV7jDFIJN1i_jK2rSDw-&usp=drive_copy"
@@ -11735,13 +11735,13 @@
    {
     "date": "2024-04-12",
     "type": "Complaint/Incident Investigation",
-    "tier": "minor",
+    "tier": "most_serious",
     "no_findings": false,
-    "headline": "S230/575: failed to follow physician's orders for 4 of 6 sample residents reviewed, 8/19 doses missed b/c med1 unavailable, 8/23 doses med2 missed b/c unavailable, 7/11 doses med2 missed b/c unavailable, 7/11 doses med4 missed b/c unavailable, 26/62 med5, 15/31 med6, 7/31 med7, 15/23 med8 doses missed b/c unavailable, OVER TWO MONTHS physician not notified; S450: failed to observe the standards stated in \"Rights of Residents\" for a singular resident reviewed relative to an allegation of a violation of resident's rights, \"states in part, \"Resident has complained that staff have opened (his/her] mail, threatened [him/her] with increase fees, becoming [his/her] rep payee and have [his/her] debit card...\" ED acknowledged that the resident has not authorized her to be his/her representative payee.The ED acknowledged that the resident had given her the card when s/he initially moved in, which she has used to pay the resident's rent. Additionally, the ED acknowledged that she has not retum the card to the resident since. (requested IDR, no indication of results; S470: failed to establish infection control provisions for the mutual protection of residents, employees, and the public relative a singular resident with a confirmed case of scabies, Director (ED), acknowledged Resident ID #5 has a confirmed diagnosis of scabies and shares a room with Resident ID #6. She further acknowledged that Resident ID #5 is receiving treatment for this diagnosis and Resident ID #6 had not been assessed or offered any treatment, as the guidance indicates. Additionally, the ED could not provide evidence the resident's personal items that cannot be laundered were properly disinfected.; S565: failed to ensure that medications shall be stored securely and in such a manner to prevent spoilage, dosage errors, administration errors, and/or inappropriate access for the singular medication storage room, 7 items opened undated; S705: fire drills obstructed/nighttime;",
+    "headline": "S230/575:  failed to follow physician's orders for 4 of 6 sample residents reviewed, 8/19 doses missed b/c med1 unavailable, 8/23 doses med2 missed b/c unavailable, 7/11 doses med2 missed b/c unavailable, 7/11 doses med4 missed b/c unavailable, 26/62 med5, 15/31 med6, 7/31 med7, 15/23 med8 doses missed b/c unavailable, OVER TWO MONTHS physician not notified; S450: failed to observe the standards stated in \"Rights of Residents\" for a singular resident reviewed relative to an allegation of a violation of resident's rights, \"states in part, \"Resident has complained that staff have opened (his/her] mail, threatened [him/her] with increase fees, becoming [his/her] rep payee and have [his/her] debit card...\" ED acknowledged that the resident has not authorized her to be his/her representative payee.The ED acknowledged that the resident had given her the card when s/he initially moved in, which she has used to pay the resident's rent. Additionally, the ED acknowledged that she has not retum the card to the resident since. (requested IDR, no indication of results; S470: failed to establish infection control provisions for the mutual protection of residents, employees, and the public relative a singular resident with a confirmed case of scabies, Director (ED), acknowledged Resident ID #5 has a confirmed diagnosis of scabies and shares a room with Resident ID #6. She further acknowledged that Resident ID #5 is receiving treatment for this diagnosis and Resident ID #6 had not been assessed or offered any treatment, as the guidance indicates. Additionally, the ED could not provide evidence the resident's personal items that cannot be laundered were properly disinfected.; S565: failed to ensure that medications shall be stored securely and in such a manner to prevent spoilage, dosage errors, administration errors, and/or inappropriate access for the singular medication storage room, 7 items opened undated; S705: fire drills obstructed/nighttime;",
     "paragraphs": [
      {
       "text": "S230/575:  failed to follow physician's orders for 4 of 6 sample residents reviewed, 8/19 doses missed b/c med1 unavailable, 8/23 doses med2 missed b/c unavailable, 7/11 doses med2 missed b/c unavailable, 7/11 doses med4 missed b/c unavailable, 26/62 med5, 15/31 med6, 7/31 med7, 15/23 med8 doses missed b/c unavailable, OVER TWO MONTHS physician not notified; S450: failed to observe the standards stated in \"Rights of Residents\" for a singular resident reviewed relative to an allegation of a violation of resident's rights, \"states in part, \"Resident has complained that staff have opened (his/her] mail, threatened [him/her] with increase fees, becoming [his/her] rep payee and have [his/her] debit card...\" ED acknowledged that the resident has not authorized her to be his/her representative payee.The ED acknowledged that the resident had given her the card when s/he initially moved in, which she has used to pay the resident's rent. Additionally, the ED acknowledged that she has not retum the card to the resident since. (requested IDR, no indication of results; S470: failed to establish infection control provisions for the mutual protection of residents, employees, and the public relative a singular resident with a confirmed case of scabies, Director (ED), acknowledged Resident ID #5 has a confirmed diagnosis of scabies and shares a room with Resident ID #6. She further acknowledged that Resident ID #5 is receiving treatment for this diagnosis and Resident ID #6 had not been assessed or offered any treatment, as the guidance indicates. Additionally, the ED could not provide evidence the resident's personal items that cannot be laundered were properly disinfected.; S565: failed to ensure that medications shall be stored securely and in such a manner to prevent spoilage, dosage errors, administration errors, and/or inappropriate access for the singular medication storage room, 7 items opened undated; S705: fire drills obstructed/nighttime;",
-      "tier": "minor"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1imwX5yjTr46iSyDrM4RrQIQOuA6VdHZ6&usp=drive_copy"
@@ -12160,13 +12160,13 @@
    {
     "date": "2023-08-25",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
-    "headline": "S815: failed to provide all care and services in accordance with the prevailing community standard of care for residents with particular needs and behaviors related to dementia, including weight and nutritional status, for one of three residents reviewed, ID #1's record revealed a downward trend in the resident's overall functioning and status. over the course of several months, as evidenced by the following:",
+    "headline": "S815:  failed to provide all care and services in accordance with the prevailing community standard of care for residents with particular needs and behaviors related to dementia, including weight and nutritional status, for one of three residents reviewed, ID #1's record revealed a downward trend in the resident's overall functioning and status. over the course of several months, as evidenced by the following:",
     "paragraphs": [
      {
       "text": "S815:  failed to provide all care and services in accordance with the prevailing community standard of care for residents with particular needs and behaviors related to dementia, including weight and nutritional status, for one of three residents reviewed, ID #1's record revealed a downward trend in the resident's overall functioning and status. over the course of several months, as evidenced by the following:\n-Weight documented in January of 2022 126.2 pounds- and in December of 2022 98.8 pounds -Falls with no injuries documented on 2/19/2022, 4/712022; 4/17/2022, and 7/26/2022.-7/17/2023 Assessment to establish Palliative Care, \"In the last month [he/she] has been more wheelchair dependent due to pain, stage IV [Avascular necrosis] left femoral head,. -7/23/2023 Left hip pain progressively worse over the last 48 hours; sent to. hospital for evaluation. Upon admission s/he was found to have a left. femur fracture and was admitted for surgery Record review of resident charting notes and other documentation fail to reveal evidence of monitoring relative to weight or physical status changes, Record review of the resident's 90-day nurse review and comprehensive assessment fail to reveal any nursing interventions or assessments completed related to changes in the resident's weight or physical decline.",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1f8p2dLENGo5dPnRb8ku3s4_SgiBg2aKl&usp=drive_copy"
@@ -12691,7 +12691,7 @@
  {
   "name": "Wingate Residences On Blackstone Boulevard",
   "key": "WINGATE RESIDENCES ON BLACKSTONE",
-  "badge": "serious",
+  "badge": "most_serious",
   "report_count": 19,
   "most_recent_date": "2025-09-12",
   "reports": [
@@ -12758,13 +12758,13 @@
    {
     "date": "2024-07-30",
     "type": "Complaint/Incident Investigation",
-    "tier": "serious",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S390: been determined the residence failed to review the service plan each time a resident's condition changes significantly for the singular resident reviewed for elopement, unable to provide evidence that individualized interventions for this resident, with a history of wandering behaviors, were put in place on the resident's service plan.",
     "paragraphs": [
      {
       "text": "S390: been determined the residence failed to review the service plan each time a resident's condition changes significantly for the singular resident reviewed for elopement, unable to provide evidence that individualized interventions for this resident, with a history of wandering behaviors, were put in place on the resident's service plan.",
-      "tier": "serious"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1NspFeMAN74ra8pcKiil0zFaCN7OvpK1p&usp=drive_copy"
@@ -12818,13 +12818,13 @@
    {
     "date": "2023-08-03",
     "type": "Complaint/Incident Investigation",
-    "tier": "minor",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S365/S390: failed to review the comprehensive assessment (/ service plan )each time a resident's condition changes significantly for 1 of 3 sample residents reviewed, Record review of nursing progress notes revealed the resident had behavior issues including being disruptive, verbally inappropriate, and/or socially inappropriate towards others on the following dates: 8/3, 8/1, 7/11, 6/30, 6/29, 6/28, 6/14, 5/23, 5/22, 5/12, 5/9, 4/20, 4/17, and 4/10/2023. Record review failed to reveal evidence that the resident's assessment was updated to reflect his/her significant condition change,; S415: been determined the residence failed to ensure employees of an assisted living residence who have reasonable cause to believe that a resident has been abused, exploited, neglected, or mistreated shall within twenty-four (24) hours of the receipt of said information make a report to a high managerial agent and to the appropriate state agency for 2 of 3 sample residents, Record review of a progress note dated 7/11/2023 at 12:30 PM, states in part, \"Overnight staff reported that during rounds at 4:15 AM, resident [ID #2) was found in another resident's [ID #1] room, (s/he] was naked in bed with that resident's arm around him/her)...--was not reported (or addressed?)",
     "paragraphs": [
      {
       "text": "S365/S390: failed to review the comprehensive assessment (/ service plan )each time a resident's condition changes significantly for 1 of 3 sample residents reviewed, Record review of nursing progress notes revealed the resident had behavior issues including being disruptive, verbally inappropriate, and/or socially inappropriate towards others on the following dates: 8/3, 8/1, 7/11, 6/30, 6/29, 6/28, 6/14, 5/23, 5/22, 5/12, 5/9, 4/20, 4/17, and 4/10/2023. Record review failed to reveal evidence that the resident's assessment was updated to reflect his/her significant condition change,; S415: been determined the residence failed to ensure employees of an assisted living residence who have reasonable cause to believe that a resident has been abused, exploited, neglected, or mistreated shall within twenty-four (24) hours of the receipt of said information make a report to a high managerial agent and to the appropriate state agency for 2 of 3 sample residents, Record review of a progress note dated 7/11/2023 at 12:30 PM, states in part, \"Overnight staff reported that during rounds at 4:15 AM, resident [ID #2) was found in another resident's [ID #1] room, (s/he] was naked in bed with that resident's arm around him/her)...--was not reported (or addressed?)",
-      "tier": "minor"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1CAP_ntsIA84TvBKiYT-e8bo69zkTzKnc&usp=drive_copy"
@@ -12850,13 +12850,13 @@
    {
     "date": "2023-04-07",
     "type": "Complaint/Incident Investigation",
-    "tier": "minor",
+    "tier": "most_serious",
     "no_findings": false,
     "headline": "S415: failed to report an alleged incident of resident abuse to the appropriate state agency for 1 of 3 sampled, Record review of a progress note dated 2/14/2023 states in part, \"On 2/12/2023 staff found this resident in a male resident's room sitting on the bed with [his/her] breast exposed with male resident fondling them. This was discovered on the overnight shift..Record review failed to reveal evidence that the above incident was investigated or reported to the state agency as required.During a surveyor interview with the Director of Wellness on 4/7/2023 at 2:50 PM, she could not provide evidence that the above-mentioned incident was investigated or reported as required.",
     "paragraphs": [
      {
       "text": "S415: failed to report an alleged incident of resident abuse to the appropriate state agency for 1 of 3 sampled, Record review of a progress note dated 2/14/2023 states in part, \"On 2/12/2023 staff found this resident in a male resident's room sitting on the bed with [his/her] breast exposed with male resident fondling them. This was discovered on the overnight shift..Record review failed to reveal evidence that the above incident was investigated or reported to the state agency as required.During a surveyor interview with the Director of Wellness on 4/7/2023 at 2:50 PM, she could not provide evidence that the above-mentioned incident was investigated or reported as required.",
-      "tier": "minor"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1vVhgcBG6k7zNKTvxM1Cb6bR-PJ7oDIv5&usp=drive_copy"
@@ -13266,13 +13266,13 @@
    {
     "date": "2023-07-28",
     "type": "Routine/Biennial Inspection",
-    "tier": "minor",
+    "tier": "most_serious",
     "no_findings": false,
-    "headline": "S565: failed to ensure all medication were administered in accordance with written physician orders for two of three residents reviewed, 4 medications ordered, not available, medication directions didn't reflect dosage order",
+    "headline": "S565:  failed to ensure all medication were administered in accordance with written physician orders for two of three residents reviewed, 4 medications ordered, not available, medication directions didn't reflect dosage order",
     "paragraphs": [
      {
       "text": "S565:  failed to ensure all medication were administered in accordance with written physician orders for two of three residents reviewed, 4 medications ordered, not available, medication directions didn't reflect dosage order",
-      "tier": "minor"
+      "tier": "most_serious"
      }
     ],
     "link": "https://drive.google.com/open?id=1Myhj2fLA8hWuYbNL9TUEH4IZ87vUKdnr&usp=drive_copy"
