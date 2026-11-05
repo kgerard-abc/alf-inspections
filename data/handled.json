@@ -13,5 +13,25 @@
   "status": "same_survey",
   "facility_key": "BLENHEIM NEWPORT",
   "note": "Plan of correction for the 4/30/2025 survey already on the site (same S230, S450, S490 findings)."
+ },
+ "1Gvzgoni_8-R5wMOKkeI2LjlaiSr3kWpX": {
+  "status": "same_survey",
+  "facility_key": "DARLINGTON MEMORY LANE",
+  "note": "Duplicate of another 5/8/2023 file already on the site (marked duplicate in the old spreadsheet)."
+ },
+ "11cMB77UnKPxouiUI_wYphbGWR2-CTj9P": {
+  "status": "same_survey",
+  "facility_key": "FOUR SEASONS",
+  "note": "Duplicate of the other 7/27/2023 off-site review already on the site."
+ },
+ "1BYZWr5xV9K8rEV7jDFIJN1i_jK2rSDw-": {
+  "status": "same_survey",
+  "facility_key": "SUMMER VILLA",
+  "note": "Duplicate of the 4/12/2024 complaint investigation already on the site."
+ },
+ "1p3LRxKjv4nq7V8w8mNtQC568MQHknhR-": {
+  "status": "same_survey",
+  "facility_key": "ALL AMERICAN",
+  "note": "Request to extend the plan of correction deadline for the 10/20/2023 survey already on the site. Not an inspection."
  }
 }

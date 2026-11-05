@@ -131,20 +131,6 @@
    },
    {
     "date": "2023-10-20",
-    "type": "na",
-    "tier": "minor",
-    "no_findings": false,
-    "headline": "extension request for POC",
-    "paragraphs": [
-     {
-      "text": "extension request for POC",
-      "tier": "minor"
-     }
-    ],
-    "link": "https://drive.google.com/open?id=1p3LRxKjv4nq7V8w8mNtQC568MQHknhR-&usp=drive_copy"
-   },
-   {
-    "date": "2023-10-20",
     "type": "Complaint/Incident Investigation",
     "tier": "minor",
     "no_findings": false,
@@ -332,10 +318,10 @@
     "type": "Routine/Biennial Inspection",
     "tier": "minor",
     "no_findings": false,
-    "headline": "S 055 — Quality Assurance: QA meetings for June and September 2025 had only the Administrator in attendance — no RN or dietary rep. Satisfaction survey results not incorporated into minutes, and no plan for pressure ulcer prevention on the special care unit.",
+    "headline": "S 055 Quality Assurance: QA meetings for June and September 2025 had only the Administrator in attendance, no RN or dietary rep. Satisfaction survey results not incorporated into minutes, and no plan for pressure ulcer prevention on the special care unit.",
     "paragraphs": [
      {
-      "text": "S 055 — Quality Assurance: QA meetings for June and September 2025 had only the Administrator in attendance — no RN or dietary rep. Satisfaction survey results not incorporated into minutes, and no plan for pressure ulcer prevention on the special care unit.\nS 090 — Safe Resident Handling: No handling hazard assessments completed for two special care unit residents with dementia (IDs #3 and #4). Director of Wellness acknowledged assessments were not being done.\nS 260 — Management of Services / Electronic Monitoring: Resident #6 had a camera installed in his/her room without the required consent form or device documentation on file, in violation of RI Law 23-17.29.\nS 405 — Resident Service Plans: Service plans for five residents incorrectly stated residents monitored their own vital signs. Resident #3's plan said he/she was independent for escort needs — observation showed he/she required staff assistance and wheelchair/walker supervision.\nS 560 — Dietetic Services: Seven kitchen staff observed without required hair/beard restraints; equipment surfaces unclean; trash containers uncovered; unlabeled spray bottles; sanitizing bucket at wrong chemical concentration; no irreversible thermometer strip available; chicken salad stored at 53°F (max allowed: 41°F).\nS 640 — Medication Services: Expired, unlabeled, and physician-orderless medications found across three medication carts affecting 9+ residents.\nS 815 — Variance Procedure: Facility failed to submit required DOH variances for Resident #1 (Foley catheter/skilled nursing since admission) and Resident #3 (on hospice services since April 2025).\nS 1005 — Limited Health Services License: QA committee had no physician, CNP, or PA in attendance at June or September 2025 meetings, as required by the facility's limited health services license.",
+      "text": "S 055 Quality Assurance: QA meetings for June and September 2025 had only the Administrator in attendance, no RN or dietary rep. Satisfaction survey results not incorporated into minutes, and no plan for pressure ulcer prevention on the special care unit.\nS 090 Safe Resident Handling: No handling hazard assessments completed for two special care unit residents with dementia (IDs #3 and #4). Director of Wellness acknowledged assessments were not being done.\nS 260 Management of Services / Electronic Monitoring: Resident #6 had a camera installed in his/her room without the required consent form or device documentation on file, in violation of RI Law 23-17.29.\nS 405 Resident Service Plans: Service plans for five residents incorrectly stated residents monitored their own vital signs. Resident #3's plan said he/she was independent for escort needs, observation showed he/she required staff assistance and wheelchair/walker supervision.\nS 560 Dietetic Services: Seven kitchen staff observed without required hair/beard restraints; equipment surfaces unclean; trash containers uncovered; unlabeled spray bottles; sanitizing bucket at wrong chemical concentration; no irreversible thermometer strip available; chicken salad stored at 53°F (max allowed: 41°F).\nS 640 Medication Services: Expired, unlabeled, and physician-orderless medications found across three medication carts affecting 9+ residents.\nS 815 Variance Procedure: Facility failed to submit required DOH variances for Resident #1 (Foley catheter/skilled nursing since admission) and Resident #3 (on hospice services since April 2025).\nS 1005 Limited Health Services License: QA committee had no physician, CNP, or PA in attendance at June or September 2025 meetings, as required by the facility's limited health services license.",
       "tier": "minor"
      }
     ],
@@ -597,7 +583,7 @@
       "tier": "serious"
      },
      {
-      "text": "Service Plan Inaccurate on Code Status (DNR vs. Full Code)\nFor 5 of 5 sample residents, service plans lacked required signatures; additionally, one resident's MOLST form documented Do Not Resuscitate (DNR) status, but the resident's service plan inaccurately listed the resident as \"Full Code\" — a code-status discrepancy between records.",
+      "text": "Service Plan Inaccurate on Code Status (DNR vs. Full Code)\nFor 5 of 5 sample residents, service plans lacked required signatures; additionally, one resident's MOLST form documented Do Not Resuscitate (DNR) status, but the resident's service plan inaccurately listed the resident as \"Full Code\", a code-status discrepancy between records.",
       "tier": "most_serious"
      }
     ],
@@ -651,7 +637,7 @@
       "tier": "minor"
      },
      {
-      "text": "Safe Resident Handling Program\nFacility with an Alzheimer's/Dementia Special Care Unit license had no Safe Resident Handling program of any kind — no committee, no written program, no policy, no hazard assessment, no annual evaluation.",
+      "text": "Safe Resident Handling Program\nFacility with an Alzheimer's/Dementia Special Care Unit license had no Safe Resident Handling program of any kind, no committee, no written program, no policy, no hazard assessment, no annual evaluation.",
       "tier": "minor"
      },
      {
@@ -998,10 +984,10 @@
     "type": "Complaint/Incident Investigation",
     "tier": "minor",
     "no_findings": false,
-    "headline": "S 055 — Quality Assurance: Written QA plan missing required components specific to the dementia care and limited health services licenses — no mention of pressure ulcer prevention, nutrition/dehydration monitoring, or psychological status changes.",
+    "headline": "S 055 Quality Assurance: Written QA plan missing required components specific to the dementia care and limited health services licenses, no mention of pressure ulcer prevention, nutrition/dehydration monitoring, or psychological status changes.",
     "paragraphs": [
      {
-      "text": "S 055 — Quality Assurance: Written QA plan missing required components specific to the dementia care and limited health services licenses — no mention of pressure ulcer prevention, nutrition/dehydration monitoring, or psychological status changes.\nS 450 — Rights of Residents: Facility failed to post the most recent state licensure survey results as required. Executive Director could not provide evidence they were posted.\nS 490 — Dietetic Services: Accumulated debris on hood slats and storage racks; a dented can; unlabeled/undated cereals; expired sliced turkey; an unsanitary Styrofoam food container; dish storage room door not sealing properly with flies present.\n🚨 S 605 — Fire Safety: A State Fire Marshal inspection from 10/17/2025 identified the facility as out of compliance due to outstanding sprinkler system repairs and testing. No subsequent compliant inspection was on record. This is a memory care facility housing residents who cannot self-evacuate.\nS 830 — Special Care / Dietitian-Directed Menus: Menus for the Alzheimer's Dementia Special Care Unit were not developed under the direction of a RI-licensed dietitian, as required.",
+      "text": "S 055 Quality Assurance: Written QA plan missing required components specific to the dementia care and limited health services licenses, no mention of pressure ulcer prevention, nutrition/dehydration monitoring, or psychological status changes.\nS 450 Rights of Residents: Facility failed to post the most recent state licensure survey results as required. Executive Director could not provide evidence they were posted.\nS 490 Dietetic Services: Accumulated debris on hood slats and storage racks; a dented can; unlabeled/undated cereals; expired sliced turkey; an unsanitary Styrofoam food container; dish storage room door not sealing properly with flies present.\n🚨 S 605 Fire Safety: A State Fire Marshal inspection from 10/17/2025 identified the facility as out of compliance due to outstanding sprinkler system repairs and testing. No subsequent compliant inspection was on record. This is a memory care facility housing residents who cannot self-evacuate.\nS 830 Special Care / Dietitian-Directed Menus: Menus for the Alzheimer's Dementia Special Care Unit were not developed under the direction of a RI-licensed dietitian, as required.",
       "tier": "minor"
      }
     ],
@@ -1145,10 +1131,10 @@
     "type": "Routine/Biennial Inspection",
     "tier": "minor",
     "no_findings": false,
-    "headline": "S 560 — Dietetic Services: Ice machine had orange/brown accumulation inside the flap; one cook prepped soup without a beard covering; four bags of cereal had no label or date; four 7-lb cans of prunes were expired since April 2025. All violations acknowledged by the Food Service Director. No resident harm documented.",
+    "headline": "S 560 Dietetic Services: Ice machine had orange/brown accumulation inside the flap; one cook prepped soup without a beard covering; four bags of cereal had no label or date; four 7-lb cans of prunes were expired since April 2025. All violations acknowledged by the Food Service Director. No resident harm documented.",
     "paragraphs": [
      {
-      "text": "S 560 — Dietetic Services: Ice machine had orange/brown accumulation inside the flap; one cook prepped soup without a beard covering; four bags of cereal had no label or date; four 7-lb cans of prunes were expired since April 2025. All violations acknowledged by the Food Service Director. No resident harm documented.",
+      "text": "S 560 Dietetic Services: Ice machine had orange/brown accumulation inside the flap; one cook prepped soup without a beard covering; four bags of cereal had no label or date; four 7-lb cans of prunes were expired since April 2025. All violations acknowledged by the Food Service Director. No resident harm documented.",
       "tier": "minor"
      }
     ],
@@ -1188,7 +1174,7 @@
    },
    {
     "date": "2024-06-07",
-    "type": "admin/offsite",
+    "type": "Off-site review",
     "tier": null,
     "no_findings": true,
     "headline": "No deficiencies identified",
@@ -1532,10 +1518,10 @@
     "type": "Complaint/Incident Investigation",
     "tier": "minor",
     "no_findings": false,
-    "headline": "S 055 — Quality Assurance: Dietary rep absent from three QA meetings; RN absent from one. Written QA plan missing required components.",
+    "headline": "S 055 Quality Assurance: Dietary rep absent from three QA meetings; RN absent from one. Written QA plan missing required components.",
     "paragraphs": [
      {
-      "text": "S 055 — Quality Assurance: Dietary rep absent from three QA meetings; RN absent from one. Written QA plan missing required components.\nS 090 — Safe Resident Handling: No handling hazard assessments completed for three special care unit residents, including one admitted in November 2025 with no admission assessment at all. Resident Services Director acknowledged assessments were not being done.\nS 255 — Policy & Procedure Manual: Policy and procedure manual not reviewed and updated annually as required.\nS 390 — Resident Assessments: Assessments not updated when conditions changed significantly for 5 of 6 residents reviewed — including one resident discharged from speech therapy with no updated assessment, and one with new paranoid/aggressive behaviors not documented.\nS 400 — Nurse Reviews: Nurse reviews for all 6 residents reviewed lacked the required physical assessment component.\nS 415 — Service Plans: Service plans not updated to reflect significant condition changes for 6 of 7 residents reviewed. One resident was given a 30-day discharge notice for paranoid/aggressive behaviors that were never reflected in the service plan.\nS 480 — Rights of Residents: A Resident/Staff Roster from 2022 and 2024 surveys — containing identifying information about residents — was found in the facility's public-facing survey binder, violating resident privacy.\nS 540 — Infection Control: Policy manual lacked required protocols for transfer/discharge of residents with infectious diseases such as TB, MRSA, VRE, and C. diff.\nS 560 — Dietetic Services: Kitchen dishwasher observed rinsing hands briefly between handling dirty and clean dishes — twice — rather than following proper handwashing protocol.",
+      "text": "S 055 Quality Assurance: Dietary rep absent from three QA meetings; RN absent from one. Written QA plan missing required components.\nS 090 Safe Resident Handling: No handling hazard assessments completed for three special care unit residents, including one admitted in November 2025 with no admission assessment at all. Resident Services Director acknowledged assessments were not being done.\nS 255 Policy & Procedure Manual: Policy and procedure manual not reviewed and updated annually as required.\nS 390 Resident Assessments: Assessments not updated when conditions changed significantly for 5 of 6 residents reviewed, including one resident discharged from speech therapy with no updated assessment, and one with new paranoid/aggressive behaviors not documented.\nS 400 Nurse Reviews: Nurse reviews for all 6 residents reviewed lacked the required physical assessment component.\nS 415 Service Plans: Service plans not updated to reflect significant condition changes for 6 of 7 residents reviewed. One resident was given a 30-day discharge notice for paranoid/aggressive behaviors that were never reflected in the service plan.\nS 480 Rights of Residents: A Resident/Staff Roster from 2022 and 2024 surveys, containing identifying information about residents, was found in the facility's public-facing survey binder, violating resident privacy.\nS 540 Infection Control: Policy manual lacked required protocols for transfer/discharge of residents with infectious diseases such as TB, MRSA, VRE, and C. diff.\nS 560 Dietetic Services: Kitchen dishwasher observed rinsing hands briefly between handling dirty and clean dishes, twice, rather than following proper handwashing protocol.",
       "tier": "minor"
      }
     ],
@@ -2249,10 +2235,10 @@
     "type": "Complaint/Incident Investigation",
     "tier": "minor",
     "no_findings": false,
-    "headline": "S 170 — Staffing (Administrative Management 2.4.13.A)",
+    "headline": "S 170 Staffing (Administrative Management 2.4.13.A)",
     "paragraphs": [
      {
-      "text": "S 170 — Staffing (Administrative Management 2.4.13.A)\nTwo staff members providing personal care (bathing, dressing) to residents were not licensed CNAs as required under Rhode Island law. The Administrator acknowledged neither held an active RI CNA license.\nS 180 — Administrator Posting (Administrative Management 2.4.13.C)\nThe name and contact information for the current administrator was not posted in a conspicuous public area as required.\nS 250 — Physician Orders/Self-Administration (Management of Services 2.4.14.A)\nThree residents were self-administering medications without physician orders on file authorizing self-administration. Residents had diagnoses including lymphedema, Type 2 diabetes/COPD/asthma, and COPD. Additionally, one resident's comprehensive assessment did not accurately reflect her cognitive ability to self-administer.\nS 385 — Resident Assessment (Residency Requirements 2.4.17.C)\nComprehensive assessments for two of three residents reviewed failed to accurately reflect their needs and abilities relative to self-administration of medications.\nS 415 — Service Plans (Residency Requirements 2.4.17.G.3)\nService plans for two residents inaccurately stated they do not self-administer medications when in fact they do.\nS 560 — Dietetic Services (Residential Care Services 2.4.23.C)\nExtensive food safety violations in the main kitchen and storage areas including dirty equipment, a wall fan blowing dust toward food prep, a can opener with black matter on the blade, wet stored mugs and juice cups, an uncovered trash container, dented cans, unlabeled food bags, freezer burn, and sticky debris on freezer shelves. The cook acknowledged multiple violations.\nS 635 — CMT Evaluations (Medication Services 2.4.26.A.3.C)\nRequired monthly evaluations of Certified Medication Technicians were not conducted or documented for three of three CMTs reviewed during their first three months of employment and quarterly thereafter.\nS 640 — Medication Storage (Medication Services 2.4.26.B.1)\nMedication cart and overflow cart contained medications with expired discard dates, missing direction labels, and items without directions for use. Staff acknowledged the violations.",
+      "text": "S 170 Staffing (Administrative Management 2.4.13.A)\nTwo staff members providing personal care (bathing, dressing) to residents were not licensed CNAs as required under Rhode Island law. The Administrator acknowledged neither held an active RI CNA license.\nS 180 Administrator Posting (Administrative Management 2.4.13.C)\nThe name and contact information for the current administrator was not posted in a conspicuous public area as required.\nS 250 Physician Orders/Self-Administration (Management of Services 2.4.14.A)\nThree residents were self-administering medications without physician orders on file authorizing self-administration. Residents had diagnoses including lymphedema, Type 2 diabetes/COPD/asthma, and COPD. Additionally, one resident's comprehensive assessment did not accurately reflect her cognitive ability to self-administer.\nS 385 Resident Assessment (Residency Requirements 2.4.17.C)\nComprehensive assessments for two of three residents reviewed failed to accurately reflect their needs and abilities relative to self-administration of medications.\nS 415 Service Plans (Residency Requirements 2.4.17.G.3)\nService plans for two residents inaccurately stated they do not self-administer medications when in fact they do.\nS 560 Dietetic Services (Residential Care Services 2.4.23.C)\nExtensive food safety violations in the main kitchen and storage areas including dirty equipment, a wall fan blowing dust toward food prep, a can opener with black matter on the blade, wet stored mugs and juice cups, an uncovered trash container, dented cans, unlabeled food bags, freezer burn, and sticky debris on freezer shelves. The cook acknowledged multiple violations.\nS 635 CMT Evaluations (Medication Services 2.4.26.A.3.C)\nRequired monthly evaluations of Certified Medication Technicians were not conducted or documented for three of three CMTs reviewed during their first three months of employment and quarterly thereafter.\nS 640 Medication Storage (Medication Services 2.4.26.B.1)\nMedication cart and overflow cart contained medications with expired discard dates, missing direction labels, and items without directions for use. Staff acknowledged the violations.",
       "tier": "minor"
      }
     ],
@@ -2491,10 +2477,10 @@
     "type": "Complaint/Incident Investigation",
     "tier": "most_serious",
     "no_findings": false,
-    "headline": "S 565 — Medication Administration",
+    "headline": "S 565 Medication Administration",
     "paragraphs": [
      {
-      "text": "S 565 — Medication Administration\nA resident with leukodystrophy (a serious neurological condition) was administered 60 mg of Baclofen — three times the ordered dose of 20 mg. The error occurred because a CMT was confused by a medication packaging system that dispensed multiple days' worth of medications together, and administered both the old 40 mg dose and the new 20 mg dose simultaneously. Resident hospitalized following the overdose.",
+      "text": "S 565 Medication Administration\nA resident with leukodystrophy (a serious neurological condition) was administered 60 mg of Baclofen, three times the ordered dose of 20 mg. The error occurred because a CMT was confused by a medication packaging system that dispensed multiple days' worth of medications together, and administered both the old 40 mg dose and the new 20 mg dose simultaneously. Resident hospitalized following the overdose.",
       "tier": "most_serious"
      }
     ],
@@ -3072,7 +3058,7 @@
       "tier": "serious"
      },
      {
-      "text": "Assessments & Service Plans Not Updated for Behaviors/Elopement Risk\nSame findings as S310 — the escalating falls, wandering, elopement, and aggression documented in progress notes for both residents were never reflected in their comprehensive assessments or service plans, despite ongoing decline (BIMS scores dropping to severe impairment) and repeated safety incidents.",
+      "text": "Assessments & Service Plans Not Updated for Behaviors/Elopement Risk\nSame findings as S310 the escalating falls, wandering, elopement, and aggression documented in progress notes for both residents were never reflected in their comprehensive assessments or service plans, despite ongoing decline (BIMS scores dropping to severe impairment) and repeated safety incidents.",
       "tier": "serious"
      }
     ],
@@ -3100,15 +3086,15 @@
     "headline": "Treatments Without Physician Orders Most serious",
     "paragraphs": [
      {
-      "text": "Treatments Without Physician Orders Most serious\nResident #1 (COPD) was receiving oxygen set at 3L on the concentrator but believed she received 2L — no physician order for oxygen existed. Resident #2 (Type 2 diabetes) had blood sugars documented twice weekly with no physician order; values of 598 and 600 (normal 70–100) were never communicated to the physician. Resident harm: Resident #1 receiving incorrect oxygen dose without oversight; Resident #2 with critically elevated blood sugars with no physician notification.",
+      "text": "Treatments Without Physician Orders Most serious\nResident #1 (COPD) was receiving oxygen set at 3L on the concentrator but believed she received 2L, no physician order for oxygen existed. Resident #2 (Type 2 diabetes) had blood sugars documented twice weekly with no physician order; values of 598 and 600 (normal 70–100) were never communicated to the physician. Resident harm: Resident #1 receiving incorrect oxygen dose without oversight; Resident #2 with critically elevated blood sugars with no physician notification.",
       "tier": "most_serious"
      },
      {
-      "text": "Resident Records\nResident #1's medication list had not been updated since move-in (January 2025); when hospitalized in November for altered mental status, toxicology showed benzodiazepine, fentanyl, and opiates — none on the facility's medication list. Hospital noted no medication list was received on transfer. Resident #2 had no physician order for finger sticks, multiple dates with no values recorded, and abnormal readings never communicated to the physician. Resident harm: inaccurate medication records contributed to incomplete hospital transfer and unmonitored dangerous blood sugar levels.",
+      "text": "Resident Records\nResident #1's medication list had not been updated since move-in (January 2025); when hospitalized in November for altered mental status, toxicology showed benzodiazepine, fentanyl, and opiates, none on the facility's medication list. Hospital noted no medication list was received on transfer. Resident #2 had no physician order for finger sticks, multiple dates with no values recorded, and abnormal readings never communicated to the physician. Resident harm: inaccurate medication records contributed to incomplete hospital transfer and unmonitored dangerous blood sugar levels.",
       "tier": "serious"
      },
      {
-      "text": "Inaccurate Resident Assessments\nAssessments for both residents did not accurately reflect care needs. Resident #1 assessed as not using OTC medications and lacking cognitive ability to self-administer medication — yet was observed with OTC medications in room and self-administering oxygen. Resident #2's assessment inaccurately reflected self-administration when full staff assistance was required.",
+      "text": "Inaccurate Resident Assessments\nAssessments for both residents did not accurately reflect care needs. Resident #1 assessed as not using OTC medications and lacking cognitive ability to self-administer medication, yet was observed with OTC medications in room and self-administering oxygen. Resident #2's assessment inaccurately reflected self-administration when full staff assistance was required.",
       "tier": "minor"
      },
      {
@@ -3134,7 +3120,7 @@
       "tier": "minor"
      },
      {
-      "text": "Employee Training\nThree new employees (Staff A, B, C — hired April–August 2025) had no documentation of required food service training within 30 days of hire.",
+      "text": "Employee Training\nThree new employees (Staff A, B, C, hired April–August 2025) had no documentation of required food service training within 30 days of hire.",
       "tier": "minor"
      },
      {
@@ -3537,10 +3523,10 @@
     "type": "Routine/Biennial Inspection",
     "tier": "serious",
     "no_findings": false,
-    "headline": "S 295 — Smoking Assessments",
+    "headline": "S 295 Smoking Assessments",
     "paragraphs": [
      {
-      "text": "S 295 — Smoking Assessments\nRequired smoking assessments not completed on admission or quarterly for two residents — one with lung cancer, one with COPD.\nS 495 — Resident Rights/Survey Posting\nMost recent survey results locked in a cabinet, not displayed as required.\nS 560 — Dietetic/Food Safety\nKitchen equipment dirty; ice dispenser lacked required air gap. A cook was caught by the surveyor wiping a thermometer with a soiled dishtowel and inserting it into food actively being served to residents. Residents were being served potentially contaminated food when the surveyor intervened.\nS 640 — Medication Cart Left Unlocked/Unattended\nMedication cart found unlocked, unattended, and out of staff sight with a prescription inhaler on top.\nS 1005 — Quality Improvement Committee Composition\nRequired medical professional absent from four QA committee meetings.",
+      "text": "S 295 Smoking Assessments\nRequired smoking assessments not completed on admission or quarterly for two residents, one with lung cancer, one with COPD.\nS 495 Resident Rights/Survey Posting\nMost recent survey results locked in a cabinet, not displayed as required.\nS 560 Dietetic/Food Safety\nKitchen equipment dirty; ice dispenser lacked required air gap. A cook was caught by the surveyor wiping a thermometer with a soiled dishtowel and inserting it into food actively being served to residents. Residents were being served potentially contaminated food when the surveyor intervened.\nS 640 Medication Cart Left Unlocked/Unattended\nMedication cart found unlocked, unattended, and out of staff sight with a prescription inhaler on top.\nS 1005 Quality Improvement Committee Composition\nRequired medical professional absent from four QA committee meetings.",
       "tier": "serious"
      }
     ],
@@ -3551,10 +3537,10 @@
     "type": "Complaint/Incident Investigation",
     "tier": "most_serious",
     "no_findings": false,
-    "headline": "S 840 — Memory Care Elopement",
+    "headline": "S 840 Memory Care Elopement",
     "paragraphs": [
      {
-      "text": "S 840 — Memory Care Elopement\nA memory care resident with documented exit-seeking behaviors eloped successfully twice in two days (8/4 and 8/5/2025) without alarms sounding either time. On the second elopement the resident was found outside the facility and transported to a hospital and never returned. A door on the same unit had been flagged as unsecured in a 2022 survey — suggesting a longstanding unresolved safety issue.",
+      "text": "S 840 Memory Care Elopement\nA memory care resident with documented exit-seeking behaviors eloped successfully twice in two days (8/4 and 8/5/2025) without alarms sounding either time. On the second elopement the resident was found outside the facility and transported to a hospital and never returned. A door on the same unit had been flagged as unsecured in a 2022 survey, suggesting a longstanding unresolved safety issue.",
       "tier": "most_serious"
      }
     ],
@@ -3847,7 +3833,7 @@
    },
    {
     "date": "2023-06-22",
-    "type": "admin/offsite",
+    "type": "Off-site review",
     "tier": null,
     "no_findings": true,
     "headline": "No deficiencies identified",
@@ -4842,10 +4828,10 @@
     "type": "Routine/Biennial Inspection",
     "tier": "minor",
     "no_findings": false,
-    "headline": "S 055 — Quality Assurance",
+    "headline": "S 055 Quality Assurance",
     "paragraphs": [
      {
-      "text": "S 055 — Quality Assurance\nQA plan not reviewed or approved since January 2022 — over 3 years overdue.\nS 565 — Medication Administration Records\nA discontinued Vitamin D2 prescription remained active in the MAR for months, appearing as missed doses.",
+      "text": "S 055 Quality Assurance\nQA plan not reviewed or approved since January 2022, over 3 years overdue.\nS 565 Medication Administration Records\nA discontinued Vitamin D2 prescription remained active in the MAR for months, appearing as missed doses.",
       "tier": "minor"
      }
     ],
@@ -4856,10 +4842,10 @@
     "type": "Complaint/Incident Investigation",
     "tier": "most_serious",
     "no_findings": false,
-    "headline": "S 565 — Medication Storage/Administration",
+    "headline": "S 565 Medication Storage/Administration",
     "paragraphs": [
      {
-      "text": "S 565 — Medication Storage/Administration\nMedications were not stored securely. A diabetic resident accessed an unlocked cabinet and injected himself with another resident's insulin — 60 units of the wrong type. Resident hospitalized as a direct result.",
+      "text": "S 565 Medication Storage/Administration\nMedications were not stored securely. A diabetic resident accessed an unlocked cabinet and injected himself with another resident's insulin, 60 units of the wrong type. Resident hospitalized as a direct result.",
       "tier": "most_serious"
      }
     ],
@@ -4926,16 +4912,11 @@
    },
    {
     "date": "2023-04-26",
-    "type": "offsite follow-up",
-    "tier": "minor",
-    "no_findings": false,
-    "headline": "deficiency from 3/21/23 corrected",
-    "paragraphs": [
-     {
-      "text": "deficiency from 3/21/23 corrected",
-      "tier": "minor"
-     }
-    ],
+    "type": "Off-site review",
+    "tier": null,
+    "no_findings": true,
+    "headline": "No deficiencies identified",
+    "paragraphs": [],
     "link": "https://drive.google.com/open?id=1Iu-JRbL6mC_PXJ5wkNhNp6FZs3Vc9QT2&usp=drive_copy"
    },
    {
@@ -5370,7 +5351,7 @@
       "tier": "most_serious"
      },
      {
-      "text": "Infection Control / Scabies Outbreak Mismanaged\nFacility had a confirmed scabies case; only the resident's roommate was treated prophylactically (other residents/staff were not), and staff used apple cider vinegar to disinfect surfaces exposed to scabies — not a CDC-recommended method — with the Administrator unable to provide any facility scabies protocol.",
+      "text": "Infection Control / Scabies Outbreak Mismanaged\nFacility had a confirmed scabies case; only the resident's roommate was treated prophylactically (other residents/staff were not), and staff used apple cider vinegar to disinfect surfaces exposed to scabies, not a CDC-recommended method, with the Administrator unable to provide any facility scabies protocol.",
       "tier": "serious"
      }
     ],
@@ -5417,10 +5398,10 @@
     "type": "Complaint/Incident Investigation",
     "tier": "serious",
     "no_findings": false,
-    "headline": "S 300 — Residency Agreement/Inappropriate Placement",
+    "headline": "S 300 Residency Agreement/Inappropriate Placement",
     "paragraphs": [
      {
-      "text": "S 300 — Residency Agreement/Inappropriate Placement\nThe facility retained a resident whose needs exceeded what an assisted living setting could safely provide. The resident had a diagnosis of major depressive disorder and was prescribed Vynase (a Schedule II stimulant the facility cannot administer). The resident had a bottle of acetaminophen in her room without a physician order, and staff were unaware. Records showed the resident had previously been found wandering a beach in Massachusetts, tested positive for cannabis and amphetamines, and had multiple knives and unprescribed medications in her room. The State had cited the facility for this same resident's safety on 9/5/2025 and it was recommended she be transferred to a secure unit — yet the facility re-admitted her. Serious finding: A resident with documented dangerous behaviors, substance use, wandering, and medication safety concerns — flagged by the state just weeks earlier — was re-admitted despite safety concerns. The Administrator herself acknowledged the resident was not in an appropriate living arrangement.\nS 560 — Medication Services (Schedule II)\nA medication aide was administering Vynase (a Schedule II controlled substance) to the same resident from 8/16/2025 through 9/30/2025, which is prohibited at an M1 assisted living facility. The pharmacist had notified the facility it could not administer this medication, yet it continued. Serious finding: An unlicensed medication aide was dispensing a Schedule II narcotic in violation of state law for over six weeks after the facility was told to stop.",
+      "text": "S 300 Residency Agreement/Inappropriate Placement\nThe facility retained a resident whose needs exceeded what an assisted living setting could safely provide. The resident had a diagnosis of major depressive disorder and was prescribed Vynase (a Schedule II stimulant the facility cannot administer). The resident had a bottle of acetaminophen in her room without a physician order, and staff were unaware. Records showed the resident had previously been found wandering a beach in Massachusetts, tested positive for cannabis and amphetamines, and had multiple knives and unprescribed medications in her room. The State had cited the facility for this same resident's safety on 9/5/2025 and it was recommended she be transferred to a secure unit, yet the facility re-admitted her. Serious finding: A resident with documented dangerous behaviors, substance use, wandering, and medication safety concerns, flagged by the state just weeks earlier, was re-admitted despite safety concerns. The Administrator herself acknowledged the resident was not in an appropriate living arrangement.\nS 560 Medication Services (Schedule II)\nA medication aide was administering Vynase (a Schedule II controlled substance) to the same resident from 8/16/2025 through 9/30/2025, which is prohibited at an M1 assisted living facility. The pharmacist had notified the facility it could not administer this medication, yet it continued. Serious finding: An unlicensed medication aide was dispensing a Schedule II narcotic in violation of state law for over six weeks after the facility was told to stop.",
       "tier": "serious"
      }
     ],
@@ -5431,10 +5412,10 @@
     "type": "Complaint/Incident Investigation",
     "tier": "most_serious",
     "no_findings": false,
-    "headline": "S 230 — Standard of Care/Inappropriate Placement (two residents)",
+    "headline": "S 230 Standard of Care/Inappropriate Placement (two residents)",
     "paragraphs": [
      {
-      "text": "S 230 — Standard of Care/Inappropriate Placement (two residents)\nTwo residents were determined to be inappropriately placed in a traditional assisted living setting:\n\nResident #1 (schizophrenia): Received the wrong dose of Clozapine (an antipsychotic) — 100 mg instead of the ordered 200 mg — from 7/8/2025 through 8/1/2025 due to physician orders not being followed. Resident sent to a higher level of care as a result of the medication error.\nResident #2 (memory loss and seizures): Was moved from a secured memory care unit to an unsecured traditional assisted living unit without a physician order documenting this was safe and appropriate.\nResident #3 (major depressive disorder with psychotic features): Was found wandering a beach in Massachusetts, found with multiple knives and drugs in her room, and tested positive for cannabis and amphetamines at the hospital. The facility failed to contact the physician regarding the resident being found out of state, and failed to document the appropriateness of her placement.\n\nDarlington Assisted Living had the same resident (#3) flagged in both the 9/5/2025 and 10/22/2025 surveys — and re-admitted her between them despite documented safety concerns.",
+      "text": "S 230 Standard of Care/Inappropriate Placement (two residents)\nTwo residents were determined to be inappropriately placed in a traditional assisted living setting:\n\nResident #1 (schizophrenia): Received the wrong dose of Clozapine (an antipsychotic), 100 mg instead of the ordered 200 mg, from 7/8/2025 through 8/1/2025 due to physician orders not being followed. Resident sent to a higher level of care as a result of the medication error.\nResident #2 (memory loss and seizures): Was moved from a secured memory care unit to an unsecured traditional assisted living unit without a physician order documenting this was safe and appropriate.\nResident #3 (major depressive disorder with psychotic features): Was found wandering a beach in Massachusetts, found with multiple knives and drugs in her room, and tested positive for cannabis and amphetamines at the hospital. The facility failed to contact the physician regarding the resident being found out of state, and failed to document the appropriateness of her placement.\n\nDarlington Assisted Living had the same resident (#3) flagged in both the 9/5/2025 and 10/22/2025 surveys, and re-admitted her between them despite documented safety concerns.",
       "tier": "most_serious"
      }
     ],
@@ -5736,10 +5717,10 @@
     "type": "Complaint/Incident Investigation",
     "tier": "minor",
     "no_findings": false,
-    "headline": "S 250 — Physician-Ordered Diets Not Being Followed",
+    "headline": "S 250 Physician-Ordered Diets Not Being Followed",
     "paragraphs": [
      {
-      "text": "S 250 — Physician-Ordered Diets Not Being Followed\nFive of eighteen residents had physician-ordered therapeutic diets (diabetic, renal, CCHO, NAS/low sodium, fluid restriction) that food service staff were not aware of or not following. The Director of Food Service revealed he was unaware of a fluid restriction for one resident and had no information on foods to prepare for residents with specific diet orders.",
+      "text": "S 250 Physician-Ordered Diets Not Being Followed\nFive of eighteen residents had physician-ordered therapeutic diets (diabetic, renal, CCHO, NAS/low sodium, fluid restriction) that food service staff were not aware of or not following. The Director of Food Service revealed he was unaware of a fluid restriction for one resident and had no information on foods to prepare for residents with specific diet orders.",
       "tier": "minor"
      }
     ],
@@ -5750,10 +5731,10 @@
     "type": "Routine/Biennial Inspection",
     "tier": "serious",
     "no_findings": false,
-    "headline": "S 230 — Medication Management/Standard of Care Four residents had medication issues identified during the survey: ordered medications were not available on the cart for residents with COPD (nicotine patch, lozenge, Xylimelt) and seizure disorder (Acetaminophen); a resident with seizure disorder missed 6 consecutive doses of Vitamin B6 without the physician being notified; and a discontinued Paroxetine 10mg blister pack remained on the cart alongside the current 40mg pack, creating risk of a wrong-medication error. The Director of Wellness acknowledged the physician was not notified about the missed Vitamin B6 doses.",
+    "headline": "S 230 Medication Management/Standard of Care Four residents had medication issues identified during the survey: ordered medications were not available on the cart for residents with COPD (nicotine patch, lozenge, Xylimelt) and seizure disorder (Acetaminophen); a resident with seizure disorder missed 6 consecutive doses of Vitamin B6 without the physician being notified; and a discontinued Paroxetine 10mg blister pack remained on the cart alongside the current 40mg pack, creating risk of a wrong-medication error. The Director of Wellness acknowledged the physician was not notified about the missed Vitamin B6 doses.",
     "paragraphs": [
      {
-      "text": "S 230 — Medication Management/Standard of Care Four residents had medication issues identified during the survey: ordered medications were not available on the cart for residents with COPD (nicotine patch, lozenge, Xylimelt) and seizure disorder (Acetaminophen); a resident with seizure disorder missed 6 consecutive doses of Vitamin B6 without the physician being notified; and a discontinued Paroxetine 10mg blister pack remained on the cart alongside the current 40mg pack, creating risk of a wrong-medication error. The Director of Wellness acknowledged the physician was not notified about the missed Vitamin B6 doses.\nS 380 — Service Plans/Smoking\nService plans for three smoking residents failed to document that they smoked or include interventions to reduce smoking risks. One had COPD, one had a seizure disorder, and one had kidney failure on dialysis — all conditions that make smoking safety planning particularly important.\nS 450 — Resident Rights/Privacy\nThe facility's survey results binder contained a resident/staff roster dated 6/26/2023, exposing identifying information about residents. The Administrator could not demonstrate residents' privacy was protected.\nS 490 — Dietetic Services/Food Safety\nMultiple food safety violations found in the main kitchen: coleslaw past its use-by date, three unlabeled and undated sandwiches, strawberries with visible white mold growth (uncovered and undated), freezer burn on unlabeled ground beef in a plastic bag, and frost buildup on the freezer walls. The chef acknowledged all violations on the spot.",
+      "text": "S 230 Medication Management/Standard of Care Four residents had medication issues identified during the survey: ordered medications were not available on the cart for residents with COPD (nicotine patch, lozenge, Xylimelt) and seizure disorder (Acetaminophen); a resident with seizure disorder missed 6 consecutive doses of Vitamin B6 without the physician being notified; and a discontinued Paroxetine 10mg blister pack remained on the cart alongside the current 40mg pack, creating risk of a wrong-medication error. The Director of Wellness acknowledged the physician was not notified about the missed Vitamin B6 doses.\nS 380 Service Plans/Smoking\nService plans for three smoking residents failed to document that they smoked or include interventions to reduce smoking risks. One had COPD, one had a seizure disorder, and one had kidney failure on dialysis, all conditions that make smoking safety planning particularly important.\nS 450 Resident Rights/Privacy\nThe facility's survey results binder contained a resident/staff roster dated 6/26/2023, exposing identifying information about residents. The Administrator could not demonstrate residents' privacy was protected.\nS 490 Dietetic Services/Food Safety\nMultiple food safety violations found in the main kitchen: coleslaw past its use-by date, three unlabeled and undated sandwiches, strawberries with visible white mold growth (uncovered and undated), freezer burn on unlabeled ground beef in a plastic bag, and frost buildup on the freezer walls. The chef acknowledged all violations on the spot.",
       "tier": "serious"
      }
     ],
@@ -5984,10 +5965,10 @@
     "type": "Complaint/Incident Investigation",
     "tier": "minor",
     "no_findings": false,
-    "headline": "S 405 — Service Plans Not Accurately Reflecting Resident Needs",
+    "headline": "S 405 Service Plans Not Accurately Reflecting Resident Needs",
     "paragraphs": [
      {
-      "text": "S 405 — Service Plans Not Accurately Reflecting Resident Needs\nService plans for three of five residents were not updated to reflect current needs and interventions, including: a resident with documented anger problems who had been hitting/striking other residents (plan not updated after altercation), and two residents requiring supervision while smoking whose service plans failed to address smoking at all.\nS 560 — Dietetic Services/Food Safety\nThe sanitizing solution in the pot and pan sink was below required concentration (below 200 PPM).\nS 925 — Memory Care Environment Safety\nOn the memory care unit, a surveyor observed: a housekeeping cart with chemicals left unattended in the hallway, a bathroom door left open with the toilet lid off, and a paint tray and roller brush stored in a resident corridor. The Administrator acknowledged all violations.",
+      "text": "S 405 Service Plans Not Accurately Reflecting Resident Needs\nService plans for three of five residents were not updated to reflect current needs and interventions, including: a resident with documented anger problems who had been hitting/striking other residents (plan not updated after altercation), and two residents requiring supervision while smoking whose service plans failed to address smoking at all.\nS 560 Dietetic Services/Food Safety\nThe sanitizing solution in the pot and pan sink was below required concentration (below 200 PPM).\nS 925 Memory Care Environment Safety\nOn the memory care unit, a surveyor observed: a housekeeping cart with chemicals left unattended in the hallway, a bathroom door left open with the toilet lid off, and a paint tray and roller brush stored in a resident corridor. The Administrator acknowledged all violations.",
       "tier": "minor"
      }
     ],
@@ -6012,10 +5993,10 @@
     "type": "Complaint/Incident Investigation",
     "tier": "most_serious",
     "no_findings": false,
-    "headline": "S 415 — Failure to Report Abuse/Neglect",
+    "headline": "S 415 Failure to Report Abuse/Neglect",
     "paragraphs": [
      {
-      "text": "S 415 — Failure to Report Abuse/Neglect\nA memory care resident with dementia reported being inappropriately touched. Progress notes from 9/20/2025 documented the resident was sent to the ER with genital area redness, pain, and swelling; hospital documentation noted the resident reported being touched. The facility failed to report this incident to the state agency within the required 24-hour timeframe. Serious finding: A vulnerable dementia resident reported sexual abuse and the facility failed to make the required report to state authorities.",
+      "text": "S 415 Failure to Report Abuse/Neglect\nA memory care resident with dementia reported being inappropriately touched. Progress notes from 9/20/2025 documented the resident was sent to the ER with genital area redness, pain, and swelling; hospital documentation noted the resident reported being touched. The facility failed to report this incident to the state agency within the required 24-hour timeframe. Serious finding: A vulnerable dementia resident reported sexual abuse and the facility failed to make the required report to state authorities.",
       "tier": "most_serious"
      }
     ],
@@ -6029,7 +6010,7 @@
     "headline": "Failed to maintain a compliant Safe Resident Handling program. Quarterly committee meetings were missing from 8/16/2023 through 5/1/2025, and annual performance evaluations for 2023 and 2024 were not documented.",
     "paragraphs": [
      {
-      "text": "Failed to maintain a compliant Safe Resident Handling program. Quarterly committee meetings were missing from 8/16/2023 through 5/1/2025, and annual performance evaluations for 2023 and 2024 were not documented. \nS 230 — Physician Orders/Self-Administration\nA memory care resident with dementia and Type 2 diabetes was self-administering insulin without a physician order authorizing self-administration.\nS 565 — Medication Storage\nThree medication carts had expired medications and medications without orders on them.\nS 830 — Memory Care Menu Requirements\nMenus for the Alzheimer's Dementia Special Care unit had not been developed or reviewed by a registered dietitian for several years. The Administrator acknowledged this.",
+      "text": "Failed to maintain a compliant Safe Resident Handling program. Quarterly committee meetings were missing from 8/16/2023 through 5/1/2025, and annual performance evaluations for 2023 and 2024 were not documented. \nS 230 Physician Orders/Self-Administration\nA memory care resident with dementia and Type 2 diabetes was self-administering insulin without a physician order authorizing self-administration.\nS 565 Medication Storage\nThree medication carts had expired medications and medications without orders on them.\nS 830 Memory Care Menu Requirements\nMenus for the Alzheimer's Dementia Special Care unit had not been developed or reviewed by a registered dietitian for several years. The Administrator acknowledged this.",
       "tier": "minor"
      }
     ],
@@ -6204,23 +6185,14 @@
     "type": "Complaint/Incident Investigation",
     "tier": "minor",
     "no_findings": false,
-    "headline": "[doesn't say]",
+    "headline": "Finding not yet summarized",
     "paragraphs": [
      {
-      "text": "[doesn't say]",
+      "text": "Finding not yet summarized / See the original report for what RIDOH found on this visit.",
       "tier": "minor"
      }
     ],
     "link": "https://drive.google.com/open?id=1_CO319XBfyLcEWt9p-BGaR3vgc7ljdh6&usp=drive_copy"
-   },
-   {
-    "date": "2023-05-08",
-    "type": "duplicate w/edit -->",
-    "tier": null,
-    "no_findings": true,
-    "headline": "No deficiencies identified",
-    "paragraphs": [],
-    "link": "https://drive.google.com/open?id=1Gvzgoni_8-R5wMOKkeI2LjlaiSr3kWpX&usp=drive_copy"
    },
    {
     "date": "2023-03-02",
@@ -6571,7 +6543,7 @@
     "headline": "S 055 – Quality Assurance",
     "paragraphs": [
      {
-      "text": "S 055 – Quality Assurance\nWritten quality improvement plan did not include all required components — specifically failed to address medication administration errors and resident falls.\nS 170 – Administrative Management (Staffing)\nTwo PCAs (Staff A and B) were providing hands-on personal care (bathing, dressing, showering) without holding active Rhode Island CNA licenses. Administrator acknowledged PCAs do not hold active RI CNA licenses. Serious deficiency — unlicensed staff providing personal care. Facility immediately ceased assigning PCAs to personal care tasks.\nS 295 – Smoking Policy\nFacility failed to complete smoking assessments upon admission and quarterly for two smoking residents (IDs #1 and #2). Resident ID #1 (COPD) was observed smoking outside in an undesignated area (behind building near a bench) at 7:30 AM. Cigarette butts confirmed the violation. Resident ID #2 had no initial smoking assessment and no quarterly assessments documented.\nS 335 – Resident Records\nFacility failed to include outside agency occupational therapy service notes in the medical record of Resident ID #3 (history of TIA). The DOW could not provide evidence of outside agency notes.\nS 400 – Nurse Review\nNurse reviews for all 6 sample residents were missing required components, including: time of assessment, physical assessment, appropriateness of placement, and/or medication regimen monitoring. Multiple missed reviews also identified (e.g., Resident ID #1 missing April 2025 review; Resident IDs #5 and #6 missing December 2024/2025 reviews).\nS 405 – Service Plans\nService plans for smoking residents (IDs #1 and #2) did not include smoking-specific interventions or accurate safety expectations. Resident ID #1's plan was not updated annually and didn't reflect elopement-related smoking risk.\nS 560 – Dietetic Services\nMultiple food safety violations: expired canned goods (chili con carne, best by 8/21/2025, including a dented can), food without labels or use-by dates, grease/debris buildup on equipment (panni maker, stove), uncovered trash containers, cell phones stored in kitchen, cleaning chemicals near food, and brooms stored improperly.\nS 635 – Medication Aide Evaluations\nFacility failed to conduct required monthly (first 3 months) and quarterly evaluations for 5 of 5 CMTs reviewed (Staff C, D, E, F, G). Multiple evaluation periods were entirely missing.\nS 640 – Medication Storage/Administration\nMedication cart inspection on 1/15/2026 found: multiple medications without directions for use (Metamucil, fiber supplement, Vitamin D, aspirin), an opened undated Lantus insulin pen (discard 28 days after opening), missing PRN medications (Ondansetron and Meclizine for Resident #4, Lidocaine patch for Resident #5), and acetaminophen/famotidine labels not matching physician orders. Significant medication management failure across multiple residents.",
+      "text": "S 055 – Quality Assurance\nWritten quality improvement plan did not include all required components, specifically failed to address medication administration errors and resident falls.\nS 170 – Administrative Management (Staffing)\nTwo PCAs (Staff A and B) were providing hands-on personal care (bathing, dressing, showering) without holding active Rhode Island CNA licenses. Administrator acknowledged PCAs do not hold active RI CNA licenses. Serious deficiency, unlicensed staff providing personal care. Facility immediately ceased assigning PCAs to personal care tasks.\nS 295 – Smoking Policy\nFacility failed to complete smoking assessments upon admission and quarterly for two smoking residents (IDs #1 and #2). Resident ID #1 (COPD) was observed smoking outside in an undesignated area (behind building near a bench) at 7:30 AM. Cigarette butts confirmed the violation. Resident ID #2 had no initial smoking assessment and no quarterly assessments documented.\nS 335 – Resident Records\nFacility failed to include outside agency occupational therapy service notes in the medical record of Resident ID #3 (history of TIA). The DOW could not provide evidence of outside agency notes.\nS 400 – Nurse Review\nNurse reviews for all 6 sample residents were missing required components, including: time of assessment, physical assessment, appropriateness of placement, and/or medication regimen monitoring. Multiple missed reviews also identified (e.g., Resident ID #1 missing April 2025 review; Resident IDs #5 and #6 missing December 2024/2025 reviews).\nS 405 – Service Plans\nService plans for smoking residents (IDs #1 and #2) did not include smoking-specific interventions or accurate safety expectations. Resident ID #1's plan was not updated annually and didn't reflect elopement-related smoking risk.\nS 560 – Dietetic Services\nMultiple food safety violations: expired canned goods (chili con carne, best by 8/21/2025, including a dented can), food without labels or use-by dates, grease/debris buildup on equipment (panni maker, stove), uncovered trash containers, cell phones stored in kitchen, cleaning chemicals near food, and brooms stored improperly.\nS 635 – Medication Aide Evaluations\nFacility failed to conduct required monthly (first 3 months) and quarterly evaluations for 5 of 5 CMTs reviewed (Staff C, D, E, F, G). Multiple evaluation periods were entirely missing.\nS 640 – Medication Storage/Administration\nMedication cart inspection on 1/15/2026 found: multiple medications without directions for use (Metamucil, fiber supplement, Vitamin D, aspirin), an opened undated Lantus insulin pen (discard 28 days after opening), missing PRN medications (Ondansetron and Meclizine for Resident #4, Lidocaine patch for Resident #5), and acetaminophen/famotidine labels not matching physician orders. Significant medication management failure across multiple residents.",
       "tier": "minor"
      }
     ],
@@ -6913,7 +6885,7 @@
       "tier": "serious"
      },
      {
-      "text": "Residency Requirements / Secure Memory Care Needed but Not Provided\nA resident with anoxic brain injury (facility not licensed for secure memory care) had 4 successful elopements (2019, 2022, 11/2025, and 5/29/2026 — found at 2:17 AM trying to enter a building, returned by local police); the resident's GPS tracker watch was malfunctioning and not holding a charge.",
+      "text": "Residency Requirements / Secure Memory Care Needed but Not Provided\nA resident with anoxic brain injury (facility not licensed for secure memory care) had 4 successful elopements (2019, 2022, 11/2025, and 5/29/2026, found at 2:17 AM trying to enter a building, returned by local police); the resident's GPS tracker watch was malfunctioning and not holding a charge.",
       "tier": "most_serious"
      },
      {
@@ -6935,7 +6907,7 @@
     "headline": "Management of Services / Therapeutic Diets Not Served",
     "paragraphs": [
      {
-      "text": "Management of Services / Therapeutic Diets Not Served\nFacility failed to follow physician-ordered therapeutic diets (\"no concentrated sweets,\" \"no added salt\") for 2 residents — staff confirmed no special diets are actually served, all residents get the same meal. A separate resident was found self-administering multiple OTC medications (Cortizone, Neosporin, antibiotic cream, eye drops, Loperamide) at bedside despite no order to self-administer; the DNS was unaware the resident had meds at bedside or that therapeutic diets weren't being provided.",
+      "text": "Management of Services / Therapeutic Diets Not Served\nFacility failed to follow physician-ordered therapeutic diets (\"no concentrated sweets,\" \"no added salt\") for 2 residents, staff confirmed no special diets are actually served, all residents get the same meal. A separate resident was found self-administering multiple OTC medications (Cortizone, Neosporin, antibiotic cream, eye drops, Loperamide) at bedside despite no order to self-administer; the DNS was unaware the resident had meds at bedside or that therapeutic diets weren't being provided.",
       "tier": "minor"
      },
      {
@@ -6967,7 +6939,7 @@
     "headline": "Resident Found Unresponsive, Presumed DNR Without Checking; Died",
     "paragraphs": [
      {
-      "text": "Resident Found Unresponsive, Presumed DNR Without Checking; Died\nStaff found a resident unresponsive after lunch and assumed — without checking — that the resident was Do Not Resuscitate; the resident was actually full code. Staff did not perform CPR and did not call 911 promptly; both staff members involved later said they did not know the resident's actual code status. The facility also had no written advance-directives policy giving staff clear instructions for medical emergencies.\nThis happened amid a broader pattern of neglected oversight: a separate resident was self-administering oxygen with no physician's order; all four sample residents' comprehensive assessments had not been reviewed in four to seven years — not since their original admission — and none of the four had a nurse review completed as required; medications on a cart were expired, unlabeled, and stored insecurely; and fire drill records did not document who had conducted each drill.",
+      "text": "Resident Found Unresponsive, Presumed DNR Without Checking; Died\nStaff found a resident unresponsive after lunch and assumed, without checking, that the resident was Do Not Resuscitate; the resident was actually full code. Staff did not perform CPR and did not call 911 promptly; both staff members involved later said they did not know the resident's actual code status. The facility also had no written advance-directives policy giving staff clear instructions for medical emergencies.\nThis happened amid a broader pattern of neglected oversight: a separate resident was self-administering oxygen with no physician's order; all four sample residents' comprehensive assessments had not been reviewed in four to seven years, not since their original admission, and none of the four had a nurse review completed as required; medications on a cart were expired, unlabeled, and stored insecurely; and fire drill records did not document who had conducted each drill.",
       "tier": "most_serious"
      }
     ],
@@ -7172,21 +7144,12 @@
    },
    {
     "date": "2023-07-27",
-    "type": "admin/offsite",
+    "type": "Off-site review",
     "tier": null,
     "no_findings": true,
     "headline": "No deficiencies identified",
     "paragraphs": [],
     "link": "https://drive.google.com/open?id=1BQeEWXGWjLRtt5SeS6fwI1sRdDdHo8j4&usp=drive_copy"
-   },
-   {
-    "date": "2023-07-27",
-    "type": "duplicate? admin/offsite",
-    "tier": null,
-    "no_findings": true,
-    "headline": "No deficiencies identified",
-    "paragraphs": [],
-    "link": "https://drive.google.com/open?id=11cMB77UnKPxouiUI_wYphbGWR2-CTj9P&usp=drive_copy"
    },
    {
     "date": "2023-06-14",
@@ -7302,7 +7265,7 @@
     "headline": "S 380 – Resident Assessment",
     "paragraphs": [
      {
-      "text": "S 380 – Resident Assessment\nFacility failed to complete an adequate initial assessment for Resident ID #1 (Alzheimer's), which did not capture the resident's wandering history from prior independent living placement. The resident was an elopement risk and the facility does not hold a secure special care unit license. Administrator acknowledged the resident's needs exceeded the facility's licensure level. Serious safety concern — elopement risk resident placed in non-secure facility.\nS 450 – Elopement Reporting\nResident ID #1 eloped on 11/5/2025 and police were called by a family member, not the facility. The RI Department of Health was not notified within 24 hours as required. Serious deficiency — failure to report police-involved elopement.\nS 460 – Incident Investigation\nFacility failed to thoroughly investigate an allegation of staff-to-resident abuse involving Staff A (CNA) against Resident ID #2, reported 11/4/2025. The internal investigation did not include: interviews with other residents about their care from Staff A, interviews with staff about any abuse of other residents, or review of a prior 12/22/2022 abuse allegation against the same staff member. No corrective actions were put in place after the 2022 incident, despite a final warning being issued at that time. This is a serious pattern-of-abuse deficiency.",
+      "text": "S 380 – Resident Assessment\nFacility failed to complete an adequate initial assessment for Resident ID #1 (Alzheimer's), which did not capture the resident's wandering history from prior independent living placement. The resident was an elopement risk and the facility does not hold a secure special care unit license. Administrator acknowledged the resident's needs exceeded the facility's licensure level. Serious safety concern, elopement risk resident placed in non-secure facility.\nS 450 – Elopement Reporting\nResident ID #1 eloped on 11/5/2025 and police were called by a family member, not the facility. The RI Department of Health was not notified within 24 hours as required. Serious deficiency, failure to report police-involved elopement.\nS 460 – Incident Investigation\nFacility failed to thoroughly investigate an allegation of staff-to-resident abuse involving Staff A (CNA) against Resident ID #2, reported 11/4/2025. The internal investigation did not include: interviews with other residents about their care from Staff A, interviews with staff about any abuse of other residents, or review of a prior 12/22/2022 abuse allegation against the same staff member. No corrective actions were put in place after the 2022 incident, despite a final warning being issued at that time. This is a serious pattern-of-abuse deficiency.",
       "tier": "most_serious"
      }
     ],
@@ -7497,10 +7460,10 @@
     "type": "Routine/Biennial Inspection",
     "tier": "most_serious",
     "no_findings": false,
-    "headline": "S 180 – Administrative Management (Staffing) Staff A was hired 9/13/2025 as a medication aide and administered medications from 9/15/2025 onward without holding a valid RI medication aide license. The DOH license verification page confirmed no active license. Owner acknowledged Staff A was administering medications without a license. Serious deficiency — unlicensed staff administering medications to residents.",
+    "headline": "S 180 – Administrative Management (Staffing) Staff A was hired 9/13/2025 as a medication aide and administered medications from 9/15/2025 onward without holding a valid RI medication aide license. The DOH license verification page confirmed no active license. Owner acknowledged Staff A was administering medications without a license. Serious deficiency, unlicensed staff administering medications to residents.",
     "paragraphs": [
      {
-      "text": "S 180 – Administrative Management (Staffing) Staff A was hired 9/13/2025 as a medication aide and administered medications from 9/15/2025 onward without holding a valid RI medication aide license. The DOH license verification page confirmed no active license. Owner acknowledged Staff A was administering medications without a license. Serious deficiency — unlicensed staff administering medications to residents.\nS 200 – Employee Training\nTwo of three new employees reviewed (Staff B, hired 9/4/2025 as a NA; Staff C, hired 10/23/2025 as a CMT) did not receive the required 2 hours of orientation/training within 10 days of hire and prior to working alone. Required topics including fire prevention, abuse recognition, elopement procedures, and infection control were not documented as completed.\nS 560 – Dietetic Services\nStaff D (food service) used a gloved hand holding a crumpled piece of cellophane to wipe a thermometer between temperature checks, then inserted the same thermometer into a food container without sanitizing it. Staff D acknowledged the noncompliant practice.\nS 640 – Medication Storage\nTwo medication carts had medications stored insecurely: an opened, undated Lantus Solostar insulin pen (manufacturer requires discard 28 days after opening) and an opened, undated Trelegy Elipta inhaler (manufacturer requires discard 6 weeks after opening). Potential resident safety risk from expired/degraded medications.",
+      "text": "S 180 – Administrative Management (Staffing) Staff A was hired 9/13/2025 as a medication aide and administered medications from 9/15/2025 onward without holding a valid RI medication aide license. The DOH license verification page confirmed no active license. Owner acknowledged Staff A was administering medications without a license. Serious deficiency, unlicensed staff administering medications to residents.\nS 200 – Employee Training\nTwo of three new employees reviewed (Staff B, hired 9/4/2025 as a NA; Staff C, hired 10/23/2025 as a CMT) did not receive the required 2 hours of orientation/training within 10 days of hire and prior to working alone. Required topics including fire prevention, abuse recognition, elopement procedures, and infection control were not documented as completed.\nS 560 – Dietetic Services\nStaff D (food service) used a gloved hand holding a crumpled piece of cellophane to wipe a thermometer between temperature checks, then inserted the same thermometer into a food container without sanitizing it. Staff D acknowledged the noncompliant practice.\nS 640 – Medication Storage\nTwo medication carts had medications stored insecurely: an opened, undated Lantus Solostar insulin pen (manufacturer requires discard 28 days after opening) and an opened, undated Trelegy Elipta inhaler (manufacturer requires discard 6 weeks after opening). Potential resident safety risk from expired/degraded medications.",
       "tier": "most_serious"
      }
     ],
@@ -7887,7 +7850,7 @@
     "headline": "Assessments & Service Plans Not Updated for Behaviors",
     "paragraphs": [
      {
-      "text": "Assessments & Service Plans Not Updated for Behaviors\nFor all 6 residents reviewed (memory care), comprehensive assessments and service plans failed to be updated to reflect escalating behaviors and outside services (PT/OT start/end dates). Progress notes over months documented increasingly severe aggression (throwing/attempting to throw walkers at staff and residents, punching threats, banging on emergency exits attempting to elope) and repeated sexually disinhibited behavior between cognitively impaired residents — including being found nude/partially clothed together in showers, one resident's hands under another's shirt/on their chest, and \"consensual\" designations applied without any documented capacity-to-consent assessment.",
+      "text": "Assessments & Service Plans Not Updated for Behaviors\nFor all 6 residents reviewed (memory care), comprehensive assessments and service plans failed to be updated to reflect escalating behaviors and outside services (PT/OT start/end dates). Progress notes over months documented increasingly severe aggression (throwing/attempting to throw walkers at staff and residents, punching threats, banging on emergency exits attempting to elope) and repeated sexually disinhibited behavior between cognitively impaired residents, including being found nude/partially clothed together in showers, one resident's hands under another's shirt/on their chest, and \"consensual\" designations applied without any documented capacity-to-consent assessment.",
       "tier": "most_serious"
      },
      {
@@ -7895,7 +7858,7 @@
       "tier": "serious"
      },
      {
-      "text": "Reporting Requirements\nFacility failed to report two incidents to RIDOH as required: a resident-to-resident incident where residents (one with Alzheimer's) were found in an intimate situation in a shower — staff decided it was \"consensual\" without a capacity assessment — and a second incident where a resident was found with bruising to the chest after another resident was observed with hands under her/his shirt (staff felt it didn't need to be reported because the resident \"had a smile on their face\").",
+      "text": "Reporting Requirements\nFacility failed to report two incidents to RIDOH as required: a resident-to-resident incident where residents (one with Alzheimer's) were found in an intimate situation in a shower, staff decided it was \"consensual\" without a capacity assessment, and a second incident where a resident was found with bruising to the chest after another resident was observed with hands under her/his shirt (staff felt it didn't need to be reported because the resident \"had a smile on their face\").",
       "tier": "most_serious"
      },
      {
@@ -7950,7 +7913,7 @@
     "headline": "Resident Not Monitored After a Fall; Facility Kept a Resident It Couldn't Adequately Care For",
     "paragraphs": [
      {
-      "text": "Resident Not Monitored After a Fall; Facility Kept a Resident It Couldn't Adequately Care For\nA resident was not monitored as required following a fall. The Administrator acknowledged the facility should have issued a 30-day discharge notice once it became clear the facility could not properly care for the resident, but never did so. Separately, the resident's record was missing health information — including diagnostic and treatment orders — that could be needed in a medical emergency, and the service plan did not clearly document fall-prevention interventions, including conflicting information about whether the resident should be using a walker.",
+      "text": "Resident Not Monitored After a Fall; Facility Kept a Resident It Couldn't Adequately Care For\nA resident was not monitored as required following a fall. The Administrator acknowledged the facility should have issued a 30-day discharge notice once it became clear the facility could not properly care for the resident, but never did so. Separately, the resident's record was missing health information, including diagnostic and treatment orders, that could be needed in a medical emergency, and the service plan did not clearly document fall-prevention interventions, including conflicting information about whether the resident should be using a walker.",
       "tier": "most_serious"
      }
     ],
@@ -8297,7 +8260,7 @@
     "headline": "Physician's Order for Secure Unit Transfer Not Followed",
     "paragraphs": [
      {
-      "text": "Physician's Order for Secure Unit Transfer Not Followed\nA resident with dementia, increasing confusion, hallucinations, and a documented safety risk had a Power of Attorney Activation Letter (6/9/2026) explicitly stating the resident needed to reside in a secured assisted living residence due to progressive dementia/cognitive impairment. As of the 7/23/2026 survey — over a month later — the resident remained in traditional (unsecured) assisted living; a surveyor observed the resident alone in his/her room partially undressed. The Executive Director could not provide evidence the physician's order for a secure-unit transfer was ever followed.",
+      "text": "Physician's Order for Secure Unit Transfer Not Followed\nA resident with dementia, increasing confusion, hallucinations, and a documented safety risk had a Power of Attorney Activation Letter (6/9/2026) explicitly stating the resident needed to reside in a secured assisted living residence due to progressive dementia/cognitive impairment. As of the 7/23/2026 survey, over a month later, the resident remained in traditional (unsecured) assisted living; a surveyor observed the resident alone in his/her room partially undressed. The Executive Director could not provide evidence the physician's order for a secure-unit transfer was ever followed.",
       "tier": "most_serious"
      },
      {
@@ -8319,7 +8282,7 @@
       "tier": "serious"
      },
      {
-      "text": "Management of Services\nThree ordered medications (ear wax drops, loperamide, MiraLAX) were unavailable on the medication cart for Resident #2. Additionally, Vitamin D2 50mcg was ordered but Vitamin D3 20mcg was being administered — a different supplement at a different dose. Physician had not been notified. Resident received wrong supplement at wrong dose; ordered medications unavailable.",
+      "text": "Management of Services\nThree ordered medications (ear wax drops, loperamide, MiraLAX) were unavailable on the medication cart for Resident #2. Additionally, Vitamin D2 50mcg was ordered but Vitamin D3 20mcg was being administered, a different supplement at a different dose. Physician had not been notified. Resident received wrong supplement at wrong dose; ordered medications unavailable.",
       "tier": "serious"
      },
      {
@@ -8369,7 +8332,7 @@
     "headline": "Unlicensed Staffing Agency; Choking Incident on Video; Resident Restricted Without Authorization",
     "paragraphs": [
      {
-      "text": "Unlicensed Staffing Agency; Choking Incident on Video; Resident Restricted Without Authorization\nThe facility used an unlicensed staffing agency (\"Nursa\") beginning in June 2025; an agency CNA failed to respond to a resident who was choking and coughing during a meal, an incident captured on in-room video. The same resident was being served thickened liquids without a physician's order authorizing that diet change, and was later placed in the facility's secured Alzheimer's unit — a physical restriction — without a physician's order or an updated record reflecting a dementia diagnosis. A related finding noted the resident had become bed-bound and required two-staff assistance, a level of care the facility is not licensed to provide.",
+      "text": "Unlicensed Staffing Agency; Choking Incident on Video; Resident Restricted Without Authorization\nThe facility used an unlicensed staffing agency (\"Nursa\") beginning in June 2025; an agency CNA failed to respond to a resident who was choking and coughing during a meal, an incident captured on in-room video. The same resident was being served thickened liquids without a physician's order authorizing that diet change, and was later placed in the facility's secured Alzheimer's unit, a physical restriction, without a physician's order or an updated record reflecting a dementia diagnosis. A related finding noted the resident had become bed-bound and required two-staff assistance, a level of care the facility is not licensed to provide.",
       "tier": "serious"
      }
     ],
@@ -8714,7 +8677,7 @@
     "headline": "Comprehensive Assessments Incomplete/Inaccurate",
     "paragraphs": [
      {
-      "text": "Comprehensive Assessments Incomplete/Inaccurate\nFor 4 residents, the \"Code Status\" section of the comprehensive assessment was either left blank (3 residents, despite each having a documented DNR on their MOLST) or, for a 4th resident, inaccurately listed as \"Full Code\" when the resident's MOLST documented DNR — creating a code-status discrepancy risk between records.",
+      "text": "Comprehensive Assessments Incomplete/Inaccurate\nFor 4 residents, the \"Code Status\" section of the comprehensive assessment was either left blank (3 residents, despite each having a documented DNR on their MOLST) or, for a 4th resident, inaccurately listed as \"Full Code\" when the resident's MOLST documented DNR, creating a code-status discrepancy risk between records.",
       "tier": "most_serious"
      }
     ],
@@ -9087,7 +9050,7 @@
     "headline": "S405 – Resident Service Plans",
     "paragraphs": [
      {
-      "text": "S405 – Resident Service Plans\nTwo residents lacked adequate service plans. Resident #1's plan omitted that they needed physical guidance and verbal cueing for bed mobility and transfers. Resident #2's plan failed to document that a 2-person assist was required for safe transfers. A hospice provider confirmed the 2-person transfer requirement, but staff had no clear guidance. No documented hospitalization, but fall/injury risk was significant.S640 – Medication Administration\nResident #2 (Alzheimer's diagnosis) had medications sitting unsecured on a table in their room — a white cream in Korean-labeled packaging, a white tablet in Korean-labeled packaging, and ear drops. None had physician orders on file. The resident couldn't communicate with surveyors due to a language barrier. The Director of Wellness acknowledged the medications were not physician-ordered and the resident had no order to self-administer. Safety risk to resident and others in the special care unit.",
+      "text": "S405 – Resident Service Plans\nTwo residents lacked adequate service plans. Resident #1's plan omitted that they needed physical guidance and verbal cueing for bed mobility and transfers. Resident #2's plan failed to document that a 2-person assist was required for safe transfers. A hospice provider confirmed the 2-person transfer requirement, but staff had no clear guidance. No documented hospitalization, but fall/injury risk was significant.S640 – Medication Administration\nResident #2 (Alzheimer's diagnosis) had medications sitting unsecured on a table in their room, a white cream in Korean-labeled packaging, a white tablet in Korean-labeled packaging, and ear drops. None had physician orders on file. The resident couldn't communicate with surveyors due to a language barrier. The Director of Wellness acknowledged the medications were not physician-ordered and the resident had no order to self-administer. Safety risk to resident and others in the special care unit.",
       "tier": "minor"
      }
     ],
@@ -9514,7 +9477,7 @@
     "headline": "S 055 – Quality Assurance",
     "paragraphs": [
      {
-      "text": "S 055 – Quality Assurance\nQA plan failed to include required components for the memory care/limited health services license — specifically dementia-specific areas (pressure ulcer prevention, nutritional status, mental/psychological changes) and a plan for dietary staff shortages.\nS 165 – CPR Certification\n18 of 28 staff members on shift schedules did not have active CPR certification in personnel records, leaving many shifts without a certified staff member on site.\nS 230 – Management of Services\nFacility failed to follow physician orders for a newly admitted diabetic resident — glucose monitoring was not being performed as ordered because the resident's glucometer was at home and the residence was not performing finger sticks.\nS 235 – Admission Procedures\nFacility failed to comply with RI law governing electronic monitoring devices — a resident had a camera in his/her room without the required POA-signed consent form and the residence lacked required device documentation.\nS 285 – Residency Requirements\nOne resident no longer met the definition of an assisted living resident — bedbound, incontinent, dependent on staff for eating, requiring two staff with a Hoyer lift for transfers.\nS 360 – Resident Assessment\nComprehensive assessment not updated for one resident despite significant decline — became non-ambulatory, incontinent, Hoyer-lift dependent, and admitted to hospice.\nS 490 – Dietetic/Food Code\nMultiple violations in the main kitchen and memory care kitchenette — food held at improper temperatures, unlabeled containers, expired milk, improperly dated prepared foods, dirty refrigerator gaskets and tilt skillet, dirty ice machine chute, uncovered trash containers, and an unlabeled sanitizer spray bottle.\nS 565 – Medication Services\nTwo medication carts had expired medications and loose unidentified pills — including expired Atropine (×2), expired Sinex nasal spray, expired eye drops, and seven loose unidentifiable pills not stored in bubble packs or vials and not linked to any resident.\nS 670 – Physical Plant/Safety\nTwo resident room closet doors (Rooms 303 and 311) had inside locks that could not be opened from the outside with a master key, posing an entrapment risk. Most Serious: Loose unidentified pills on a medication cart, failure to perform required glucose monitoring for a diabetic resident, a resident retained beyond appropriate acuity, and lockable closet doors posing entrapment risk are the most serious findings with direct resident safety implications.",
+      "text": "S 055 – Quality Assurance\nQA plan failed to include required components for the memory care/limited health services license, specifically dementia-specific areas (pressure ulcer prevention, nutritional status, mental/psychological changes) and a plan for dietary staff shortages.\nS 165 – CPR Certification\n18 of 28 staff members on shift schedules did not have active CPR certification in personnel records, leaving many shifts without a certified staff member on site.\nS 230 – Management of Services\nFacility failed to follow physician orders for a newly admitted diabetic resident, glucose monitoring was not being performed as ordered because the resident's glucometer was at home and the residence was not performing finger sticks.\nS 235 – Admission Procedures\nFacility failed to comply with RI law governing electronic monitoring devices, a resident had a camera in his/her room without the required POA-signed consent form and the residence lacked required device documentation.\nS 285 – Residency Requirements\nOne resident no longer met the definition of an assisted living resident, bedbound, incontinent, dependent on staff for eating, requiring two staff with a Hoyer lift for transfers.\nS 360 – Resident Assessment\nComprehensive assessment not updated for one resident despite significant decline, became non-ambulatory, incontinent, Hoyer-lift dependent, and admitted to hospice.\nS 490 – Dietetic/Food Code\nMultiple violations in the main kitchen and memory care kitchenette, food held at improper temperatures, unlabeled containers, expired milk, improperly dated prepared foods, dirty refrigerator gaskets and tilt skillet, dirty ice machine chute, uncovered trash containers, and an unlabeled sanitizer spray bottle.\nS 565 – Medication Services\nTwo medication carts had expired medications and loose unidentified pills, including expired Atropine (×2), expired Sinex nasal spray, expired eye drops, and seven loose unidentifiable pills not stored in bubble packs or vials and not linked to any resident.\nS 670 – Physical Plant/Safety\nTwo resident room closet doors (Rooms 303 and 311) had inside locks that could not be opened from the outside with a master key, posing an entrapment risk. Most Serious: Loose unidentified pills on a medication cart, failure to perform required glucose monitoring for a diabetic resident, a resident retained beyond appropriate acuity, and lockable closet doors posing entrapment risk are the most serious findings with direct resident safety implications.",
       "tier": "serious"
      }
     ],
@@ -9859,7 +9822,7 @@
    },
    {
     "date": "2025-09-25",
-    "type": "offsite",
+    "type": "Off-site review",
     "tier": null,
     "no_findings": true,
     "headline": "No deficiencies identified",
@@ -9868,7 +9831,7 @@
    },
    {
     "date": "2025-09-09",
-    "type": "offsite",
+    "type": "Off-site review",
     "tier": null,
     "no_findings": true,
     "headline": "No deficiencies identified",
@@ -10496,10 +10459,10 @@
     "type": "Complaint/Incident Investigation",
     "tier": "serious",
     "no_findings": false,
-    "headline": "S250: Resident #1 (anxiety disorder, major depressive disorder, no bottom teeth) is on a physician-ordered pureed diet but was served non-pureed food on Thanksgiving (turkey or fish). Dining Service Director acknowledged working that day and confirmed the resident received non-pureed food, stating the resident \"chooses not to eat pureed meats.\" Administrator could not provide documentation of the resident refusing the pureed diet or evidence the physician was notified of non-compliance. S460: Facility failed to submit 5-day investigation reports to the Department within the required timeframe for 2 of 3 incidents reviewed — Incident #102519 (resident tested positive for oxycodone on hospital tox screen, reported 11/18/25) and Incident #102576 (resident reported missing money and credit card, reported 11/26/25). [Resident harm for S250: resident with swallowing/chewing impairment served incorrect diet texture]",
+    "headline": "S250: Resident #1 (anxiety disorder, major depressive disorder, no bottom teeth) is on a physician-ordered pureed diet but was served non-pureed food on Thanksgiving (turkey or fish). Dining Service Director acknowledged working that day and confirmed the resident received non-pureed food, stating the resident \"chooses not to eat pureed meats.\" Administrator could not provide documentation of the resident refusing the pureed diet or evidence the physician was notified of non-compliance. S460: Facility failed to submit 5-day investigation reports to the Department within the required timeframe for 2 of 3 incidents reviewed: Incident #102519 (resident tested positive for oxycodone on hospital tox screen, reported 11/18/25) and Incident #102576 (resident reported missing money and credit card, reported 11/26/25). [Resident harm for S250: resident with swallowing/chewing impairment served incorrect diet texture]",
     "paragraphs": [
      {
-      "text": "S250: Resident #1 (anxiety disorder, major depressive disorder, no bottom teeth) is on a physician-ordered pureed diet but was served non-pureed food on Thanksgiving (turkey or fish). Dining Service Director acknowledged working that day and confirmed the resident received non-pureed food, stating the resident \"chooses not to eat pureed meats.\" Administrator could not provide documentation of the resident refusing the pureed diet or evidence the physician was notified of non-compliance. S460: Facility failed to submit 5-day investigation reports to the Department within the required timeframe for 2 of 3 incidents reviewed — Incident #102519 (resident tested positive for oxycodone on hospital tox screen, reported 11/18/25) and Incident #102576 (resident reported missing money and credit card, reported 11/26/25). [Resident harm for S250: resident with swallowing/chewing impairment served incorrect diet texture]",
+      "text": "S250: Resident #1 (anxiety disorder, major depressive disorder, no bottom teeth) is on a physician-ordered pureed diet but was served non-pureed food on Thanksgiving (turkey or fish). Dining Service Director acknowledged working that day and confirmed the resident received non-pureed food, stating the resident \"chooses not to eat pureed meats.\" Administrator could not provide documentation of the resident refusing the pureed diet or evidence the physician was notified of non-compliance. S460: Facility failed to submit 5-day investigation reports to the Department within the required timeframe for 2 of 3 incidents reviewed: Incident #102519 (resident tested positive for oxycodone on hospital tox screen, reported 11/18/25) and Incident #102576 (resident reported missing money and credit card, reported 11/26/25). [Resident harm for S250: resident with swallowing/chewing impairment served incorrect diet texture]",
       "tier": "serious"
      }
     ],
@@ -10981,16 +10944,11 @@
    },
    {
     "date": "2023-05-26",
-    "type": "offsite",
-    "tier": "minor",
-    "no_findings": false,
-    "headline": "\"all deficiencies corrected\"",
-    "paragraphs": [
-     {
-      "text": "\"all deficiencies corrected\"",
-      "tier": "minor"
-     }
-    ],
+    "type": "Off-site review",
+    "tier": null,
+    "no_findings": true,
+    "headline": "No deficiencies identified",
+    "paragraphs": [],
     "link": "https://drive.google.com/open?id=1_9cUhyZtLyrCyKp_3X11pw7bBauv392h&usp=drive_copy"
    },
    {
@@ -11720,20 +11678,6 @@
    },
    {
     "date": "2024-04-12",
-    "type": "appears to be duplicate",
-    "tier": "minor",
-    "no_findings": false,
-    "headline": "appears to be duplicate",
-    "paragraphs": [
-     {
-      "text": "appears to be duplicate",
-      "tier": "minor"
-     }
-    ],
-    "link": "https://drive.google.com/open?id=1BYZWr5xV9K8rEV7jDFIJN1i_jK2rSDw-&usp=drive_copy"
-   },
-   {
-    "date": "2024-04-12",
     "type": "Complaint/Incident Investigation",
     "tier": "most_serious",
     "no_findings": false,
@@ -12035,7 +11979,7 @@
     "headline": "S 285 – Residency Requirements",
     "paragraphs": [
      {
-      "text": "S 285 – Residency Requirements\nFacility retained a resident who no longer met the definition of an assisted living resident — the resident was bedbound, required a Hoyer lift with two staff members for transfers, and was receiving hospice services requiring a higher level of care than permitted in assisted living.\nS 375 – Nurse Review\nNurse reviews for four residents failed to include required physical assessments, as evidenced by review of completed nurse review forms.\nS 565 – Medication Services\nMultiple medication issues across residents — a CoQ10 bottle on the cart contained 100mg when only 30mg was ordered, an opened insulin pen and inhaler were undated (manufacturer requires dating upon opening), and a medication dosage instruction for acetaminophen did not match the physician order. Staff could not provide evidence medications were properly reconciled.\nS 705 – Fire Safety\nEmergency floor plans were not posted on multiple floors (1st, 2nd, 4th, and 5th floors) throughout the residence.\nS 730 – Variance Procedure\nFacility failed to obtain required RIDOH variance approval for three residents receiving hospice and palliative care services from outside providers.\nS 920 – Limited Health Services\nThe Quality Improvement Committee lacked a required licensed physician, certified nurse practitioner, or licensed physician assistant as a member for three consecutive quarterly meetings (January, April, and July 2025). Most Serious: Retaining a resident clearly beyond appropriate acuity for assisted living is the most serious finding. Medication dosing and reconciliation errors and failure to obtain required variances for hospice residents also represent significant compliance and safety concerns.",
+      "text": "S 285 – Residency Requirements\nFacility retained a resident who no longer met the definition of an assisted living resident, the resident was bedbound, required a Hoyer lift with two staff members for transfers, and was receiving hospice services requiring a higher level of care than permitted in assisted living.\nS 375 – Nurse Review\nNurse reviews for four residents failed to include required physical assessments, as evidenced by review of completed nurse review forms.\nS 565 – Medication Services\nMultiple medication issues across residents, a CoQ10 bottle on the cart contained 100mg when only 30mg was ordered, an opened insulin pen and inhaler were undated (manufacturer requires dating upon opening), and a medication dosage instruction for acetaminophen did not match the physician order. Staff could not provide evidence medications were properly reconciled.\nS 705 – Fire Safety\nEmergency floor plans were not posted on multiple floors (1st, 2nd, 4th, and 5th floors) throughout the residence.\nS 730 – Variance Procedure\nFacility failed to obtain required RIDOH variance approval for three residents receiving hospice and palliative care services from outside providers.\nS 920 – Limited Health Services\nThe Quality Improvement Committee lacked a required licensed physician, certified nurse practitioner, or licensed physician assistant as a member for three consecutive quarterly meetings (January, April, and July 2025). Most Serious: Retaining a resident clearly beyond appropriate acuity for assisted living is the most serious finding. Medication dosing and reconciliation errors and failure to obtain required variances for hospice residents also represent significant compliance and safety concerns.",
       "tier": "serious"
      }
     ],
@@ -12049,7 +11993,7 @@
     "headline": "S 230 – Management of Services",
     "paragraphs": [
      {
-      "text": "S 230 – Management of Services\nFacility failed to follow physician orders for daily weight monitoring for a resident with congestive heart failure — multiple 3-pound single-day weight gains were not reported to the physician as ordered.\nS 390 – Service Plans\nService plans not updated to reflect outside services (hospice, PT/OT) for three residents receiving those services.\nS 405 – Reporting Requirements\nA resident's fall resulting in hospitalization (admitted 9/12, discharged 9/16) was not reported to the Center for Health Facilities Regulation in writing by the next working day, as required.\nS 535 – Housekeeping\nA toilet grab bar in a resident's bathroom was not securely attached to the wall — a resident sustained a bruise to the upper left arm as a direct result. Most Serious: The unsecured grab bar causing documented resident injury is the most serious finding. Failure to report a hospitalization and failure to follow physician weight monitoring orders also represent significant lapses with direct resident harm potential.",
+      "text": "S 230 – Management of Services\nFacility failed to follow physician orders for daily weight monitoring for a resident with congestive heart failure, multiple 3-pound single-day weight gains were not reported to the physician as ordered.\nS 390 – Service Plans\nService plans not updated to reflect outside services (hospice, PT/OT) for three residents receiving those services.\nS 405 – Reporting Requirements\nA resident's fall resulting in hospitalization (admitted 9/12, discharged 9/16) was not reported to the Center for Health Facilities Regulation in writing by the next working day, as required.\nS 535 – Housekeeping\nA toilet grab bar in a resident's bathroom was not securely attached to the wall, a resident sustained a bruise to the upper left arm as a direct result. Most Serious: The unsecured grab bar causing documented resident injury is the most serious finding. Failure to report a hospitalization and failure to follow physician weight monitoring orders also represent significant lapses with direct resident harm potential.",
       "tier": "serious"
      }
     ],
@@ -12060,10 +12004,10 @@
     "type": "Complaint/Incident Investigation",
     "tier": "minor",
     "no_findings": false,
-    "headline": "S370: RA/SP: assessment not updated after readmission from health care facility; S415: licensure reqs(?): reporting: did not report suspected abuse resulting in injury",
+    "headline": "S370: RA/SP: assessment not updated after readmission from health care facility; S415: licensure requirements: reporting: did not report suspected abuse resulting in injury",
     "paragraphs": [
      {
-      "text": "S370: RA/SP: assessment not updated after readmission from health care facility; S415: licensure reqs(?): reporting: did not report suspected abuse resulting in injury",
+      "text": "S370: RA/SP: assessment not updated after readmission from health care facility; S415: licensure requirements: reporting: did not report suspected abuse resulting in injury",
       "tier": "minor"
      }
     ],
@@ -12296,10 +12240,10 @@
     "type": "Routine/Biennial Inspection",
     "tier": "serious",
     "no_findings": false,
-    "headline": "S 640 – Medication Services: Two medication carts had improperly stored medications — one bottle of Trospium Chloride did not match the physician order (wrong dose), two supplement bottles (Preservision Areds 2, Advanced Multi 50 Plus) had no directions for use, expired medications (Melatonin 5mg, Trazodone 50mg) were found on the upstairs cart.",
+    "headline": "S 640 – Medication Services: Two medication carts had improperly stored medications, one bottle of Trospium Chloride did not match the physician order (wrong dose), two supplement bottles (Preservision Areds 2, Advanced Multi 50 Plus) had no directions for use, expired medications (Melatonin 5mg, Trazodone 50mg) were found on the upstairs cart.",
     "paragraphs": [
      {
-      "text": "S 640 – Medication Services: Two medication carts had improperly stored medications — one bottle of Trospium Chloride did not match the physician order (wrong dose), two supplement bottles (Preservision Areds 2, Advanced Multi 50 Plus) had no directions for use, expired medications (Melatonin 5mg, Trazodone 50mg) were found on the upstairs cart.",
+      "text": "S 640 – Medication Services: Two medication carts had improperly stored medications, one bottle of Trospium Chloride did not match the physician order (wrong dose), two supplement bottles (Preservision Areds 2, Advanced Multi 50 Plus) had no directions for use, expired medications (Melatonin 5mg, Trazodone 50mg) were found on the upstairs cart.",
       "tier": "serious"
      }
     ],
@@ -12415,10 +12359,10 @@
     "type": "Routine/Biennial Inspection",
     "tier": "minor",
     "no_findings": false,
-    "headline": "S 055 – Quality Assurance: Written QA plan failed to include all required components, particularly those related to the Dementia Special Care Unit — missing medication administration errors, reportable incidents, and dementia-specific areas (decubitus ulcers, dehydration, mental/psychological status changes).",
+    "headline": "S 055 – Quality Assurance: Written QA plan failed to include all required components, particularly those related to the Dementia Special Care Unit, missing medication administration errors, reportable incidents, and dementia-specific areas (decubitus ulcers, dehydration, mental/psychological status changes).",
     "paragraphs": [
      {
-      "text": "S 055 – Quality Assurance: Written QA plan failed to include all required components, particularly those related to the Dementia Special Care Unit — missing medication administration errors, reportable incidents, and dementia-specific areas (decubitus ulcers, dehydration, mental/psychological status changes).\nS 230 – Management of Services: Two residents were self-administering medications (insulin, oxygen) without proper physician orders documented in the residence. One resident's spouse was administering medications without a formal order permitting this.\nS 490 – Dietetic/Food Code: Multiple violations in Courtyard and Lodge kitchens — scratched cutting boards, dirty can opener and microwave, cracked dishwasher temperature dials with expired test strips, undated/unlabeled food items, walk-in freezer ice buildup, no sanitizer solution for low-temp dish machine, staff not wearing hair/beard restraints.\nS 565 – Medication Services: Expired and unavailable medications found on multiple medication carts (Milk of Magnesia, Diclofenac gel, Acetaminophen, Senna, Bayer aspirin). Expired medications were on the cart and had not been discarded.\nS 705 – Fire Drill Documentation: Fire drill records for both the Lodge and Courtyard failed to include the length/duration of the drills, as required.",
+      "text": "S 055 – Quality Assurance: Written QA plan failed to include all required components, particularly those related to the Dementia Special Care Unit, missing medication administration errors, reportable incidents, and dementia-specific areas (decubitus ulcers, dehydration, mental/psychological status changes).\nS 230 – Management of Services: Two residents were self-administering medications (insulin, oxygen) without proper physician orders documented in the residence. One resident's spouse was administering medications without a formal order permitting this.\nS 490 – Dietetic/Food Code: Multiple violations in Courtyard and Lodge kitchens, scratched cutting boards, dirty can opener and microwave, cracked dishwasher temperature dials with expired test strips, undated/unlabeled food items, walk-in freezer ice buildup, no sanitizer solution for low-temp dish machine, staff not wearing hair/beard restraints.\nS 565 – Medication Services: Expired and unavailable medications found on multiple medication carts (Milk of Magnesia, Diclofenac gel, Acetaminophen, Senna, Bayer aspirin). Expired medications were on the cart and had not been discarded.\nS 705 – Fire Drill Documentation: Fire drill records for both the Lodge and Courtyard failed to include the length/duration of the drills, as required.",
       "tier": "minor"
      }
     ],
@@ -12615,7 +12559,7 @@
     "headline": "S 190 – In-Service Training: Two newly hired staff (certified medication aides) did not receive the required 10 hours of orientation and training in required topics within 30 days of hire.",
     "paragraphs": [
      {
-      "text": "S 190 – In-Service Training: Two newly hired staff (certified medication aides) did not receive the required 10 hours of orientation and training in required topics within 30 days of hire.\nS 310 – Resident Records: Records for two residents receiving outside OT/PT services lacked documentation from the outside agency indicating services provided and current health status.\nS 365 – Resident Assessment/Service Plans: Comprehensive assessments not updated when residents' conditions changed significantly for 3 residents — including failure to document receipt of OT/PT services, hospice services, and an inaccurate self-medication assessment.\nS 390 – Service Plans: Service plans not updated to reflect significant condition changes (hospice, PT services) for 2 residents.\nS 560 – Medication Services: Facility failed to conduct required monthly evaluations of two newly hired certified medication aides for the first three months of hire.\nS 705 – Fire Drills/Safety: Fire drills were not conducted at the required frequency — only 36% of drills were obstructed (vs. required 50%), and only 1 overnight drill was conducted instead of the required 2.",
+      "text": "S 190 – In-Service Training: Two newly hired staff (certified medication aides) did not receive the required 10 hours of orientation and training in required topics within 30 days of hire.\nS 310 – Resident Records: Records for two residents receiving outside OT/PT services lacked documentation from the outside agency indicating services provided and current health status.\nS 365 – Resident Assessment/Service Plans: Comprehensive assessments not updated when residents' conditions changed significantly for 3 residents, including failure to document receipt of OT/PT services, hospice services, and an inaccurate self-medication assessment.\nS 390 – Service Plans: Service plans not updated to reflect significant condition changes (hospice, PT services) for 2 residents.\nS 560 – Medication Services: Facility failed to conduct required monthly evaluations of two newly hired certified medication aides for the first three months of hire.\nS 705 – Fire Drills/Safety: Fire drills were not conducted at the required frequency, only 36% of drills were obstructed (vs. required 50%), and only 1 overnight drill was conducted instead of the required 2.",
       "tier": "minor"
      }
     ],
@@ -12703,7 +12647,7 @@
     "headline": "S 055 – Quality Assurance: Failed to maintain a written QA plan with required components. April 2025 QA minutes showed resident/family concerns (food temps, menu variety, activity repetition, poor communication) were identified but not addressed with corrective action plans.",
     "paragraphs": [
      {
-      "text": "S 055 – Quality Assurance: Failed to maintain a written QA plan with required components. April 2025 QA minutes showed resident/family concerns (food temps, menu variety, activity repetition, poor communication) were identified but not addressed with corrective action plans.\nS 490 – Dietetic Services/Food Code: Multiple Rhode Island Food Code violations — staff not wearing beard restraints, improper glove changes/hand washing, unlabeled food containers, undated prepared food, dirty gaskets on walk-in refrigerator and freezer, frost accumulation in ice cream chest, dirty walls behind dish machine and hand sink.\nS 565 – Medication Services: PRN medications (Melatonin 3mg, Trazodone 50mg) were prescribed but unavailable on the medication cart. Staff could not confirm availability; resident could not recall due to cognitive decline.",
+      "text": "S 055 – Quality Assurance: Failed to maintain a written QA plan with required components. April 2025 QA minutes showed resident/family concerns (food temps, menu variety, activity repetition, poor communication) were identified but not addressed with corrective action plans.\nS 490 – Dietetic Services/Food Code: Multiple Rhode Island Food Code violations, staff not wearing beard restraints, improper glove changes/hand washing, unlabeled food containers, undated prepared food, dirty gaskets on walk-in refrigerator and freezer, frost accumulation in ice cream chest, dirty walls behind dish machine and hand sink.\nS 565 – Medication Services: PRN medications (Melatonin 3mg, Trazodone 50mg) were prescribed but unavailable on the medication cart. Staff could not confirm availability; resident could not recall due to cognitive decline.",
       "tier": "minor"
      }
     ],
@@ -13002,7 +12946,7 @@
     "headline": "Assessments Not Updated for Outside Services / Behaviors",
     "paragraphs": [
      {
-      "text": "Assessments Not Updated for Outside Services / Behaviors\n3 of 6 residents reviewed had comprehensive assessments not updated for significant changes: 2 residents' PT/OT/palliative-care service dates were missing, and a 3rd resident's escalating aggressive behaviors (documented over a month, including trying to hit staff, spitting out medication, urinating on the floor) were not reflected — the assessment stated the resident had no history of disruptive/aggressive behavior.",
+      "text": "Assessments Not Updated for Outside Services / Behaviors\n3 of 6 residents reviewed had comprehensive assessments not updated for significant changes: 2 residents' PT/OT/palliative-care service dates were missing, and a 3rd resident's escalating aggressive behaviors (documented over a month, including trying to hit staff, spitting out medication, urinating on the floor) were not reflected, the assessment stated the resident had no history of disruptive/aggressive behavior.",
       "tier": "minor"
      },
      {
@@ -13064,7 +13008,7 @@
    },
    {
     "date": "2023-08-10",
-    "type": "admin/offsite",
+    "type": "Off-site review",
     "tier": null,
     "no_findings": true,
     "headline": "No deficiencies identified",
@@ -13073,7 +13017,7 @@
    },
    {
     "date": "2023-08-10",
-    "type": "admin/offsite",
+    "type": "Off-site review",
     "tier": null,
     "no_findings": true,
     "headline": "No deficiencies identified",
@@ -13204,7 +13148,7 @@
     "headline": "S640 – Medication Administration",
     "paragraphs": [
      {
-      "text": "S640 – Medication Administration / Security A community complaint was filed 12/23/2025 alleging Resident #1 received the wrong medication. Surveyors observed a medication cup with multiple pills left unattended on the resident's kitchen counter at 12:10 PM on 1/2/2026. The resident revealed she wasn't feeling well and hadn't taken her morning medications — the cup had been left since approximately 5:30 AM. CMT Staff B confirmed via phone that she left the medications with the resident without waiting for them to be taken, stating \"I'm at fault.\" The Administrator could not confirm medications were stored securely or that administration errors were being prevented. Direct medication safety failure with a prior complaint of wrong medication administration — high resident harm risk.",
+      "text": "S640 – Medication Administration / Security A community complaint was filed 12/23/2025 alleging Resident #1 received the wrong medication. Surveyors observed a medication cup with multiple pills left unattended on the resident's kitchen counter at 12:10 PM on 1/2/2026. The resident revealed she wasn't feeling well and hadn't taken her morning medications, the cup had been left since approximately 5:30 AM. CMT Staff B confirmed via phone that she left the medications with the resident without waiting for them to be taken, stating \"I'm at fault.\" The Administrator could not confirm medications were stored securely or that administration errors were being prevented. Direct medication safety failure with a prior complaint of wrong medication administration, high resident harm risk.",
       "tier": "serious"
      }
     ],
@@ -13222,7 +13166,7 @@
       "tier": "minor"
      },
      {
-      "text": "S380 – Resident Service Plans\nSix of six residents reviewed had service plans that failed to document the description and interventions needed for their known conditions:\n\nResident #1 (hypertension, on mechanically altered diet, moderate fall risk with falls 11/28/24, 3/2/25, 4/20/25, 5/12/25) — service plan showed regular diet (incorrect) and no fall risk interventions.\nResident #2 (dementia, anxiety, hypertension, moderate fall risk with falls 10/7/24, 3/29/25, 5/2/25) — service plan had no fall risk interventions.\nResident #3 (dementia, anxiety, hypertension, moderate fall risk with falls 3/28/25, 4/1/25, 4/12/25, 4/26/25) — service plan had no fall risk interventions.\nResident #4 (end stage kidney disease, receiving dialysis) — service plan failed to mention dialysis treatments.\nResident #5 (BPH, nicotine dependence, urinary catheter) — service plan failed to mention the foley catheter or smoking-related interventions.\nResident #6 (congestive heart failure, using 2L oxygen via nasal cannula continuously) — service plan did not document oxygen use or safety interventions.\n\nFall risk residents had documented repeated falls with no care plan response — high potential for serious injury.",
+      "text": "S380 – Resident Service Plans\nSix of six residents reviewed had service plans that failed to document the description and interventions needed for their known conditions:\n\nResident #1 (hypertension, on mechanically altered diet, moderate fall risk with falls 11/28/24, 3/2/25, 4/20/25, 5/12/25), service plan showed regular diet (incorrect) and no fall risk interventions.\nResident #2 (dementia, anxiety, hypertension, moderate fall risk with falls 10/7/24, 3/29/25, 5/2/25), service plan had no fall risk interventions.\nResident #3 (dementia, anxiety, hypertension, moderate fall risk with falls 3/28/25, 4/1/25, 4/12/25, 4/26/25), service plan had no fall risk interventions.\nResident #4 (end stage kidney disease, receiving dialysis), service plan failed to mention dialysis treatments.\nResident #5 (BPH, nicotine dependence, urinary catheter), service plan failed to mention the foley catheter or smoking-related interventions.\nResident #6 (congestive heart failure, using 2L oxygen via nasal cannula continuously), service plan did not document oxygen use or safety interventions.\n\nFall risk residents had documented repeated falls with no care plan response, high potential for serious injury.",
       "tier": "minor"
      },
      {
@@ -13372,11 +13316,11 @@
       "tier": "minor"
      },
      {
-      "text": "S250 – Management of Services / Self-Administration\nResident #1 (hypertension, receiving physical therapy since 10/10/2025) had a comprehensive assessment dated 10/16/2025 showing she lacked cognitive capacity to self-administer medications — yet no physician's order existed to self-administer her Fluticasone-Salmeterol inhaler and Albuterol. The Director of Wellness could not produce the required order.\nResident #2 (COPD, diagnosed January 2022) was self-administering a Fluticasone nasal spray, Fluticasone inhaler, and Albuterol inhaler with no physician's order for self-administration.",
+      "text": "S250 – Management of Services / Self-Administration\nResident #1 (hypertension, receiving physical therapy since 10/10/2025) had a comprehensive assessment dated 10/16/2025 showing she lacked cognitive capacity to self-administer medications, yet no physician's order existed to self-administer her Fluticasone-Salmeterol inhaler and Albuterol. The Director of Wellness could not produce the required order.\nResident #2 (COPD, diagnosed January 2022) was self-administering a Fluticasone nasal spray, Fluticasone inhaler, and Albuterol inhaler with no physician's order for self-administration.",
       "tier": "minor"
      },
      {
-      "text": "S390 – Resident Assessment Updates\nResident #1's comprehensive assessment (10/16/2025) showed she lacks cognitive ability to self-administer and is receiving physical therapy — but the service plan dated 11/4/2024 failed to reflect either of these facts.\nResident #3 (COPD, admitted October 2024) self-administered a Ventolin inhaler, but the comprehensive assessment dated 10/16/2025 showed the resident lacks cognitive capacity to do so. The service plan dated 10/16/2025 also failed to document this.",
+      "text": "S390 – Resident Assessment Updates\nResident #1's comprehensive assessment (10/16/2025) showed she lacks cognitive ability to self-administer and is receiving physical therapy, but the service plan dated 11/4/2024 failed to reflect either of these facts.\nResident #3 (COPD, admitted October 2024) self-administered a Ventolin inhaler, but the comprehensive assessment dated 10/16/2025 showed the resident lacks cognitive capacity to do so. The service plan dated 10/16/2025 also failed to document this.",
       "tier": "minor"
      },
      {
@@ -13388,7 +13332,7 @@
       "tier": "minor"
      },
      {
-      "text": "S640 – Medication Storage Multiple expired medications were found across medication carts:\n\nPolyethylene glycol expired 8/23/2025\nMiralax expired 7/2024\nBudesonide inhalation suspension (×2) expired 4/2025 and 5/2025\nDebrox ear wax expired 3/20/2025\nZyrtec allergy expired 1/2025\nEquate motion sickness expired 6/2025\nItch relief cream expired 4/21/2025\nTrazodone 50mg expired 7/30/2025\nCitracal Plus D3 expired 6/2025\nB Complex expired 1/2025\nSenna Plus expired 7/2024\nFurosemide expired 5/27/2020\n\nAdditionally, multiple opened inhalers (Fluticasone propionate, Incruse Ellipta) were undated — per manufacturer instructions these must be discarded 6 weeks after opening. Grapes were found stored in the medication refrigerator. Significant risk of medication error and harm to residents.",
+      "text": "S640 – Medication Storage Multiple expired medications were found across medication carts:\n\nPolyethylene glycol expired 8/23/2025\nMiralax expired 7/2024\nBudesonide inhalation suspension (×2) expired 4/2025 and 5/2025\nDebrox ear wax expired 3/20/2025\nZyrtec allergy expired 1/2025\nEquate motion sickness expired 6/2025\nItch relief cream expired 4/21/2025\nTrazodone 50mg expired 7/30/2025\nCitracal Plus D3 expired 6/2025\nB Complex expired 1/2025\nSenna Plus expired 7/2024\nFurosemide expired 5/27/2020\n\nAdditionally, multiple opened inhalers (Fluticasone propionate, Incruse Ellipta) were undated, per manufacturer instructions these must be discarded 6 weeks after opening. Grapes were found stored in the medication refrigerator. Significant risk of medication error and harm to residents.",
       "tier": "minor"
      }
     ],
