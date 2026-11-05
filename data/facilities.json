@@ -12002,12 +12002,16 @@
    {
     "date": "2025-04-16",
     "type": "Complaint/Incident Investigation",
-    "tier": "minor",
+    "tier": "serious",
     "no_findings": false,
-    "headline": "S370: RA/SP: assessment not updated after readmission from health care facility; S415: licensure requirements: reporting: did not report suspected abuse resulting in injury",
+    "headline": "S415: Suspected abuse not reported",
     "paragraphs": [
      {
-      "text": "S370: RA/SP: assessment not updated after readmission from health care facility; S415: licensure requirements: reporting: did not report suspected abuse resulting in injury",
+      "text": "S415: Suspected abuse not reported / The residence did not report suspected abuse that resulted in an injury to a resident.",
+      "tier": "serious"
+     },
+     {
+      "text": "S370: Assessment not updated / A resident's assessment was not updated after the resident came back from a stay in a health care facility.",
       "tier": "minor"
      }
     ],
