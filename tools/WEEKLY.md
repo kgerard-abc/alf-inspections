@@ -82,6 +82,11 @@ inside `index.html` by hand; `tools/build.py` writes it there.
   `Routine/Biennial Inspection, Complaint/Incident Investigation`,
   `Complaint/Incident Investigation (Follow-Up)`, `Off-site review` (RIDOH reviewed documents
   without visiting, usually to confirm a plan of correction; record it as no findings).
+- House style (`tools/style.py`, applied automatically by `apply.py`): each finding starts with its
+  tag or tags written `S230: ` or `S230/S575: `, then `Title / What happened`; abbreviations a family
+  member would not know are spelled out (RN, ER, CPR, COPD, DNR, TB, and RIDOH stay); no ALL CAPS
+  except abbreviations; no emoji (the page adds the yellow warning sign to most serious findings);
+  most serious finding first. Write entries this way to begin with; `style.py` catches what slips.
 - Never put working notes (like "duplicate", "(?)", or "[doesn't say]") in a type, headline, or
   finding. `build.py` stops if it finds one. A duplicate file goes in `handled` as `same_survey`.
 - No deficiencies: `no_findings: true`, `tier: null`, `headline: "No deficiencies identified"`, `paragraphs: []`.
