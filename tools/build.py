@@ -13,7 +13,7 @@ import re
 import sys
 from zoneinfo import ZoneInfo
 
-from alf import (DATA, INDEX, NO_FINDINGS, REPORT_KEYS, SCRIPT_RE, TIER_RANK, TYPES,
+from alf import (DATA, INDEX, NO_FINDINGS, NOTE_RE, REPORT_KEYS, SCRIPT_RE, TIER_RANK, TYPES,
                  compact, file_id, load, recompute)
 
 UPDATED_RE = re.compile(r"(Data last updated <strong>)([^<]+)(</strong>)")
@@ -60,7 +60,14 @@ def validate(facilities):
                 if not r["headline"].strip():
                     blank += 1
             if r["type"] not in TYPES + ["Inspection"]:
-                warns.append(f"{where}: unusual type shown on the site: {r['type']!r}")
+                errors.append(f"{where}: type shown on the site is not one of the allowed types: {r['type']!r}")
+            for t in [r["type"], r["headline"]] + [p.get("text", "") for p in r["paragraphs"]]:
+                if NOTE_RE.search(t or ""):
+                    errors.append(f"{where}: looks like a working note, not text for the public: {t[:80]!r}")
+                    break
+                if "\u2014" in (t or ""):
+                    errors.append(f"{where}: has an em dash: {t[:80]!r}")
+                    break
     if blank:
         warns.append(f"{blank} older reports have findings but a blank summary")
     return errors, warns

@@ -80,7 +80,10 @@ inside `index.html` by hand; `tools/build.py` writes it there.
 - `date`: the "(X3) Date survey completed" on the form. Use the file name's date only if the form's is unreadable.
 - `type`: one of `Complaint/Incident Investigation`, `Routine/Biennial Inspection`,
   `Routine/Biennial Inspection, Complaint/Incident Investigation`,
-  `Complaint/Incident Investigation (Follow-Up)`.
+  `Complaint/Incident Investigation (Follow-Up)`, `Off-site review` (RIDOH reviewed documents
+  without visiting, usually to confirm a plan of correction; record it as no findings).
+- Never put working notes (like "duplicate", "(?)", or "[doesn't say]") in a type, headline, or
+  finding. `build.py` stops if it finds one. A duplicate file goes in `handled` as `same_survey`.
 - No deficiencies: `no_findings: true`, `tier: null`, `headline: "No deficiencies identified"`, `paragraphs: []`.
 - Otherwise one paragraph per deficiency (or closely related group), most severe first:
   `"S###: Short plain title / What happened, in 1 to 4 plain sentences."` Use facts from the

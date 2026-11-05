@@ -34,7 +34,10 @@ TYPES = [
     "Routine/Biennial Inspection",
     "Routine/Biennial Inspection, Complaint/Incident Investigation",
     "Complaint/Incident Investigation (Follow-Up)",
+    "Off-site review",   # RIDOH reviewed documents without visiting, usually to confirm a plan of correction
 ]
+# Working notes that must never reach the public site (checked by build.py).
+NOTE_RE = re.compile(r"duplicate\?|appears to be (a )?duplicate|duplicate w/|-->|\(\?\)|\[doesn'?t say\]|\bTBD\b", re.I)
 
 
 def file_id(link):
