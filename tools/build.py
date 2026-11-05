@@ -65,6 +65,9 @@ def validate(facilities):
                 if NOTE_RE.search(t or ""):
                     errors.append(f"{where}: looks like a working note, not text for the public: {t[:80]!r}")
                     break
+                if re.search("[\U0001F300-\U0001FAFF\u2600-\u27BF]", t or ""):
+                    errors.append(f"{where}: has an emoji (the page adds the warning sign itself): {t[:80]!r}")
+                    break
                 if "\u2014" in (t or ""):
                     errors.append(f"{where}: has an em dash: {t[:80]!r}")
                     break

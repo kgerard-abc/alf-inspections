@@ -67,8 +67,16 @@ def main():
         print("\n".join("ERROR: " + p for p in problems))
         sys.exit(1)
 
+    from style import ocr_fixes, style   # house style: tags first, abbreviations spelled out, no ALL CAPS
+    texts = [t for f in facilities for r in f["reports"] for t in [r["headline"]] + [p["text"] for p in r["paragraphs"]]]
+    fixes = ocr_fixes(texts)
     for item in new.get("reports", []):
-        by_key[item["facility_key"]]["reports"].append(item["entry"])
+        e = item["entry"]
+        if not e["no_findings"]:
+            for p in e["paragraphs"]:
+                p["text"] = style(p["text"], fixes)
+            e["headline"] = style(e["headline"], fixes, headline=True)
+        by_key[item["facility_key"]]["reports"].append(e)
     for x in new.get("relink", []):
         link_of[x["old_file_id"]]["link"] = "https://drive.google.com/file/d/" + x["ridoh_id"] + "/view"
     for h in new.get("handled", []):
