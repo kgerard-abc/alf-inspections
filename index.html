@@ -893,6 +893,15 @@
 <script>
 (function () {
   var DATA = JSON.parse(document.getElementById('facility-data').textContent);
+  // Mailing addresses often name a village, not the town or city it is in. Group residences by town
+  // so choosing East Providence also finds Riverside, and show the village in parentheses.
+  var VILLAGE_TOWN = { 'Riverside': 'East Providence', 'Wakefield': 'South Kingstown', 'Greenville': 'Smithfield',
+    'Greene': 'Coventry', 'Manville': 'Lincoln', 'Pascoag': 'Burrillville', 'North Scituate': 'Scituate' };
+  DATA.forEach(function (f) {
+    if (!f.city) return;
+    f.town = VILLAGE_TOWN[f.city] || f.city;
+    f.place = f.town !== f.city ? f.town + ' (' + f.city + ')' : f.city;
+  });
 
   // Badges reflect only reports from the last 3 years. Older reports stay in each timeline.
   var BADGE_HOVER = 'Based only on inspection reports from the last 3 years. Older reports are still listed below.';
@@ -968,7 +977,7 @@
   var state = { query: '', filter: 'all', town: '', scuOnly: false, lhsOnly: false, nhcOnly: false, selected: {} };
 
   function populateTowns() {
-    var towns = Array.from(new Set(DATA.map(function (f) { return f.city; }).filter(Boolean))).sort();
+    var towns = Array.from(new Set(DATA.map(function (f) { return f.town; }).filter(Boolean))).sort();
     var sel = document.getElementById('townSelect');
     towns.forEach(function (t) {
       var opt = document.createElement('option');
@@ -1061,7 +1070,7 @@
 
   function matchesTown(f) {
     if (!state.town) return true;
-    return f.city === state.town;
+    return f.town === state.town;
   }
 
   function escapeHtml(s) {
@@ -1175,8 +1184,12 @@
 
   function decodeMedicaidTier(raw) {
     if (!raw) return null;
-    var tiers = raw.toUpperCase().match(/TIER\s*[ABC]/g);
-    if (!tiers) return escapeHtml(raw);
+    // ABLTC writes several tiers as "Tier A,B" or "Tier A,B,C", with "Tier" only once.
+    var tiers = [];
+    (raw.toUpperCase().match(/TIERS?\s*[ABC](\s*(,|AND|&|\/)\s*[ABC])*/g) || []).forEach(function (m) {
+      (m.replace(/^TIERS?/, '').match(/[ABC]/g) || []).forEach(function (l) { tiers.push('TIER ' + l); });
+    });
+    if (!tiers.length) return escapeHtml(raw);
     var seen = {};
     var lines = [];
     tiers.forEach(function (t) {
@@ -1307,7 +1320,7 @@
           '<div class="row-name-block">' +
             '<div class="row-name">' + escapeHtml(f.name) + '</div>' +
             (f.name_note ? '<div class="row-sub row-name-note">' + escapeHtml(f.name_note) + '</div>' : '') +
-            '<div class="row-sub">' + (f.city ? escapeHtml(f.city) + ' · ' : '') + (f.capacity ? f.capacity + ' beds · ' : '') + f.report_count + ' inspection' + (f.report_count === 1 ? '' : 's') + ' on file · most recent ' + fmtDate(f.most_recent_date) + '</div>' +
+            '<div class="row-sub">' + (f.place ? escapeHtml(f.place) + ' · ' : '') + (f.capacity ? f.capacity + ' beds · ' : '') + f.report_count + ' inspection' + (f.report_count === 1 ? '' : 's') + ' on file · most recent ' + fmtDate(f.most_recent_date) + '</div>' +
           '</div>' +
           badgesHtml(f) +
           '<svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><polyline points="9 6 15 12 9 18"/></svg>' +
@@ -1982,7 +1995,7 @@
     tmap.resize();
     var mappable = lastFiltered.filter(hasCoords);
     tmap.setMarkers(mappable.map(function (f) {
-      return { key: f.key, lat: f.lat, lng: f.lng, label: f.name + ', ' + f.city };
+      return { key: f.key, lat: f.lat, lng: f.lng, label: f.name + ', ' + f.place };
     }));
     tmap.setMe(nearLoc ? { lat: nearLoc.lat, lng: nearLoc.lng } : null);
     var missing = lastFiltered.length - mappable.length;
