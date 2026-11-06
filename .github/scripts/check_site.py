@@ -255,7 +255,14 @@ def check_alf():
         if ds:
             top = parse(max(ds))
             newest = top if newest is None else max(newest, top)
-        tiers = {p.get("tier") for r in rep for p in r.get("paragraphs", [])} | {r.get("tier") for r in rep}
+        # Tags count only reports from the last 3 years (the site's rule), so the check does too.
+        today = dt.date.today()
+        try:
+            cut = today.replace(year=today.year - 3).isoformat()
+        except ValueError:
+            cut = today.replace(year=today.year - 3, day=28).isoformat()
+        recent = [r for r in rep if (r.get("date") or "") >= cut]
+        tiers = {p.get("tier") for r in recent for p in r.get("paragraphs", [])} | {r.get("tier") for r in recent}
         if f["badge"] == "most_serious" and "most_serious" not in tiers:
             err(f"{nm}: badged most_serious but no report is tiered most_serious")
         if f["badge"] == "clean" and tiers & {"serious", "most_serious"}:

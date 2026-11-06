@@ -13,7 +13,7 @@ import re
 import sys
 from zoneinfo import ZoneInfo
 
-from alf import (DATA, INDEX, NO_FINDINGS, NOTE_RE, REPORT_KEYS, SCRIPT_RE, TIER_RANK, TYPES,
+from alf import (badge_cutoff, DATA, INDEX, NO_FINDINGS, NOTE_RE, REPORT_KEYS, SCRIPT_RE, TIER_RANK, TYPES,
                  compact, file_id, load, recompute)
 
 UPDATED_RE = re.compile(r"(Data last updated <strong>)([^<]+)(</strong>)")
@@ -52,6 +52,11 @@ def validate(facilities):
             else:
                 if not r["paragraphs"]:
                     errors.append(f"{where}: has findings but no finding text")
+                    continue
+                # Older blank summaries are a known gap (the warning below); a blank one in the badge window
+                # would count as a violation the public can't read, so it stops the build.
+                if r["date"] >= badge_cutoff() and any(not (p.get("text") or "").strip() for p in r["paragraphs"]):
+                    errors.append(f"{where}: a finding in the last 3 years has no text (if RIDOH found nothing, mark it no findings)")
                     continue
                 bad = [p for p in r["paragraphs"] if p.get("tier") not in TIER_RANK]
                 if bad:

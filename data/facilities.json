@@ -2874,16 +2874,11 @@
   "reports": [
    {
     "date": "2025-10-10",
-    "type": "Inspection",
-    "tier": "minor",
-    "no_findings": false,
-    "headline": "",
-    "paragraphs": [
-     {
-      "text": "",
-      "tier": "minor"
-     }
-    ],
+    "type": "Complaint/Incident Investigation",
+    "tier": null,
+    "no_findings": true,
+    "headline": "No deficiencies identified",
+    "paragraphs": [],
     "link": "https://drive.google.com/file/d/1-_gBCHvxOWOO6_MeFRo19LkHFENoPNzC/view?usp=drive_link"
    },
    {
