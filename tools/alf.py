@@ -37,7 +37,7 @@ TYPES = [
     "Off-site review",   # RIDOH reviewed documents without visiting, usually to confirm a plan of correction
 ]
 # Working notes that must never reach the public site (checked by build.py).
-NOTE_RE = re.compile(r"\?\)|duplicate\?|appears to be (a )?duplicate|duplicate w/|-->|\(\?\)|\?\?|\[SEE |\[doesn'?t say\]|\bTBD\b|_x00[0-9A-F]{2}_", re.I)
+NOTE_RE = re.compile(r"\?\)|\((does not|doesn.t) (indicate|say)|\b(Most serious|most serious)\s*\n|duplicate\?|appears to be (a )?duplicate|duplicate w/|-->|\(\?\)|\?\?|\[SEE |\[doesn'?t say\]|\bTBD\b|_x00[0-9A-F]{2}_", re.I)
 
 
 def file_id(link):
