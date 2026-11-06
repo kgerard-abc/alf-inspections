@@ -5055,7 +5055,7 @@
   "profile": {
    "limited_health_svcs": "n",
    "dementia_scu": "n",
-   "medicaid_accepted": null,
+   "medicaid_accepted": "Yes",
    "medicaid_exceptions": null,
    "payment_care_level_codes": "OHHS/RIHW/R/MC/F1/M1",
    "fire_code_med_level": "F1/M1",
@@ -5063,7 +5063,8 @@
    "alz_scu_beds": 0,
    "dementia_scu_beds": null,
    "phone": "(401) 453-9324",
-   "nursing_home_colocated": false
+   "nursing_home_colocated": false,
+   "medicaid_source": "confirmed by ABC-RI, 2026"
   },
   "unlicensed_note": null,
   "website": "https://charlesgate.net",
@@ -10015,7 +10016,7 @@
   "profile": {
    "limited_health_svcs": "n",
    "dementia_scu": "n",
-   "medicaid_accepted": null,
+   "medicaid_accepted": "Yes",
    "medicaid_exceptions": null,
    "payment_care_level_codes": "IL/OHHS/RIHW/SSI/R/F2/M1",
    "fire_code_med_level": "F2/M1",
@@ -10023,7 +10024,8 @@
    "alz_scu_beds": 0,
    "dementia_scu_beds": null,
    "phone": "(401) 725-7045",
-   "nursing_home_colocated": false
+   "nursing_home_colocated": false,
+   "medicaid_source": "confirmed by ABC-RI, 2026"
   },
   "unlicensed_note": null,
   "website": null,
@@ -10201,7 +10203,7 @@
   "profile": {
    "limited_health_svcs": "y",
    "dementia_scu": "y",
-   "medicaid_accepted": null,
+   "medicaid_accepted": "Yes",
    "medicaid_exceptions": null,
    "payment_care_level_codes": "PP/OHHS/R/MC/F1/M1",
    "fire_code_med_level": "F1/M1",
@@ -10209,7 +10211,8 @@
    "alz_scu_beds": 0,
    "dementia_scu_beds": 26,
    "phone": "(401) 767-3500",
-   "nursing_home_colocated": true
+   "nursing_home_colocated": true,
+   "medicaid_source": "confirmed by ABC-RI, 2026"
   },
   "unlicensed_note": null,
   "website": "https://stantoine.net",
