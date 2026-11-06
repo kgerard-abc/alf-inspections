@@ -26,6 +26,9 @@ def validate(facilities):
     blank = 0
     for f in facilities:
         name = f.get("name", "?")
+        for k, v in (f.get("profile") or {}).items():
+            if isinstance(v, str) and NOTE_RE.search(v):
+                errors.append(f"{name}: facility detail {k} looks like a working note, not text for the public: {v[:80]!r}")
         if not f.get("key") or f["key"] in keys:
             errors.append(f"{name}: missing or repeated facility key")
         keys.add(f.get("key"))
