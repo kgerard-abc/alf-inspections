@@ -4091,7 +4091,7 @@
    "limited_health_svcs": "n",
    "dementia_scu": "n",
    "medicaid_accepted": "Tier A",
-   "medicaid_exceptions": "(Other brookdales have MC, not Medicaid)",
+   "medicaid_exceptions": null,
    "payment_care_level_codes": "IL/OHHS/F2/M1",
    "fire_code_med_level": "F2/M1",
    "total_capacity": 66,
