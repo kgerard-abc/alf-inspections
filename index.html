@@ -1210,7 +1210,7 @@
     rows += profileRow('Dementia special care unit', yesNo(p.dementia_scu) + (p.memory_care_only ? ' (this residence serves memory care residents exclusively)' : ''));
     if (p.nursing_home_colocated) rows += profileRow('Nursing home co-located', 'Yes');
     if (p.medicaid_source) rows += profileRow('Medicaid accepted', escapeHtml(p.medicaid_accepted) + ' (' + escapeHtml(p.medicaid_source) + ')');
-    else rows += profileRow('Medicaid accepted (per EOHHS, 2022)', p.medicaid_accepted ? decodeMedicaidTier(p.medicaid_accepted) : 'Not listed. Call to ask.');
+    else rows += profileRow('Medicaid accepted (per ABLTC listing, October 2026)', p.medicaid_accepted ? decodeMedicaidTier(p.medicaid_accepted) : 'Not listed. Call to ask.');
     rows += profileRow('Paying with Medicaid', 'Most residences that accept Medicaid require residents to pay privately for 2 to 3 years before they can switch to Medicaid. Policies differ, so call each residence and ask about its policy.');
     if (p.medicaid_exceptions) rows += profileRow('Medicaid exceptions', escapeHtml(p.medicaid_exceptions));
     if (p.payment_care_level_codes) rows += profileRow('Payment / care levels offered', decodeSlashCodes(p.payment_care_level_codes, PAYMENT_CODE_KEY));
