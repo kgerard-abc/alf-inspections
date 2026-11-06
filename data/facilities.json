@@ -10320,7 +10320,7 @@
    "limited_health_svcs": "n",
    "dementia_scu": "n",
    "medicaid_accepted": "Tier A,B",
-   "medicaid_exceptions": "(only Trad AL takes medicaid?)",
+   "medicaid_exceptions": null,
    "payment_care_level_codes": "OHHS/RIHW/F1/M1",
    "fire_code_med_level": "F1/M1",
    "total_capacity": 72,
@@ -12314,14 +12314,14 @@
    "limited_health_svcs": "n",
    "dementia_scu": "n",
    "medicaid_accepted": "Tier A",
-   "medicaid_exceptions": "(only Trad AL takes medicaid?)",
    "payment_care_level_codes": "PP/OHHS/R/F1/M1",
    "fire_code_med_level": "F1/M1",
    "total_capacity": 90,
    "alz_scu_beds": 0,
    "dementia_scu_beds": 8,
    "phone": "(401) 767-2574",
-   "nursing_home_colocated": true
+   "nursing_home_colocated": true,
+   "medicaid_exceptions": null
   },
   "unlicensed_note": null,
   "website": "https://stantoine.net",
@@ -12626,7 +12626,7 @@
    "limited_health_svcs": "n",
    "dementia_scu": "n",
    "medicaid_accepted": "Tier A,B",
-   "medicaid_exceptions": "(only Trad AL takes medicaid?)",
+   "medicaid_exceptions": null,
    "payment_care_level_codes": "IL/OHHS/RIHW/R/ADC/F2/M1",
    "fire_code_med_level": "F2/M1",
    "total_capacity": 32,
@@ -12772,10 +12772,10 @@
     "type": "Complaint/Incident Investigation",
     "tier": "most_serious",
     "no_findings": false,
-    "headline": "S365/S390: Failed to review the comprehensive assessment (/ service plan )each time a resident's condition changes significantly for 1 of 3 sample residents reviewed, Record review of nursing progress notes revealed the resident had behavior issues including being disruptive, verbally inappropriate, and/or socially inappropriate towards others on the following dates: 8/3, 8/1, 7/11, 6/30, 6/29, 6/28, 6/14, 5/23, 5/22, 5/12, 5/9, 4/20, 4/17, and 4/10/2023. Record review failed to reveal evidence that the resident's assessment was updated to reflect his/her significant condition change,; S415: been determined the residence failed to ensure employees of an assisted living residence who have reasonable cause to believe that a resident has been abused, exploited, neglected, or mistreated shall within twenty-four (24) hours of the receipt of said information make a report to a high managerial agent and to the appropriate state agency for 2 of 3 sample residents, Record review of a progress note dated 7/11/2023 at 12:30 PM, states in part, \"Overnight staff reported that during rounds at 4:15 AM, resident [ID #2) was found in another resident's [ID #1] room, (s/he] was naked in bed with that resident's arm around him/her)...--was not reported (or addressed?)",
+    "headline": "S365/S390: Failed to review the comprehensive assessment (/ service plan )each time a resident's condition changes significantly for 1 of 3 sample residents reviewed, Record review of nursing progress notes revealed the resident had behavior issues including being disruptive, verbally inappropriate, and/or socially inappropriate towards others on the following dates: 8/3, 8/1, 7/11, 6/30, 6/29, 6/28, 6/14, 5/23, 5/22, 5/12, 5/9, 4/20, 4/17, and 4/10/2023. Record review failed to reveal evidence that the resident's assessment was updated to reflect his/her significant condition change,; S415: been determined the residence failed to ensure employees of an assisted living residence who have reasonable cause to believe that a resident has been abused, exploited, neglected, or mistreated shall within twenty-four (24) hours of the receipt of said information make a report to a high managerial agent and to the appropriate state agency for 2 of 3 sample residents, Record review of a progress note dated 7/11/2023 at 12:30 PM, states in part, \"Overnight staff reported that during rounds at 4:15 AM, resident [ID #2) was found in another resident's [ID #1] room, (s/he] was naked in bed with that resident's arm around him/her)...--was not reported",
     "paragraphs": [
      {
-      "text": "S365/S390: Failed to review the comprehensive assessment (/ service plan )each time a resident's condition changes significantly for 1 of 3 sample residents reviewed, Record review of nursing progress notes revealed the resident had behavior issues including being disruptive, verbally inappropriate, and/or socially inappropriate towards others on the following dates: 8/3, 8/1, 7/11, 6/30, 6/29, 6/28, 6/14, 5/23, 5/22, 5/12, 5/9, 4/20, 4/17, and 4/10/2023. Record review failed to reveal evidence that the resident's assessment was updated to reflect his/her significant condition change,; S415: been determined the residence failed to ensure employees of an assisted living residence who have reasonable cause to believe that a resident has been abused, exploited, neglected, or mistreated shall within twenty-four (24) hours of the receipt of said information make a report to a high managerial agent and to the appropriate state agency for 2 of 3 sample residents, Record review of a progress note dated 7/11/2023 at 12:30 PM, states in part, \"Overnight staff reported that during rounds at 4:15 AM, resident [ID #2) was found in another resident's [ID #1] room, (s/he] was naked in bed with that resident's arm around him/her)...--was not reported (or addressed?)",
+      "text": "S365/S390: Failed to review the comprehensive assessment (/ service plan )each time a resident's condition changes significantly for 1 of 3 sample residents reviewed, Record review of nursing progress notes revealed the resident had behavior issues including being disruptive, verbally inappropriate, and/or socially inappropriate towards others on the following dates: 8/3, 8/1, 7/11, 6/30, 6/29, 6/28, 6/14, 5/23, 5/22, 5/12, 5/9, 4/20, 4/17, and 4/10/2023. Record review failed to reveal evidence that the resident's assessment was updated to reflect his/her significant condition change,; S415: been determined the residence failed to ensure employees of an assisted living residence who have reasonable cause to believe that a resident has been abused, exploited, neglected, or mistreated shall within twenty-four (24) hours of the receipt of said information make a report to a high managerial agent and to the appropriate state agency for 2 of 3 sample residents, Record review of a progress note dated 7/11/2023 at 12:30 PM, states in part, \"Overnight staff reported that during rounds at 4:15 AM, resident [ID #2) was found in another resident's [ID #1] room, (s/he] was naked in bed with that resident's arm around him/her)...--was not reported",
       "tier": "most_serious"
      }
     ],
