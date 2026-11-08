@@ -89,12 +89,12 @@
   a { color: inherit; }
 
   .wrap {
-    max-width: 760px;
+    max-width: 1080px;
     margin: 0 auto;
-    padding: 56px 24px 120px;
+    padding: 34px 24px 120px;
   }
   @media (max-width: 560px) {
-    .wrap { padding: 36px 18px 120px; }
+    .wrap { padding: 22px 18px 120px; }
     /* On phones the rating (with its inspection count) sits on its own line under the name */
     .row-main { flex-wrap: wrap; row-gap: 8px; }
     .row-main .row-name-block { flex: 0 0 calc(100% - 70px); }
@@ -111,21 +111,22 @@
     height: 76px;
     width: auto;
     display: block;
-    margin: 0 0 24px;
+    margin: 0 0 22px;
   }
+  @media (max-width: 560px) { .site-logo { height: 60px; } }
   h1 {
     font-family: 'Public Sans', sans-serif;
     font-weight: 800;
     font-size: clamp(28px, 5.2vw, 40px);
     line-height: 1.12;
-    margin: 0 0 16px;
+    margin: 0 0 12px;
     letter-spacing: -0.015em;
   }
   .lede {
     font-size: 17px;
     color: var(--ink-soft);
     line-height: 1.55;
-    max-width: 620px;
+    max-width: 640px;
     margin: 0 0 4px;
   }
   .updated-line {
@@ -139,19 +140,29 @@
   .mast-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
-    margin: 14px 0 0;
+    align-items: center;
+    gap: 6px 22px;
+    margin: 18px 0 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
   }
   .mast-links a {
     display: inline-flex;
     align-items: center;
     gap: 4px;
-    font-size: 13px;
+    padding: 3px 0;
+    font-size: 15px;
     font-weight: 600;
+    white-space: nowrap;
     color: var(--accent);
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    border-bottom: 3px solid transparent;
   }
-  .mast-links a:hover { text-decoration: underline; }
+  .mast-links a:hover, .mast-links a:focus-visible { text-decoration-thickness: 2px; }
+  .mast-links a.on { color: var(--ink); text-decoration: none; border-bottom-color: var(--ink); }
+  .mast-links a.ext.first { border-left: 1px solid var(--line); padding-left: 22px; }
   .mast-links a svg { width: 12px; height: 12px; flex: none; }
 
   .learn-more {
@@ -807,11 +818,12 @@
     <h1>Rhode Island Assisted Living Inspection Records</h1>
     <p class="lede">Assisted living residences in Rhode Island are regulated only by the state, not the federal government, so unlike nursing homes, they don't receive CMS star ratings. The Rhode Island Department of Health (RIDOH) inspects each one every two years, and more often if a complaint or incident report is filed. Extra inspections usually mean someone filed a complaint or the residence reported an incident. This site summarizes what those inspections found, in plain language, links to the original reports, and includes other information that may help you evaluate a residence.</p>
     <p class="updated-line">Data last updated <strong>November 6, 2026</strong>. New reports are reviewed and added by hand as they become available.</p>
-    <div class="mast-links">
+    <div class="mast-links" role="navigation" aria-label="Pages">
+      <a href="index.html" class="on" aria-current="page">All residences</a>
       <a href="most-serious.html">All most serious findings</a>
-      <a href="https://snfdashboard.abc-ri.org" target="_blank" rel="noopener" title="Our companion site covering CMS ratings, staffing, and inspections for Rhode Island nursing homes">Nursing home info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
-      <a href="visit-checklist.pdf" target="_blank" rel="noopener" title="Printable PDF: questions to ask and things to look for on a visit">Visit checklist <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
-      <a href="visit-checklist-large-print.pdf" target="_blank" rel="noopener" title="Same visit checklist in large print">Visit checklist (large print) <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <a class="ext first" href="https://snfdashboard.abc-ri.org" target="_blank" rel="noopener" title="Our companion site covering CMS ratings, staffing, and inspections for Rhode Island nursing homes">Nursing home info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <a class="ext" href="visit-checklist.pdf" target="_blank" rel="noopener" title="Printable PDF: questions to ask and things to look for on a visit">Visit checklist <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <a class="ext" href="visit-checklist-large-print.pdf" target="_blank" rel="noopener" title="Same visit checklist in large print">Visit checklist (large print) <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
     </div>
   </header>
 
