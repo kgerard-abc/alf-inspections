@@ -195,6 +195,7 @@ window.RINH_ES = {
   "Switch to list view": "Cambiar a la vista de lista",
   ", which shows the same facilities and distances. Map tiles come from OpenStreetMap, which can see your IP address and the area of the map you are viewing.": ", que muestra las mismas residencias y distancias. Los mapas vienen de OpenStreetMap, que puede ver su dirección IP y la zona del mapa que usted está mirando.",
   "is an independent advocacy organization dedicated to protecting the rights and improving the care of long-term care residents in\u00A0Rhode\u00A0Island.": "es una organización independiente de defensa, dedicada a proteger los derechos y mejorar el cuidado de los residentes en cuidados a largo plazo en\u00A0Rhode\u00A0Island.",
+  "is an independent advocacy organization dedicated to protecting the rights and improving the care of long-term care residents in\u00A0Rhode\u00A0Island. This page is not produced or endorsed by the Rhode\u00A0Island Department of Health (RIDOH).": "es una organización independiente de defensa, dedicada a proteger los derechos y mejorar el cuidado de los residentes en cuidados a largo plazo en\u00A0Rhode\u00A0Island. Esta página no la produce ni la respalda el Departamento de Salud de Rhode\u00A0Island (RIDOH).",
   "Our public data sites:": "Nuestros sitios de datos públicos:",
   "Nursing home dashboard": "Panel de hogares de ancianos",
   "Nursing home sales": "Ventas de hogares de ancianos",
