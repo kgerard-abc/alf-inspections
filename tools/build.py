@@ -17,6 +17,8 @@ from alf import (badge_cutoff, DATA, INDEX, NO_FINDINGS, NOTE_RE, REPORT_KEYS, S
                  compact, file_id, load, recompute)
 
 UPDATED_RE = re.compile(r"(Data last updated <strong>)([^<]+)(</strong>)")
+# A level word at the start or end of a title ("Most serious: ...", "... Most serious", "(Serious)").
+LEVEL_IN_TITLE_RE = re.compile(r"^\W*(most serious|serious|minor)\b\W|\b(most serious|serious|minor)\W*$", re.I)
 
 
 def validate(facilities):
@@ -78,6 +80,12 @@ def validate(facilities):
                     break
                 if "\u2014" in (t or ""):
                     errors.append(f"{where}: has an em dash: {t[:80]!r}")
+                    break
+            # The page labels each finding's level itself, so a level typed into a title shows twice
+            # ("Unsecured Medications Most serious"). Check the headline and each finding's title.
+            for t in [r["headline"]] + [(p.get("text") or "").split(" / ")[0] for p in r["paragraphs"]]:
+                if LEVEL_IN_TITLE_RE.search(t or ""):
+                    errors.append(f"{where}: a title has the level typed into it (the page adds it): {t[:80]!r}")
                     break
     if blank:
         warns.append(f"{blank} older reports have findings but a blank summary")
