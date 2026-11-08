@@ -1433,7 +1433,7 @@
       buildProfileHtml(f) +
       '<div class="' + noteCls + '"><strong>' + badgeSummaryText(f) + '.</strong> ' + noteText + '</div>' +
       '<div class="timeline">' + reports + '</div>' +
-      '<button type="button" class="detail-close" aria-label="Close ' + escapeHtml(f.name) + '"><span aria-hidden="true" style="margin-right:6px">\u25B4</span>Close this residence</button>'
+      '<button type="button" class="detail-close" aria-label="Hide details for ' + escapeHtml(f.name) + '"><span aria-hidden="true" style="margin-right:6px">\u25B4</span>Hide details</button>'
     );
   }
 
@@ -1489,7 +1489,7 @@
               btn.setAttribute('aria-expanded', item.classList.contains('expanded') ? 'true' : 'false');
             });
           });
-          // The close button at the bottom of a residence closes it and brings its name back into view.
+          // The "Hide details" button at the bottom of a residence closes it and brings its name back into view.
           var closeBtn = detail.querySelector('.detail-close');
           if (closeBtn) {
             closeBtn.addEventListener('click', function (ev) {
