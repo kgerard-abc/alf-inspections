@@ -153,7 +153,7 @@ window.RINH_ES = {
   "No deficiencies identified": "No se encontraron deficiencias",
   "Read full finding": "Leer el hallazgo completo",
   "Reports more than 3 years old. Tap a report’s headline (▸) to open or close it.": "Informes de hace más de 3 años. Toque el título de un informe (▸) para abrirlo o cerrarlo.",
-  "Close this residence": "Cerrar esta residencia",
+  "Hide details": "Ocultar detalles",
   "View original report (PDF)": "Ver el informe original (PDF, en inglés)",
   "RIDOH generally removes reports from its site after about {n} years, so this link may no longer work.": "RIDOH suele quitar los informes de su sitio después de unos {n} años, así que puede que este enlace ya no funcione.",
   "{n} selected": "{n} seleccionadas",
