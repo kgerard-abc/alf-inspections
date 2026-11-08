@@ -110,11 +110,25 @@
   .nb { white-space: nowrap; }
   .section-head { font-size: 22px; line-height: 1.2; margin: 36px 0 8px; }
   .item .who { font-weight: 700; font-size: 18px; line-height: 1.25; margin: 0 0 2px; }
+  /* English / Spanish button (i18n.js) */
+  .mast-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+  .lang-toggle {
+    flex: none;
+    font-family: inherit; font-size: 14px; font-weight: 600;
+    color: var(--ink); background: transparent;
+    border: 1px solid var(--ink); border-radius: 3px;
+    padding: 6px 14px; cursor: pointer;
+  }
+  .lang-toggle:hover { background: var(--paper-dim); }
+  .lang-note { font-size: 14px; line-height: 1.5; color: var(--ink-soft); margin: 0 0 20px; max-width: 640px; }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <a class="back" href="./">&larr; Back to all residences</a>
+  <div class="mast-top"><a class="back" href="./">&larr; Back to all residences</a>
+    <button type="button" id="langToggle" class="lang-toggle" lang="es" aria-label="Cambiar a español">Español</button>
+  </div>
+  <p id="langNote" class="lang-note" hidden></p>
 
   <h1>Most serious findings at all residences</h1>
   <p class="lede">These are findings where a resident was seriously harmed, or where a failure was likely to cause serious injury, harm, or death. This is the same standard nursing home inspections call &ldquo;immediate jeopardy.&rdquo;</p>
@@ -306,5 +320,7 @@
     });
 })();
 </script>
+<script src="i18n-es.js"></script>
+<script src="i18n.js"></script>
 </body>
 </html>
