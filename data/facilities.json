@@ -3078,14 +3078,14 @@
     "type": "Complaint/Incident Investigation",
     "tier": "most_serious",
     "no_findings": false,
-    "headline": "Treatments Without Physician Orders Most serious",
+    "headline": "Blood sugars near 600 not reported; oxygen given without doctor's order",
     "paragraphs": [
      {
-      "text": "Treatments Without Physician Orders Most serious / Resident #1 (COPD) was receiving oxygen set at 3L on the concentrator but believed she received 2L, no physician order for oxygen existed. Resident #2 (Type 2 diabetes) had blood sugars documented twice weekly with no physician order; values of 598 and 600 (normal 70–100) were never communicated to the physician. Resident harm: Resident #1 receiving incorrect oxygen dose without oversight; Resident #2 with critically elevated blood sugars with no physician notification.",
+      "text": "Blood sugars near 600 not reported; oxygen given without doctor's order / Resident #1 (COPD) was receiving oxygen set at 3L on the concentrator but believed she received 2L, no physician order for oxygen existed. Resident #2 (Type 2 diabetes) had blood sugars documented twice weekly with no physician order; values of 598 and 600 (normal 70–100) were never communicated to the physician. Resident harm: Resident #1 receiving incorrect oxygen dose without oversight; Resident #2 with critically elevated blood sugars with no physician notification.",
       "tier": "most_serious"
      },
      {
-      "text": "Unsecured Medications Most serious / Following a hospitalization for a possible suicidal attempt, Resident #1 was found with multiple unsecured, unordered medications in her room including an inhaler, muscle rub, antibiotic cream, pain gel, and Biofreeze. No active physician orders existed for any of them. Resident Care Director acknowledged the resident was not supposed to have medications in her possession after the hospitalization. Resident harm: resident with recent possible suicidal attempt had unsecured unordered medications accessible in her room.",
+      "text": "Unordered medications in room after resident's possible suicide attempt / Following a hospitalization for a possible suicidal attempt, Resident #1 was found with multiple unsecured, unordered medications in her room including an inhaler, muscle rub, antibiotic cream, pain gel, and Biofreeze. No active physician orders existed for any of them. Resident Care Director acknowledged the resident was not supposed to have medications in her possession after the hospitalization. Resident harm: resident with recent possible suicidal attempt had unsecured unordered medications accessible in her room.",
       "tier": "most_serious"
      },
      {
@@ -11387,10 +11387,10 @@
     "type": "Complaint/Incident Investigation",
     "tier": "most_serious",
     "no_findings": false,
-    "headline": "Elopement / Wandering Risk Most serious",
+    "headline": "Resident with dementia left unlocked unit and was returned by police",
     "paragraphs": [
      {
-      "text": "Elopement / Wandering Risk\nResident #1 (dementia, admitted September 2025) was placed on an unlocked unit. Initial assessment indicated no wandering risk, but progress notes showed repeated attempts to leave the unit beginning 9/29/25. On 10/3/25 the resident successfully eloped to a nearby hardware store and was returned by police. No care plan or interventions had been implemented prior to the elopement. Resident harm: resident with dementia eloped from an unsecured unit and was found by police, at serious risk of injury or death.",
+      "text": "Resident with dementia left unlocked unit and was returned by police / Resident #1 (dementia, admitted September 2025) was placed on an unlocked unit. Initial assessment indicated no wandering risk, but progress notes showed repeated attempts to leave the unit beginning 9/29/25. On 10/3/25 the resident successfully eloped to a nearby hardware store and was returned by police. No care plan or interventions had been implemented prior to the elopement. Resident harm: resident with dementia eloped from an unsecured unit and was found by police, at serious risk of injury or death.",
       "tier": "most_serious"
      }
     ],
