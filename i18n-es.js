@@ -347,5 +347,9 @@ window.RINH_ES = {
   "(toll-free": "(línea gratuita",
   "Long-Term Care Ombudsman Program": "Programa del Defensor de Cuidados a Largo Plazo",
   "More, including who pays for each:": "Más información, incluido quién paga cada uno:",
-  "Which kind of care?": "¿Qué tipo de cuidado?"
+  "Which kind of care?": "¿Qué tipo de cuidado?",
+  "Ways to pay": "Formas de pago",
+  "Yes, per ABLTC’s listing (October 2026):": "Sí, según la lista de ABLTC (octubre de 2026):",
+  "Medicaid exceptions:": "Excepciones de Medicaid:",
+  "Other ways to pay (ABLTC list):": "Otras formas de pago (lista de ABLTC):",
 };

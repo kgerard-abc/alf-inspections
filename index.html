@@ -479,6 +479,7 @@
   .detail-contact { font-size: 14.5px; margin: -6px 0 14px; display: flex; flex-wrap: wrap; gap: 4px 18px; }
   .detail-contact a { text-decoration: underline; }
   .profile-note { display: block; margin-top: 4px; color: var(--ink-soft); }
+  .pay-line + .pay-line { margin-top: 6px; }
   .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
   .tl-item.expanded .tl-body { display: block; }
   /* Older reports: the headline is a button with a triangle that turns when the report is open. */
@@ -1329,14 +1330,26 @@
     SSI: 'SSI waiver (for residents who get Supplemental Security Income)', ADC: 'Adult day care',
     IL: 'Independent living', MC: 'Memory care (dementia or Alzheimer\u2019s)', R: 'Respite (short stays)'
   };
-  var PAY_ORDER = ['PP', 'OHHS', 'RIHW', 'SSI', 'MC', 'IL', 'ADC', 'R'];
-  function paymentList(raw) {
-    if (!raw) return null;
-    var codes = raw.toUpperCase().split('/').map(function (s) { return s.replace(/\s+/g, ''); }).filter(Boolean);
-    var known = PAY_ORDER.filter(function (c) { return codes.indexOf(c) !== -1; });
-    var other = codes.filter(function (c) { return !PAYMENT_CODE_KEY[c] && !FIRE_MED_KEY[c]; });
-    var items = known.map(function (c) { return escapeHtml(PAYMENT_CODE_KEY[c]); }).concat(other.map(escapeHtml));
-    return items.length ? items.join('<br>') : null;
+  // "Ways to pay" (kg, November 2026): one row for Medicaid, the other ways to pay, and the private-pay note.
+  // Medicaid comes from ABLTC's Medicaid listing (or ABC-RI's own confirmation), not from the payment codes,
+  // because ABLTC's two lists disagree for some residences (12 list a Medicaid tier but no OHHS code).
+  // ABLTC's service codes (memory care, independent living, adult day care, respite) are left out: the
+  // first three repeat other rows, and respite doesn't set residences apart.
+  var PAY_SHOW = ['PP', 'RIHW', 'SSI'];
+  function waysToPayHtml(p) {
+    var codes = String(p.payment_care_level_codes || '').toUpperCase().split('/').map(function (s) { return s.replace(/\s+/g, ''); }).filter(Boolean);
+    var med;
+    if (p.medicaid_source) med = '<span>' + escapeHtml(p.medicaid_accepted) + ' (' + escapeHtml(p.medicaid_source) + ')</span>';
+    else if (p.medicaid_accepted) med = '<span>Yes, per ABLTC\u2019s listing (October 2026):</span><br>' + decodeMedicaidTier(p.medicaid_accepted);
+    else if (codes.indexOf('OHHS') !== -1) med = '<span>ABLTC\u2019s Medicaid listing does not show this residence, but its list of payment types does. Call to ask whether it takes Medicaid.</span>';
+    else med = '<span>Not listed. Call to ask.</span>';
+    var others = PAY_SHOW.filter(function (c) { return codes.indexOf(c) !== -1; });
+    return '<div class="pay-line"><strong>Medicaid:</strong> ' + med + '</div>' +
+      (p.medicaid_exceptions ? '<div class="pay-line"><strong>Medicaid exceptions:</strong> <span>' + escapeHtml(p.medicaid_exceptions) + '</span></div>' : '') +
+      (others.length ? '<div class="pay-line"><strong>Other ways to pay (ABLTC list):</strong> ' +
+        others.map(function (c) { return '<span>' + escapeHtml(PAYMENT_CODE_KEY[c]) + '</span>'; }).join('; ') + '</div>' : '') +
+      '<div class="pay-line"><span>Some residences that accept Medicaid require residents to pay privately for 2 to 3 years before they can switch to Medicaid. Policies differ, so call each residence and ask about its policy.</span>' +
+      ' <a href="https://snfdashboard.abc-ri.org/#costs" target="_blank" rel="noopener">What care costs, and paying with Medicaid</a></div>';
   }
   function fireMedList(raw) {
     if (!raw) return null;
@@ -1390,15 +1403,7 @@
     rows += profileRow('Limited health services', yesNo(p.limited_health_svcs));
     rows += profileRow('Dementia special care unit', yesNo(p.dementia_scu) + (p.memory_care_only ? ' (this residence serves memory care residents exclusively)' : ''));
     if (p.nursing_home_colocated) rows += profileRow('Nursing home co-located', 'Yes');
-    if (p.medicaid_source) rows += profileRow('Medicaid accepted', escapeHtml(p.medicaid_accepted) + ' (' + escapeHtml(p.medicaid_source) + ')');
-    else rows += profileRow('Medicaid accepted (per ABLTC listing, October 2026)', p.medicaid_accepted ? decodeMedicaidTier(p.medicaid_accepted) : 'Not listed. Call to ask.');
-    rows += profileRow('Paying with Medicaid', 'Some residences that accept Medicaid require residents to pay privately for 2 to 3 years before they can switch to Medicaid. Policies differ, so call each residence and ask about its policy.'
-      + ' <a href="https://snfdashboard.abc-ri.org/#costs" target="_blank" rel="noopener">What care costs, and paying with Medicaid</a>');
-    if (p.medicaid_exceptions) rows += profileRow('Medicaid exceptions', escapeHtml(p.medicaid_exceptions));
-    var pay = paymentList(p.payment_care_level_codes);
-    var ohhsOnly = /(^|\/)\s*OHHS\s*(\/|$)/i.test(p.payment_care_level_codes || '') && !p.medicaid_accepted && !p.medicaid_source;
-    if (pay) rows += profileRow('Ways to pay and services (ABLTC list)', pay +
-      (ohhsOnly ? '<span class="profile-note">ABLTC\u2019s Medicaid listing does not show this residence, but its list of payment types does. Call to ask whether it takes Medicaid.</span>' : ''));
+    rows += profileRow('Ways to pay', waysToPayHtml(p));
     if (p.fire_code_med_level) rows += profileRow('License level', fireMedList(p.fire_code_med_level));
     if (p.total_capacity) rows += profileRow('Total licensed capacity', p.total_capacity + ' beds');
     if (p.dementia_scu_beds) rows += profileRow('Dementia / special care unit beds', p.dementia_scu_beds + ' beds');
