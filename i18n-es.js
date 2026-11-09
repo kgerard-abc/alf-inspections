@@ -2,6 +2,11 @@
    See the comment at the top of i18n.js for how placeholders work. The plain-language finding
    summaries, most report headlines, and residence names are not in this table and stay in English. */
 window.RINH_ES = {
+  "New here?": "¿Es su primera visita?",
+  "explains the difference between nursing homes and assisted living, who pays, and what inspection data can and can't tell you.": "explica la diferencia entre los hogares de ancianos y la vida asistida, quién paga y lo que los datos de inspección pueden y no pueden decirle.",
+  "Some residences that accept Medicaid require residents to pay privately for {n} to {n} years before they can switch to Medicaid. Policies differ, so call each residence and ask about its policy.": "Algunas residencias que aceptan Medicaid exigen que los residentes paguen de forma privada durante {n} a {n} años antes de poder pasar a Medicaid. Las políticas varían, así que llame a cada residencia y pregunte por la suya.",
+  "The Rhode Island Long-Term Care Ombudsman Program": "El Programa del Defensor de Cuidados a Largo Plazo (Ombudsman) de Rhode Island",
+  "advocates for residents of nursing homes and assisted living residences. Residents and families can call": "defiende a los residentes de hogares de ancianos y residencias de vida asistida. Los residentes y sus familias pueden llamar al",
   "Rhode Island Assisted Living Inspection Records": "Registros de inspecciones de vida asistida de Rhode\u00A0Island",
   "Most Serious Findings | Rhode Island Assisted Living Inspection Records": "Hallazgos más graves | Registros de inspecciones de vida asistida de Rhode\u00A0Island",
   "ABC-RI home page": "Página principal de ABC-RI",
@@ -97,7 +102,6 @@ window.RINH_ES = {
   "Medicaid accepted": "Acepta Medicaid",
   "Medicaid accepted (per ABLTC listing, October {n})": "Acepta Medicaid (según la lista de ABLTC, octubre de {n})",
   "Paying with Medicaid": "Pagar con Medicaid",
-  "Most residences that accept Medicaid require residents to pay privately for {n} to {n} years before they can switch to Medicaid. Policies differ, so call each residence and ask about its policy.": "La mayoría de las residencias que aceptan Medicaid exigen que los residentes paguen de forma privada durante {n} a {n} años antes de poder pasar a Medicaid. Las políticas varían, así que llame a cada residencia y pregunte por la suya.",
   "Medicaid exceptions": "Excepciones de Medicaid",
   "Ways to pay and services (ABLTC list)": "Formas de pago y servicios (lista de ABLTC)",
   "ABLTC’s Medicaid listing does not show this residence, but its list of payment types does. Call to ask whether it takes Medicaid.": "La lista de Medicaid de ABLTC no incluye esta residencia, pero su lista de formas de pago sí. Llame para preguntar si acepta Medicaid.",
@@ -286,7 +290,6 @@ window.RINH_ES = {
   "Counted November 2026. We plan to update these counts every 6 to 12 months.": "Contado en noviembre de 2026. Planeamos actualizar estas cifras cada 6 a 12 meses.",
   /* Ombudsman box and the care-page link (November 2026) */
   "Have a concern about care?": "¿Le preocupa la atención?",
-  "The Rhode Island Long-Term Care Ombudsman Program advocates for residents of nursing homes and assisted living residences. Residents and families can call": "El Programa del Defensor de Cuidados a Largo Plazo (Ombudsman) de Rhode Island defiende a los residentes de hogares de ancianos y residencias de vida asistida. Los residentes y sus familias pueden llamar al",
   "(toll-free": "(línea gratuita",
   "Long-Term Care Ombudsman Program": "Programa del Defensor de Cuidados a Largo Plazo",
   "More, including who pays for each:": "Más información, incluido quién paga cada uno:",
