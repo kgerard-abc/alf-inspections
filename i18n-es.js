@@ -2,6 +2,28 @@
    See the comment at the top of i18n.js for how placeholders work. The plain-language finding
    summaries, most report headlines, and residence names are not in this table and stay in English. */
 window.RINH_ES = {
+  // Repeat problems box (November 2026)
+  "Repeat problems:": "Problemas repetidos:",
+  "Repeat problems: questions to ask": "Problemas repetidos: preguntas para hacer",
+  "Medication errors": "Errores con los medicamentos",
+  "Elopement and exit-seeking": "Fugas e intentos de salir",
+  "Assessments and care plans": "Evaluaciones y planes de cuidado",
+  "Abuse, neglect, and resident-to-resident harm": "Abuso, negligencia y daño entre residentes",
+  "Kitchen and food safety": "Cocina y seguridad de los alimentos",
+  "Infection control": "Control de infecciones",
+  "Pressure sores and wound care": "Úlceras por presión y cuidado de heridas",
+  "In the last 3 years, RIDOH cited this residence for the same kind of problem at 3 or more inspections. You might ask the administrator what they are doing about it.": "En los últimos 3 años, RIDOH citó a esta residencia por el mismo tipo de problema en 3 o más inspecciones. Puede preguntarle al administrador qué está haciendo al respecto.",
+  "({n} inspections)": "({n} inspecciones)",
+  "Ask:": "Pregunte:",
+  "How do staff confirm a resident’s identity before giving medications? What does your training around medication administration look like?": "¿Cómo confirma el personal la identidad de un residente antes de darle medicamentos? ¿Cómo es su capacitación sobre la administración de medicamentos?",
+  "How are wander alarms checked, and are every exit, stairwell, and elevator covered?": "¿Cómo revisan las alarmas contra fugas, y cubren todas las salidas, escaleras y elevadores?",
+  "How do you make sure a resident’s assessment and service plan are updated when their needs change, and how is the family involved?": "¿Cómo se aseguran de que la evaluación y el plan de servicios de un residente se actualicen cuando cambian sus necesidades, y cómo participa la familia?",
+  "What do you do to protect residents from a resident who is aggressive or wanders into rooms?": "¿Qué hacen para proteger a los residentes de un residente que es agresivo o que entra en otros cuartos?",
+  "How do you screen and supervise staff, and how quickly do you report suspected abuse?": "¿Cómo evalúan y supervisan al personal, y con qué rapidez reportan una sospecha de abuso?",
+  "Who checks that the kitchen is clean and that each resident gets the diet the doctor ordered?": "¿Quién verifica que la cocina esté limpia y que cada residente reciba la dieta que ordenó el médico?",
+  "How do you check that staff wash their hands and use protective gear, and what do you do when an infection spreads?": "¿Cómo verifican que el personal se lave las manos y use equipo de protección, y qué hacen cuando se propaga una infección?",
+  "How often is each resident’s skin checked, and who treats a wound when one is found?": "¿Con qué frecuencia revisan la piel de cada residente, y quién trata una herida cuando la encuentran?",
+  "How we count: we sorted each finding from the last 3 years into these groups by reading what RIDOH wrote, and one finding can be in more than one group. Findings from the same inspection date count once. Medication errors means a wrong drug, dose, resident, or time, or a missed dose. Elopement and exit-seeking means a resident got out or tried to, an exit or alarm did not work, or a resident’s plan did not address it. Assessments and care plans include RIDOH’s nurse reviews and service plans. Abuse, neglect, and resident-to-resident harm includes not reporting or investigating it. Kitchen and food safety includes diets a doctor ordered. The reports are listed below.": "Cómo contamos: clasificamos cada hallazgo de los últimos 3 años en estos grupos leyendo lo que escribió RIDOH, y un hallazgo puede estar en más de un grupo. Los hallazgos de una misma fecha de inspección cuentan una sola vez. Errores con los medicamentos quiere decir un medicamento, una dosis, un residente o una hora equivocados, o una dosis que no se dio. Fugas e intentos de salir quiere decir que un residente salió o intentó salir, que una salida o alarma no funcionó, o que el plan del residente no lo tomó en cuenta. Evaluaciones y planes de cuidado incluye las revisiones de enfermería y los planes de servicios de RIDOH. Abuso, negligencia y daño entre residentes incluye no reportarlo o no investigarlo. Cocina y seguridad de los alimentos incluye las dietas que ordenó un médico. Los informes aparecen abajo.",
   "This page is published by ABC-RI. It is not produced, reviewed, or endorsed by the Rhode Island Department of Health (RIDOH), or any state agency, and it is not a substitute for their records.": "Esta página la publica ABC-RI. No la produce, revisa ni respalda el Departamento de Salud de Rhode Island (RIDOH) ni ninguna agencia estatal, y no sustituye sus registros.",
   ". If you disagree with how we've characterized a finding rather than with a factual error, we'll still note your response, but our summaries reflect RIDOH's own findings as written.": ". Si no está de acuerdo con cómo describimos un hallazgo, y no se trata de un error de hecho, igual anotaremos su respuesta, pero nuestros resúmenes reflejan los hallazgos de RIDOH tal como están escritos.",
   "Nursing home vs assisted living": "Hogar de ancianos o vida asistida",

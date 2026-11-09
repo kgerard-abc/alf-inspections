@@ -13,7 +13,7 @@ import re
 import sys
 from zoneinfo import ZoneInfo
 
-from alf import (badge_cutoff, DATA, INDEX, NO_FINDINGS, NOTE_RE, REPORT_KEYS, SCRIPT_RE, TIER_RANK, TYPES,
+from alf import (badge_cutoff, DATA, INDEX, NO_FINDINGS, NOTE_RE, REPORT_KEYS, SCRIPT_RE, TIER_RANK, TOPICS, TYPES,
                  compact, file_id, load, recompute)
 
 UPDATED_RE = re.compile(r"(Data last updated <strong>)([^<]+)(</strong>)")
@@ -69,6 +69,17 @@ def validate(facilities):
                     errors.append(f"{where}: report severity {r['tier']} but most severe finding is {top}")
                 if not r["headline"].strip():
                     blank += 1
+            # Each finding from the last 3 years says which kinds of problem it is about (see TOPICS in alf.py),
+            # so the page can show repeat problems. An empty list means none of them fits.
+            for p in r["paragraphs"]:
+                tp = p.get("topics")
+                if tp is None:
+                    if r["date"] >= badge_cutoff():
+                        errors.append(f"{where}: a finding in the last 3 years has no topics list (use [] if none fits)")
+                        break
+                elif not isinstance(tp, list) or any(t not in TOPICS for t in tp) or len(set(tp)) != len(tp):
+                    errors.append(f"{where}: unknown or repeated topic in {tp!r}; allowed: {sorted(TOPICS)}")
+                    break
             if r["type"] not in TYPES + ["Inspection"]:
                 errors.append(f"{where}: type shown on the site is not one of the allowed types: {r['type']!r}")
             for t in [r["type"], r["headline"]] + [p.get("text", "") for p in r["paragraphs"]]:
