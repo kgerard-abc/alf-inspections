@@ -820,6 +820,40 @@
   }
   .lang-toggle:hover { background: var(--paper-dim); }
   .lang-note { font-size: 14px; line-height: 1.5; color: var(--ink-soft); margin: 0 0 20px; max-width: 640px; }
+  /* Printable sheets (see "Printable sheets" in the script) */
+  .print-btns { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+  #print-root { display: none; }
+  @media print {
+    @page { size: letter; margin: 0.5in; }
+    html.ps-on body > *:not(#print-root) { display: none !important; }
+    html.ps-on body { background: #fff !important; margin: 0; padding: 0; }
+    html.ps-on #print-root { display: block !important; }
+  }
+  #print-root, #print-root * { color: #000 !important; background: transparent !important; font-family: Helvetica, Arial, sans-serif !important; box-shadow: none !important; }
+  #print-root { font-size: 11pt; line-height: 1.25; }
+  html[data-print="lp"] #print-root { font-size: 14pt; }
+  #print-root .ps-top { display: flex; justify-content: space-between; align-items: flex-end; gap: 12pt; border-bottom: 1pt solid #000; padding-bottom: 5pt; margin-bottom: 8pt; }
+  #print-root .ps-logo { height: 0.6in; width: auto; }
+  #print-root .ps-site { display: flex; align-items: center; gap: 8pt; text-align: right; font-size: 0.9em; }
+  #print-root .ps-top .ps-qr svg { width: 1.8cm; height: 1.8cm; display: block; }
+  html[data-print="lp"] #print-root .ps-top .ps-qr svg { width: 2.6cm; height: 2.6cm; }
+  #print-root .ps-url { font-weight: 700; white-space: nowrap; }
+  #print-root h1 { font-size: 1.6em; line-height: 1.2; margin: 0 0 4pt; font-weight: 700; }
+  #print-root h2 { font-size: 1.15em; margin: 9pt 0 3pt; font-weight: 700; break-after: avoid; page-break-after: avoid; break-inside: avoid; }
+  #print-root p, #print-root li { orphans: 3; widows: 3; text-wrap: pretty; }
+  #print-root p { margin: 0 0 5pt; }
+  #print-root .ps-meta { margin: 0 0 2pt; }
+  #print-root ul { margin: 0 0 6pt; padding-left: 1.2em; }
+  #print-root li { margin: 0 0 3pt; break-inside: avoid; }
+  #print-root .ps-k { font-weight: 700; }
+  #print-root .ps-two { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16pt; break-inside: avoid; }
+  html[data-print="lp"] #print-root .ps-two { grid-template-columns: 1fr; }
+  #print-root .ps-tbl { border-collapse: collapse; width: 100%; margin: 6pt 0; }
+  #print-root .ps-tbl th, #print-root .ps-tbl td { border: 1pt solid #000; padding: 3pt 5pt; text-align: left; vertical-align: top; }
+  #print-root .ps-tbl tr { break-inside: avoid; }
+  #print-root .ps-qrrow { display: flex; gap: 10pt; align-items: center; margin: 6pt 0; break-inside: avoid; }
+  #print-root .ps-qrs .ps-qr svg { width: 2cm; height: 2cm; display: block; }
+  #print-root .ps-foot { font-size: 0.85em; border-top: 1pt solid #000; padding-top: 4pt; margin-top: 10pt; }
 </style>
 </head>
 <body>
@@ -919,6 +953,7 @@
       <h2 id="compareHeading">Comparing facilities</h2>
       <button class="close-x" id="compareClose" aria-label="Close comparison">&times;</button>
     </div>
+    <div class="print-btns"><button type="button" class="btn-quiet" id="comparePrint">Print</button><button type="button" class="btn-quiet" id="comparePrintLp">Large print</button></div>
     <div class="compare-grid" id="compareGrid"></div>
   </div>
 </div>
@@ -1458,6 +1493,7 @@
     return (
       addrLine +
       contact +
+      psButtons('Print a summary') +
       buildProfileHtml(f) +
       '<div class="' + noteCls + '"><strong>' + badgeSummaryText(f) + '.</strong> ' + noteText + '</div>' +
       repeatBoxHtml(f) +
@@ -1517,6 +1553,13 @@
               var item = btn.closest('.tl-item');
               item.classList.toggle('expanded');
               btn.setAttribute('aria-expanded', item.classList.contains('expanded') ? 'true' : 'false');
+            });
+          });
+          detail.querySelectorAll('.ps-btn').forEach(function (btn) {
+            btn.addEventListener('click', function (ev) {
+              ev.stopPropagation();
+              psPrint(function (lv) { return residenceSheet(f, lv); }, btn.getAttribute('data-ps') === 'lp',
+                ALF_URL + '#' + f.license_no, 'Scan for the full record:');
             });
           });
           // The "Hide details" button at the bottom of a residence closes it and brings its name back into view.
@@ -1650,6 +1693,148 @@
   });
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') closeCompareOverlay();
+  });
+
+
+  /* =====================================================================
+     Printable sheets (November 2026): one residence, and the compare view, each with a large-print
+     version. kg's rules for printed pages: black text, Helvetica, 11 pt (14 pt large print, the size
+     of the large-print visit checklist), no shaded or filled backgrounds, headings kept with what
+     follows, no lone lines at page breaks. The ABC-RI logo, the page's address, and a QR code (qr.js)
+     go at the top. No Ombudsman box on these (kg). The sheet is built into #print-root, which only
+     shows when printing from these buttons (html.ps-on); printing any other way prints the page as is.
+     ===================================================================== */
+  var ALF_URL = 'https://alinspections.abc-ri.org/';
+  var PS_UPDATED = (document.querySelector('.updated-line strong') || {}).textContent || '';
+  function psToday() { var d = new Date(); return fmtDate(d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2)); }
+  function psFill(bodyHtml, qrUrl, qrNote) {
+    var root = document.getElementById('print-root');
+    if (!root) { root = document.createElement('div'); root.id = 'print-root'; document.body.appendChild(root); }
+    var logo = document.querySelector('.site-logo'), qr = '';
+    if (qrUrl) { try { qr = '<div class="ps-qr">' + window.abcQR.svg(qrUrl) + '</div>'; } catch (e) {} }
+    root.innerHTML =
+      '<div class="ps-top">' +
+        (logo ? '<img class="ps-logo" src="' + logo.src + '" alt="Advocates for Better Care in Rhode Island (ABC-RI)">' : '') +
+        '<div class="ps-site">' + qr + '<div>' +
+          (qrNote ? '<div>' + qrNote + '</div>' : '') +
+          '<div class="ps-url">' + escapeHtml((qrUrl || ALF_URL).replace(/^https:\/\//, '').replace(/\/$/, '')) + '</div>' +
+          (PS_UPDATED ? '<div><span>Data last updated</span> <span>' + escapeHtml(PS_UPDATED) + '</span></div>' : '') +
+          '<div>Printed ' + psToday() + '</div>' +
+        '</div></div>' +
+      '</div>' +
+      bodyHtml +
+      '<p class="ps-foot">Published by Advocates for Better Care in Rhode Island (ABC-RI). Not produced, reviewed, or endorsed by the Rhode Island Department of Health (RIDOH) or any state agency, and not a substitute for RIDOH’s records.</p>';
+    return root;
+  }
+  // Standard print: try the full sheet, then shorter versions, until it fits one letter page (7.5 by 10
+  // inches inside half-inch margins). Large print keeps everything and runs onto more pages.
+  function psPrint(buildFor, large, qrUrl, qrNote) {
+    var html = document.documentElement, level = 0;
+    html.setAttribute('data-print', large ? 'lp' : 'std');
+    function go() { html.classList.add('ps-on'); setTimeout(function () { window.print(); }, 80); }
+    function attempt() {
+      var root = psFill(buildFor(level), qrUrl, qrNote);
+      if (large || level >= 3) { go(); return; }
+      root.style.cssText = 'display:block;position:absolute;left:-10000px;top:0;width:7.5in;visibility:hidden';
+      // the Spanish translation (i18n.js) runs on the next animation frame, so measure after it
+      (window.requestAnimationFrame || setTimeout)(function () { setTimeout(function () {
+        var tall = root.getBoundingClientRect().height;
+        root.style.cssText = '';
+        if (tall <= 9.85 * 96) go(); else { level++; attempt(); }
+      }, 0); });
+    }
+    attempt();
+  }
+  window.addEventListener('afterprint', function () { document.documentElement.classList.remove('ps-on'); });
+  function psButtons(label) {
+    return '<div class="print-btns"><button type="button" class="btn-quiet ps-btn" data-ps="std">' + label + '</button>' +
+      '<button type="button" class="btn-quiet ps-btn" data-ps="lp">Large print</button></div>';
+  }
+  function psMedicaid(p) {
+    if (p.medicaid_source) return escapeHtml(p.medicaid_accepted || '') + ' (' + escapeHtml(p.medicaid_source) + ')';
+    return p.medicaid_accepted ? decodeMedicaidTier(p.medicaid_accepted) : 'Not listed. Call to ask.';
+  }
+  var PS_TIER = { most_serious: '(most serious)', serious: '(serious)', minor: '(minor)' };
+
+  function residenceSheet(f, level) {
+    var p = f.profile || {}, ph = f.phone || p.phone, e = escapeHtml;
+    var recent = f.reports.filter(function (r) { return inWindow(r) && !r.no_findings && !isUnsummarized(r); });
+    var maxR = [8, 5, 3, 3][level];
+    var line = function (k, v) { return '<div><span class="ps-k">' + k + '</span> <span>' + v + '</span></div>'; };
+    var out = '<h1>' + e(f.name) + '</h1>' +
+      (f.address ? '<p class="ps-meta">' + e(f.address) + ', ' + e(f.city) + ', RI ' + e(zip5(f.zip)) + '</p>' : '') +
+      (ph ? '<p class="ps-meta"><span>Phone:</span> <span>' + e(ph) + '</span></p>' : '') +
+      (f.website ? '<p class="ps-meta"><span>Website:</span> <span>' + e(f.website.replace(/^https?:\/\//, '').replace(/\/$/, '')) + '</span></p>' : '') +
+      '<div class="ps-two"><div>' +
+        '<h2>At a glance</h2>' +
+        '<div class="ps-lines">' +
+          line('Concerns, last 3 years:', badgeSummaryText(f)) +
+          (f.latest_top ? '<div>' + latestTopText(f) + '</div>' : '') +
+          line('Most recent inspection:', fmtDate(f.most_recent_date)) +
+          (f.capacity ? line('Licensed capacity:', f.capacity + ' beds') : '') +
+        '</div></div><div>' +
+        '<h2>Services and payment</h2>' +
+        '<div class="ps-lines">' +
+          line('Dementia special care unit:', yesNo(p.dementia_scu)) +
+          line('Limited health services:', yesNo(p.limited_health_svcs)) +
+          line('Medicaid accepted:', psMedicaid(p)) +
+        '</div></div></div>' +
+      '<p>' + BADGE_NOTE[f.badge] + '</p>' +
+      '<p><span>Some residences that accept Medicaid require residents to pay privately for 2 to 3 years before they can switch to Medicaid. Policies differ, so call each residence and ask about its policy.</span></p>';
+    out += '<h2>Inspection findings in the last 3 years</h2>';
+    if (!recent.length) out += '<p>No deficiencies were identified in any inspection in the last 3 years.</p>';
+    else {
+      out += '<ul>' + recent.slice(0, maxR).map(function (r) {
+        return '<li><strong>' + fmtDate(r.date) + '</strong> <span>' + (PS_TIER[r.tier] || '') + '</span> <span>' + e(shortHeadline(r.headline)) + '</span></li>';
+      }).join('') + '</ul>';
+      if (recent.length > maxR) out += '<p>See all ' + recent.length + ' on our website.</p>';
+    }
+    // questions from this residence's own record: most important first, one per repeat problem, at most five
+    var qs = [];
+    var ms = f.reports.find(function (r) { return inWindow(r) && r.tier === 'most_serious'; });
+    if (ms) qs.push('RIDOH found a most serious problem here on ' + fmtDate(ms.date) + '. What did the residence change afterward?');
+    f.repeats.forEach(function (x) { qs.push(x.topic.ask[0]); });
+    qs.push('What happens if my care needs grow beyond what you can provide here?');
+    qs.push('May I see the residence’s most recent inspection report?');
+    out += '<h2>Questions to ask, from this residence’s record</h2><ul>' +
+      qs.slice(0, level >= 2 ? 3 : 5).map(function (q) { return '<li>' + q + '</li>'; }).join('') + '</ul>';
+    return out;
+  }
+
+  function compareSheet(facs) {
+    var e = escapeHtml;
+    var row = function (label, cell) {
+      return '<tr><th scope="row">' + label + '</th>' + facs.map(function (f) { return '<td>' + cell(f) + '</td>'; }).join('') + '</tr>';
+    };
+    return '<h1>Comparing assisted living residences</h1>' +
+      '<table class="ps-tbl"><thead><tr><td></td>' + facs.map(function (f) { return '<th scope="col">' + e(f.name) + '</th>'; }).join('') + '</tr></thead><tbody>' +
+      row('Town', function (f) { return e(f.city || ''); }) +
+      row('Phone', function (f) { var p = f.phone || (f.profile || {}).phone; return p ? e(p) : '–'; }) +
+      row('Concerns, last 3 years', function (f) { return badgeSummaryText(f).split('; ').map(function (t) { return '<span>' + t + '</span>'; }).join('<br>'); }) +
+      row('Latest serious or most serious finding', function (f) { return f.latest_top ? fmtDate(f.latest_top) : '–'; }) +
+      row('Most recent inspection', function (f) { return fmtDate(f.most_recent_date); }) +
+      row('Licensed capacity', function (f) { return f.capacity ? f.capacity + ' beds' : '–'; }) +
+      row('Medicaid accepted', function (f) { return psMedicaid(f.profile || {}); }) +
+      row('Dementia special care unit', function (f) { return yesNo((f.profile || {}).dementia_scu); }) +
+      row('Limited health services', function (f) { return yesNo((f.profile || {}).limited_health_svcs); }) +
+      row('Repeat problems', function (f) { return f.repeats.length ? f.repeats.map(function (x) { return '<span>' + x.topic.label + '</span>'; }).join('<br>') : '–'; }) +
+      '</tbody></table>' +
+      '<div class="ps-qrs">' + facs.map(function (f) {
+        var url = ALF_URL + '#' + f.license_no, svg = '';
+        try { svg = window.abcQR.svg(url); } catch (x) {}
+        return '<div class="ps-qrrow"><div class="ps-qr">' + svg + '</div><div><div>' + e(f.name) + '</div><div class="ps-url">' + e(url.replace(/^https:\/\//, '')) + '</div></div></div>';
+      }).join('') + '</div>';
+  }
+  function comparedFacilities() {
+    var keys = Object.keys(state.selected);
+    return DATA.filter(function (f) { return keys.indexOf(f.key) !== -1; });
+  }
+  ['std', 'lp'].forEach(function (kind) {
+    var b = document.getElementById(kind === 'lp' ? 'comparePrintLp' : 'comparePrint');
+    if (b) b.addEventListener('click', function () {
+      var facs = comparedFacilities();
+      psPrint(function () { return compareSheet(facs); }, kind === 'lp', ALF_URL, null);
+    });
   });
 
   var searchInput = document.getElementById('search');
@@ -2321,6 +2506,7 @@
 })();
 
 </script>
+<script src="qr.js"></script>
 <script src="i18n-es.js"></script>
 <script src="i18n.js"></script>
 <script data-goatcounter="https://abc-ri-al.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
