@@ -480,6 +480,7 @@
   .detail-contact a { text-decoration: underline; }
   .profile-note { display: block; margin-top: 4px; color: var(--ink-soft); }
   .pay-line + .pay-line { margin-top: 6px; }
+  .has-tip { text-decoration: underline dotted; text-underline-offset: 3px; cursor: help; }
   .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
   .tl-item.expanded .tl-body { display: block; }
   /* Older reports: the headline is a button with a triangle that turns when the report is open. */
@@ -831,30 +832,32 @@
     html.ps-on #print-root { display: block !important; }
   }
   #print-root, #print-root * { color: #000 !important; background: transparent !important; font-family: Helvetica, Arial, sans-serif !important; box-shadow: none !important; }
-  #print-root { font-size: 11pt; line-height: 1.25; }
+  #print-root { font-size: 11pt; line-height: 1.4; }
   html[data-print="lp"] #print-root { font-size: 14pt; }
-  #print-root .ps-top { display: flex; justify-content: space-between; align-items: flex-end; gap: 12pt; border-bottom: 1pt solid #000; padding-bottom: 5pt; margin-bottom: 8pt; }
+  #print-root .ps-top { display: flex; justify-content: space-between; align-items: flex-end; gap: 12pt; border-bottom: 1pt solid #000; padding-bottom: 6pt; margin-bottom: 14pt; }
   #print-root .ps-logo { height: 0.6in; width: auto; }
   #print-root .ps-site { display: flex; align-items: center; gap: 8pt; text-align: right; font-size: 0.9em; }
   #print-root .ps-top .ps-qr svg { width: 1.8cm; height: 1.8cm; display: block; }
   html[data-print="lp"] #print-root .ps-top .ps-qr svg { width: 2.6cm; height: 2.6cm; }
   #print-root .ps-url { font-weight: 700; white-space: nowrap; }
-  #print-root h1 { font-size: 1.6em; line-height: 1.2; margin: 0 0 4pt; font-weight: 700; }
-  #print-root h2 { font-size: 1.15em; margin: 9pt 0 3pt; font-weight: 700; break-after: avoid; page-break-after: avoid; break-inside: avoid; }
+  #print-root h1 { font-size: 1.6em; line-height: 1.2; margin: 0 0 6pt; font-weight: 700; }
+  #print-root h2 { font-size: 1.15em; margin: 16pt 0 5pt; font-weight: 700; break-after: avoid; page-break-after: avoid; break-inside: avoid; }
   #print-root p, #print-root li { orphans: 3; widows: 3; text-wrap: pretty; }
-  #print-root p { margin: 0 0 5pt; }
-  #print-root .ps-meta { margin: 0 0 2pt; }
-  #print-root ul { margin: 0 0 6pt; padding-left: 1.2em; }
-  #print-root li { margin: 0 0 3pt; break-inside: avoid; }
+  #print-root p { margin: 0 0 7pt; }
+  #print-root .ps-meta { margin: 0 0 3pt; }
+  #print-root .ps-lines > div { margin-bottom: 3pt; }
+  #print-root .ps-nw { white-space: nowrap; }
+  #print-root ul { margin: 0 0 8pt; padding-left: 1.2em; }
+  #print-root li { margin: 0 0 5pt; break-inside: avoid; }
   #print-root .ps-k { font-weight: 700; }
-  #print-root .ps-two { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16pt; break-inside: avoid; }
+  #print-root .ps-two { display: grid; grid-template-columns: 1fr 1fr; gap: 0 28pt; break-inside: avoid; margin-bottom: 10pt; }
   html[data-print="lp"] #print-root .ps-two { grid-template-columns: 1fr; }
   #print-root .ps-tbl { border-collapse: collapse; width: 100%; margin: 6pt 0; }
   #print-root .ps-tbl th, #print-root .ps-tbl td { border: 1pt solid #000; padding: 3pt 5pt; text-align: left; vertical-align: top; }
   #print-root .ps-tbl tr { break-inside: avoid; }
   #print-root .ps-qrrow { display: flex; gap: 10pt; align-items: center; margin: 6pt 0; break-inside: avoid; }
   #print-root .ps-qrs .ps-qr svg { width: 2cm; height: 2cm; display: block; }
-  #print-root .ps-foot { font-size: 0.85em; border-top: 1pt solid #000; padding-top: 4pt; margin-top: 10pt; }
+  #print-root .ps-foot { font-size: 0.85em; border-top: 1pt solid #000; padding-top: 6pt; margin-top: 18pt; }
 </style>
 </head>
 <body>
@@ -1336,6 +1339,7 @@
   // ABLTC's service codes (memory care, independent living, adult day care, respite) are left out: the
   // first three repeat other rows, and respite doesn't set residences apart.
   var PAY_SHOW = ['PP', 'RIHW', 'SSI'];
+  var LHS_TIP = 'A license that lets an assisted living residence provide certain nursing care beyond typical assisted living: stage I and II pressure ulcer prevention and treatment; simple wound care, including postoperative suture care/removal and stasis ulcer care; ostomy care for residents with an established stoma; and urinary catheter care.';
   function waysToPayHtml(p) {
     var codes = String(p.payment_care_level_codes || '').toUpperCase().split('/').map(function (s) { return s.replace(/\s+/g, ''); }).filter(Boolean);
     var med;
@@ -1402,7 +1406,7 @@
     var p = f.profile;
     if (!p) return '';
     var rows = '';
-    rows += profileRow('Limited health services', yesNo(p.limited_health_svcs));
+    rows += profileRow('<span class="has-tip" tabindex="0" title="' + LHS_TIP + '">Limited health services</span>', yesNo(p.limited_health_svcs));
     rows += profileRow('Dementia special care unit', yesNo(p.dementia_scu) + (p.memory_care_only ? ' (this residence serves memory care residents exclusively)' : ''));
     if (p.nursing_home_colocated) rows += profileRow('Nursing home co-located', 'Yes');
     rows += profileRow('Ways to pay', waysToPayHtml(p));
@@ -1741,7 +1745,7 @@
     function go() { html.classList.add('ps-on'); setTimeout(function () { window.print(); }, 80); }
     function attempt() {
       var root = psFill(buildFor(level), qrUrl, qrNote);
-      if (large || level >= 3) { go(); return; }
+      if (large || level >= 5) { go(); return; }
       root.style.cssText = 'display:block;position:absolute;left:-10000px;top:0;width:7.5in;visibility:hidden';
       // the Spanish translation (i18n.js) runs on the next animation frame, so measure after it
       (window.requestAnimationFrame || setTimeout)(function () { setTimeout(function () {
@@ -1757,21 +1761,25 @@
     return '<div class="print-btns"><button type="button" class="btn-quiet ps-btn" data-ps="std">' + label + '</button>' +
       '<button type="button" class="btn-quiet ps-btn" data-ps="lp">Large print</button></div>';
   }
-  function psMedicaid(p) {
-    if (p.medicaid_source) return 'Yes (' + escapeHtml(p.medicaid_source) + ')' +
-      (/TIER/i.test(p.medicaid_accepted || '') ? '<br>' + decodeMedicaidTier(p.medicaid_accepted) : '');
-    return p.medicaid_accepted ? decodeMedicaidTier(p.medicaid_accepted) : 'Not listed. Call to ask.';
+  // compact: tiers by letter only ("Yes, Tier A, B (ABLTC)"), as on the compare cards; used when a sheet is long
+  function psMedicaid(p, compact) {
+    var tiers = (String(p.medicaid_accepted || '').toUpperCase().replace(/^.*?TIERS?/, '').match(/[ABC]/g) || [])
+      .filter(function (t, i, a) { return a.indexOf(t) === i; });
+    var tierText = compact ? (tiers.length ? '<br>Tier ' + tiers.join(', ') + ' (ABLTC)' : '') : '<br>' + decodeMedicaidTier(p.medicaid_accepted);
+    if (p.medicaid_source) return 'Yes (' + escapeHtml(p.medicaid_source) + ')' + (/TIER/i.test(p.medicaid_accepted || '') ? tierText : '');
+    if (!p.medicaid_accepted) return 'Not listed. Call to ask.';
+    return compact && tiers.length ? 'Yes, Tier ' + tiers.join(', ') + ' (ABLTC)' : decodeMedicaidTier(p.medicaid_accepted);
   }
   var PS_TIER = { most_serious: '(most serious)', serious: '(serious)', minor: '(minor)' };
 
   function residenceSheet(f, level) {
     var p = f.profile || {}, ph = f.phone || p.phone, e = escapeHtml;
     var recent = f.reports.filter(function (r) { return inWindow(r) && !r.no_findings && !isUnsummarized(r); });
-    var maxR = [8, 5, 3, 3][level];
+    var maxR = [8, 5, 3, 3, 2, 2][level];
     var line = function (k, v) { return '<div><span class="ps-k">' + k + '</span> <span>' + v + '</span></div>'; };
     var out = '<h1>' + e(f.name) + '</h1>' +
-      (f.address ? '<p class="ps-meta">' + e(f.address) + ', ' + e(f.city) + ', RI ' + e(zip5(f.zip)) + '</p>' : '') +
-      (ph ? '<p class="ps-meta"><span>Phone:</span> <span>' + e(ph) + '</span></p>' : '') +
+      (f.address || ph ? '<p class="ps-meta">' + (f.address ? '<span>' + e(f.address) + ', ' + e(f.city) + ', RI ' + e(zip5(f.zip)) + '</span>' : '') +
+        (f.address && ph ? ' \u00B7 ' : '') + (ph ? '<span class="ps-nw">' + e(ph) + '</span>' : '') + '</p>' : '') +
       (f.website ? '<p class="ps-meta"><span>Website:</span> <span>' + e(f.website.replace(/^https?:\/\//, '').replace(/\/$/, '')) + '</span></p>' : '') +
       '<div class="ps-two"><div>' +
         '<h2>At a glance</h2>' +
@@ -1785,7 +1793,7 @@
         '<div class="ps-lines">' +
           line('Dementia special care unit:', yesNo(p.dementia_scu)) +
           line('Limited health services:', yesNo(p.limited_health_svcs)) +
-          line('Medicaid accepted:', psMedicaid(p)) +
+          line('Medicaid accepted:', psMedicaid(p, level >= 5)) +
         '</div></div></div>' +
       '<p>' + BADGE_NOTE[f.badge] + '</p>' +
       '<p><span>Some residences that accept Medicaid require residents to pay privately for 2 to 3 years before they can switch to Medicaid. Policies differ, so call each residence and ask about its policy.</span></p>';
@@ -1795,7 +1803,7 @@
       out += '<ul>' + recent.slice(0, maxR).map(function (r) {
         return '<li><strong>' + fmtDate(r.date) + '</strong> <span>' + (PS_TIER[r.tier] || '') + '</span> <span>' + e(shortHeadline(r.headline)) + '</span></li>';
       }).join('') + '</ul>';
-      if (recent.length > maxR) out += '<p>See all ' + recent.length + ' on our website.</p>';
+      if (recent.length > maxR) out += '<p>To read all ' + recent.length + ', scan the code at the top of this page or go to alinspections.abc-ri.org/#' + e(f.license_no) + '.</p>';
     }
     // questions from this residence's own record: most important first, one per repeat problem, at most five
     var qs = [];
@@ -1805,7 +1813,7 @@
     qs.push('What happens if my care needs grow beyond what you can provide here?');
     qs.push('May I see the residence’s most recent inspection report?');
     out += '<h2>Questions to ask, from this residence’s record</h2><ul>' +
-      qs.slice(0, level >= 2 ? 3 : 5).map(function (q) { return '<li>' + q + '</li>'; }).join('') + '</ul>';
+      qs.slice(0, level >= 4 ? 2 : level >= 2 ? 3 : 5).map(function (q) { return '<li>' + q + '</li>'; }).join('') + '</ul>';
     return out;
   }
 
