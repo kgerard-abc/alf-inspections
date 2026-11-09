@@ -2,6 +2,8 @@
    See the comment at the top of i18n.js for how placeholders work. The plain-language finding
    summaries, most report headlines, and residence names are not in this table and stay in English. */
 window.RINH_ES = {
+  "This page is published by ABC-RI. It is not produced, reviewed, or endorsed by the Rhode Island Department of Health (RIDOH), or any state agency, and it is not a substitute for their records.": "Esta página la publica ABC-RI. No la produce, revisa ni respalda el Departamento de Salud de Rhode Island (RIDOH) ni ninguna agencia estatal, y no sustituye sus registros.",
+  ". If you disagree with how we've characterized a finding rather than with a factual error, we'll still note your response, but our summaries reflect RIDOH's own findings as written.": ". Si no está de acuerdo con cómo describimos un hallazgo, y no se trata de un error de hecho, igual anotaremos su respuesta, pero nuestros resúmenes reflejan los hallazgos de RIDOH tal como están escritos.",
   "Nursing home vs assisted living": "Hogar de ancianos o vida asistida",
   "New here?": "¿Es su primera visita?",
   "explains the difference between nursing homes and assisted living, who pays, and what inspection data can and can't tell you.": "explica la diferencia entre los hogares de ancianos y la vida asistida, quién paga y lo que los datos de inspección pueden y no pueden decirle.",
