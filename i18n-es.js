@@ -353,4 +353,7 @@ window.RINH_ES = {
   "Medicaid exceptions:": "Excepciones de Medicaid:",
   "Other ways to pay (ABLTC list):": "Otras formas de pago (lista de ABLTC):",
   "Levels, per ABLTC’s listing (October 2026):": "Niveles, según la lista de ABLTC (octubre de 2026):",
+  "A license that lets an assisted living residence provide certain nursing care beyond typical assisted living: stage I and II pressure ulcer prevention and treatment; simple wound care, including postoperative suture care/removal and stasis ulcer care; ostomy care for residents with an established stoma; and urinary catheter care.": "Una licencia que permite a una residencia de vida asistida dar ciertos cuidados de enfermería que van más allá de la vida asistida habitual: prevención y tratamiento de úlceras por presión de etapa I y II; cuidado sencillo de heridas, incluidos el cuidado y retiro de puntos después de una cirugía y el cuidado de úlceras por estasis; cuidado de ostomías para residentes con un estoma ya establecido; y cuidado de sondas urinarias.",
+  "To read all {n}, scan the code at the top of this page or go to {*}.": "Para leer los {1}, escanee el código en la parte de arriba de esta página o vaya a {2}.",
+  "Tier {*} (ABLTC)": "Nivel {*} (ABLTC)",
 };
