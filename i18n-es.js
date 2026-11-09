@@ -283,5 +283,12 @@ window.RINH_ES = {
   "How we counted": "Cómo contamos",
   "We counted findings in reports dated November 8, 2023 to August 31, 2026, the newest report on this site in November 2026. Serious and most serious are our own ratings (see": "Contamos los hallazgos de los informes con fecha del 8 de noviembre de 2023 al 31 de agosto de 2026, el informe más reciente de este sitio en noviembre de 2026. Grave y más grave son nuestras propias calificaciones (vea",
   "). We grouped the serious and most serious findings by hand from our plain-language summaries; one finding can fall in more than one group. Findings RIDOH reported without naming the residence are not included. RIDOH inspects each residence every two years and more often after a complaint, so a residence with more findings may simply have had more inspections.": "). Agrupamos a mano los hallazgos graves y más graves a partir de nuestros resúmenes en lenguaje sencillo; un hallazgo puede estar en más de un grupo. No se incluyen los hallazgos que RIDOH reportó sin nombrar la residencia. RIDOH inspecciona cada residencia cada dos años y más a menudo después de una queja, así que una residencia con más hallazgos puede haber tenido simplemente más inspecciones.",
-  "Counted November 2026. We plan to update these counts every 6 to 12 months.": "Contado en noviembre de 2026. Planeamos actualizar estas cifras cada 6 a 12 meses."
+  "Counted November 2026. We plan to update these counts every 6 to 12 months.": "Contado en noviembre de 2026. Planeamos actualizar estas cifras cada 6 a 12 meses.",
+  /* Ombudsman box and the care-page link (November 2026) */
+  "Have a concern about care?": "¿Le preocupa la atención?",
+  "The Rhode Island Long-Term Care Ombudsman Program advocates for residents of nursing homes and assisted living residences. Residents and families can call": "El Programa del Defensor de Cuidados a Largo Plazo (Ombudsman) de Rhode Island defiende a los residentes de hogares de ancianos y residencias de vida asistida. Los residentes y sus familias pueden llamar al",
+  "(toll-free": "(línea gratuita",
+  "Long-Term Care Ombudsman Program": "Programa del Defensor de Cuidados a Largo Plazo",
+  "More, including who pays for each:": "Más información, incluido quién paga cada uno:",
+  "Which kind of care?": "¿Qué tipo de cuidado?"
 };
