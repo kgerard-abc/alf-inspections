@@ -168,47 +168,10 @@
   .ombuds { margin: 16px 0 8px; max-width: 680px; background: var(--paper-dim); border: 1px solid var(--line); border-radius: 3px; padding: 14px 18px; font-size: 16px; line-height: 1.5; }
   .ombuds strong { display: block; margin-bottom: 2px; }
   .ombuds a { color: var(--ink); font-weight: 700; white-space: nowrap; }
+  .ombuds a.ombuds-name { font-weight: 600; white-space: normal; }
 
-  .learn-more {
-    margin: 22px 0 8px;
-    border: 1px solid var(--line);
-    border-radius: 3px;
-    padding: 4px 16px;
-    background: var(--paper-dim);
-  }
-  .learn-more summary {
-    cursor: pointer;
-    padding: 12px 0;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--ink);
-    list-style: none;
-  }
-  .learn-more summary::-webkit-details-marker { display: none; }
-  .learn-more summary::before {
-    content: '▸';
-    display: inline-block;
-    margin-right: 8px;
-    color: var(--ink-soft);
-    transition: transform 0.15s;
-  }
-  .learn-more[open] summary::before { transform: rotate(90deg); }
-  .learn-more-body {
-    padding: 4px 0 18px;
-    font-size: 15px;
-    line-height: 1.6;
-    color: var(--ink);
-    max-width: 680px;
-  }
-  .learn-more-body h3 {
-    font-family: 'Public Sans', sans-serif;
-    font-size: 17px;
-    font-weight: 600;
-    margin: 22px 0 8px;
-  }
-  .learn-more-body h3:first-of-type { margin-top: 4px; }
-  .learn-more-body p { margin: 0 0 12px; }
-  .learn-more-body a { text-decoration: underline; }
+  .new-here { margin: 22px 0 8px; border: 1px solid var(--line); border-radius: 3px; padding: 12px 16px; background: var(--paper-dim); font-size: 15px; line-height: 1.5; }
+  .new-here a { text-decoration: underline; font-weight: 600; }
 
   .search-block {
     margin: 32px 0 8px;
@@ -865,29 +828,11 @@
     </div>
   </header>
 
-  <details class="learn-more">
-    <summary>New here? Read this first</summary>
-    <div class="learn-more-body">
-      <p>Choosing a long-term care residence for yourself or a loved one is never easy. Along with the inspection history below, we'd recommend visiting more than once (at different times of day and on weekends), talking with current residents and their families, and asking friends and acquaintances about their own experiences. We've put together a <a href="visit-checklist.pdf" target="_blank" rel="noopener">checklist</a> (<a href="visit-checklist-large-print.pdf" target="_blank" rel="noopener">large print version</a>) you can bring with you on a visit.</p>
-
-      <h3>Three kinds of long-term care in Rhode Island</h3>
-      <p>Long-term care for adults in RI generally falls into three categories: Skilled Nursing Facilities (SNFs), Assisted Living Residences (ALRs, also called ALFs), and various supportive residences for people with developmental disabilities or other special needs. Looking for a nursing home instead? See our companion <a href="https://snfdashboard.abc-ri.org" target="_blank" rel="noopener">Rhode Island Nursing Home Records</a> site, which covers CMS ratings, staffing, inspections, and fines for nursing homes the same way this site covers RIDOH inspections for assisted living.</p>
-      <p>Skilled nursing facilities are appropriate for residents receiving most kinds of nursing care, or who can't transfer in and out of bed without help from two or more staff members. Assisted living residences may be appropriate for residents who need help with daily activities like bathing and dressing, medication management (including insulin), and services like housekeeping, laundry, transportation, activities, and meals. Some assisted living residences also have secure memory-care units for residents living with dementia.</p>
-
-      <p>More, including who pays for each: <a href="https://snfdashboard.abc-ri.org/#care">Which kind of care?</a></p>
-
-      <h3>How ALRs are regulated differently from nursing homes</h3>
-      <p>Unlike skilled nursing facilities, assisted living residences are not regulated by the federal government. RIDOH is their only regulator. That means they don't receive CMS star ratings; they're surveyed every two years, plus additional inspections if a complaint is filed; they don't have the same scope-and-severity deficiency system nursing homes do, and although RIDOH has legal authority to fine assisted living residences for violations, representatives have said its policy is not to use it; and they follow a more limited set of regulations overall.</p>
-      <p>Most assisted living residences are private-pay only, but some participate in state waiver programs that let residents pay through Medicaid or SSI. You can see which under "Medicaid accepted" in a residence's profile below. Most residences that accept Medicaid require residents to pay privately for 2 to 3 years before they can switch to Medicaid. Policies differ, so call each residence and ask about its policy.</p>
-
-      <h3>Limited health services</h3>
-      <p>Some assisted living residences hold a "limited health services" license, which allows them to provide certain kinds of nursing care beyond typical assisted living: Stage I and II pressure ulcer prevention and treatment; simple wound care, including postoperative suture care/removal and stasis ulcer care; ostomy care for residents with an established stoma; and urinary catheter care. You can see whether a given residence offers this under "Limited health services" in its profile below.</p>
-    </div>
-  </details>
+  <p class="new-here"><strong>New here?</strong> <a href="https://snfdashboard.abc-ri.org/#care">Which kind of care?</a> <span>explains the difference between nursing homes and assisted living, who pays, and what inspection data can and can't tell you.</span></p>
 
   <aside class="ombuds" aria-label="Long-Term Care Ombudsman Program">
     <strong>Have a concern about care?</strong>
-    <span>The Rhode&nbsp;Island Long-Term Care Ombudsman Program advocates for residents of nursing homes and assisted living residences. Residents and families can call</span> <a href="tel:+14017853340">401-785-3340</a> <span>(toll-free</span> <a href="tel:+18883510808">1-888-351-0808</a>).
+    <a class="ombuds-name" href="https://risltcop.org/" target="_blank" rel="noopener">The Rhode&nbsp;Island Long-Term Care Ombudsman Program</a> <span>advocates for residents of nursing homes and assisted living residences. Residents and families can call</span> <a href="tel:+14017853340">401-785-3340</a> <span>(toll-free</span> <a href="tel:+18883510808">1-888-351-0808</a>).
   </aside>
 
   <div class="search-block">
@@ -1341,7 +1286,7 @@
     if (p.nursing_home_colocated) rows += profileRow('Nursing home co-located', 'Yes');
     if (p.medicaid_source) rows += profileRow('Medicaid accepted', escapeHtml(p.medicaid_accepted) + ' (' + escapeHtml(p.medicaid_source) + ')');
     else rows += profileRow('Medicaid accepted (per ABLTC listing, October 2026)', p.medicaid_accepted ? decodeMedicaidTier(p.medicaid_accepted) : 'Not listed. Call to ask.');
-    rows += profileRow('Paying with Medicaid', 'Most residences that accept Medicaid require residents to pay privately for 2 to 3 years before they can switch to Medicaid. Policies differ, so call each residence and ask about its policy.');
+    rows += profileRow('Paying with Medicaid', 'Some residences that accept Medicaid require residents to pay privately for 2 to 3 years before they can switch to Medicaid. Policies differ, so call each residence and ask about its policy.');
     if (p.medicaid_exceptions) rows += profileRow('Medicaid exceptions', escapeHtml(p.medicaid_exceptions));
     var pay = paymentList(p.payment_care_level_codes);
     var ohhsOnly = /(^|\/)\s*OHHS\s*(\/|$)/i.test(p.payment_care_level_codes || '') && !p.medicaid_accepted && !p.medicaid_source;
