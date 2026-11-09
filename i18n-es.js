@@ -2,6 +2,7 @@
    See the comment at the top of i18n.js for how placeholders work. The plain-language finding
    summaries, most report headlines, and residence names are not in this table and stay in English. */
 window.RINH_ES = {
+  "Nursing home vs assisted living": "Hogar de ancianos o vida asistida",
   "New here?": "¿Es su primera visita?",
   "explains the difference between nursing homes and assisted living, who pays, and what inspection data can and can't tell you.": "explica la diferencia entre los hogares de ancianos y la vida asistida, quién paga y lo que los datos de inspección pueden y no pueden decirle.",
   "Some residences that accept Medicaid require residents to pay privately for {n} to {n} years before they can switch to Medicaid. Policies differ, so call each residence and ask about its policy.": "Algunas residencias que aceptan Medicaid exigen que los residentes paguen de forma privada durante {n} a {n} años antes de poder pasar a Medicaid. Las políticas varían, así que llame a cada residencia y pregunte por la suya.",
