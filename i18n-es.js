@@ -2,6 +2,7 @@
    See the comment at the top of i18n.js for how placeholders work. The plain-language finding
    summaries, most report headlines, and residence names are not in this table and stay in English. */
 window.RINH_ES = {
+  "What care costs, and paying with Medicaid": "Lo que cuesta el cuidado y cómo pagar con Medicaid",
   // Repeat problems box (November 2026)
   "Repeat problems:": "Problemas repetidos:",
   "Repeat problems: questions to ask": "Problemas repetidos: preguntas para hacer",
