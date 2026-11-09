@@ -1357,7 +1357,8 @@
     if (p.nursing_home_colocated) rows += profileRow('Nursing home co-located', 'Yes');
     if (p.medicaid_source) rows += profileRow('Medicaid accepted', escapeHtml(p.medicaid_accepted) + ' (' + escapeHtml(p.medicaid_source) + ')');
     else rows += profileRow('Medicaid accepted (per ABLTC listing, October 2026)', p.medicaid_accepted ? decodeMedicaidTier(p.medicaid_accepted) : 'Not listed. Call to ask.');
-    rows += profileRow('Paying with Medicaid', 'Some residences that accept Medicaid require residents to pay privately for 2 to 3 years before they can switch to Medicaid. Policies differ, so call each residence and ask about its policy.');
+    rows += profileRow('Paying with Medicaid', 'Some residences that accept Medicaid require residents to pay privately for 2 to 3 years before they can switch to Medicaid. Policies differ, so call each residence and ask about its policy.'
+      + ' <a href="https://snfdashboard.abc-ri.org/#costs" target="_blank" rel="noopener">What care costs, and paying with Medicaid</a>');
     if (p.medicaid_exceptions) rows += profileRow('Medicaid exceptions', escapeHtml(p.medicaid_exceptions));
     var pay = paymentList(p.payment_care_level_codes);
     var ohhsOnly = /(^|\/)\s*OHHS\s*(\/|$)/i.test(p.payment_care_level_codes || '') && !p.medicaid_accepted && !p.medicaid_source;
