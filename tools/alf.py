@@ -18,6 +18,20 @@ SCRIPT_RE = re.compile(r'(<script id="facility-data" type="application/json">)(.
 TIER_RANK = {"minor": 1, "serious": 2, "most_serious": 3}
 REPORT_KEYS = {"date", "type", "tier", "no_findings", "headline", "paragraphs", "link"}
 NO_FINDINGS = "No deficiencies identified"
+# Kinds of problem a finding can be about, for the "Repeat problems" box: a residence cited for the
+# same kind at 3 or more inspections in the last 3 years. Every finding from the last 3 years has a
+# "topics" list (empty when none fits). index.html has the same keys and labels.
+TOPICS = {
+    "medication_errors": "Medication errors",          # wrong drug, dose, resident, or time; a dose missed or charted but not given
+    "elopement": "Elopement and exit-seeking",         # a resident got out or tried to; exits or alarms not working; plan didn't cover it
+    "care_plans": "Assessments and care plans",        # comprehensive assessments, nurse reviews, service plans: missing, late, wrong
+    "abuse": "Abuse, neglect, and resident-to-resident harm",  # including not reporting or investigating it, and taking residents' money
+    "kitchen": "Kitchen and food safety",              # food code, food safety manager, food service training, ordered diets and textures
+    "infection_control": "Infection control",          # infection control policies and practice, outbreaks, staff health screening
+    "wounds": "Pressure sores and wound care",         # wounds or skin not checked, treated, or tracked
+}
+REPEAT_MIN = 3  # inspections (distinct report dates) with the same topic
+
 BADGE_WINDOW_YEARS = 3  # badges reflect only reports from this many years back; index.html applies the same rule live
 
 

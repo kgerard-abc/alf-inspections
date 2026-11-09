@@ -96,6 +96,28 @@ inside `index.html` by hand; `tools/build.py` writes it there.
   and quantities as written. No resident or staff names, no em dashes, plain words a family
   member would understand. `headline` = the title (before " / ") of the most severe paragraph.
 - `link`: `https://drive.google.com/file/d/<RIDOH file ID>/view`.
+- Each finding is `{"text": ..., "tier": ..., "topics": [...]}`. `topics` lists the kinds of problem
+  the finding is about, from what RIDOH wrote; use `[]` when none fits, and more than one when a
+  finding covers several. The page uses them for the "Repeat problems" box (the same kind cited at
+  3 or more inspections in the last 3 years), so tag carefully. `apply.py` and `build.py` stop on a
+  missing or unknown topic. The keys (also in `TOPICS` in `tools/alf.py`):
+  - `medication_errors`: RIDOH found a medication error: wrong drug, dose, resident, or time (including a
+    resident getting into another resident's medication); a dose missed or charted but not given; doses missed because a medication ran out or was not
+    reordered. Not storage, labels, expired drugs, self-administration without an order, a
+    medication only "not available" with no missed dose stated, or medication aide evaluations.
+  - `elopement`: a resident got out or tried to; exit doors, gates, or alarms not working; or an
+    exit-seeking resident's assessment or service plan did not address it. Not wandering inside.
+  - `care_plans`: comprehensive assessments, nurse reviews, service plans, smoking and
+    self-administration assessments: missing, late, not updated, not signed, or wrong. Not resident
+    records in general (allergy lists, outside providers' notes) or safe resident handling programs.
+  - `abuse`: abuse or neglect by staff or anyone else, harm or threats between residents, taking a
+    resident's money, or not reporting or investigating any of these.
+  - `kitchen`: food code, kitchen cleanliness, food safety manager, food service training, menus,
+    and diets or food textures a doctor ordered. Not cleaning chemicals outside the kitchen.
+  - `infection_control`: infection control policies and practice, outbreaks, scabies, sharps,
+    staff health screening. Not bed bugs or housekeeping.
+  - `wounds`: pressure sores, wounds, or skin not checked, treated, or tracked. Not a variance or
+    an assessment that leaves out wound care (that is `care_plans`).
 
 ### Severity (kg reviews every serious and most serious call)
 

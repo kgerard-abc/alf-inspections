@@ -4,7 +4,8 @@
 
 new.json:
 {
-  "reports": [ {"ridoh_id": "...", "facility_key": "...", "entry": {date, type, tier, no_findings, headline, paragraphs, link}} ],
+  "reports": [ {"ridoh_id": "...", "facility_key": "...", "entry": {date, type, tier, no_findings, headline, paragraphs, link}}
+  each finding in paragraphs: {"text", "tier", "topics"} (topics: keys from TOPICS in alf.py, [] if none fits) ],
   "handled": [ {"ridoh_id": "...", "facility_key": "...", "status": "same_survey" | "excluded", "note": "why"} ],
   "relink": [ {"ridoh_id": "...", "old_file_id": "...", "note": "why"} ]
 }
@@ -18,7 +19,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from alf import DATA, HANDLED, NO_FINDINGS, REPORT_KEYS, TIER_RANK, TYPES, file_id, load, recompute, save
+from alf import DATA, HANDLED, NO_FINDINGS, REPORT_KEYS, TIER_RANK, TOPICS, TYPES, file_id, load, recompute, save
 
 
 def main():
@@ -50,6 +51,8 @@ def main():
                 problems.append(f"{where}: every finding needs text and a severity")
             elif e["tier"] != max(e["paragraphs"], key=lambda p: TIER_RANK[p["tier"]])["tier"]:
                 problems.append(f"{where}: report severity must equal its most severe finding")
+            if any(not isinstance(p.get("topics"), list) or any(t not in TOPICS for t in p["topics"]) for p in e["paragraphs"]):
+                problems.append(f"{where}: every finding needs a topics list ([] if none fits); allowed: {sorted(TOPICS)}")
         text = e["headline"] + " ".join(p.get("text", "") for p in e["paragraphs"])
         if "—" in text:
             problems.append(f"{where}: contains an em dash; use a colon or a period")
