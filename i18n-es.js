@@ -290,7 +290,5 @@ window.RINH_ES = {
   "(toll-free": "(línea gratuita",
   "Long-Term Care Ombudsman Program": "Programa del Defensor de Cuidados a Largo Plazo",
   "More, including who pays for each:": "Más información, incluido quién paga cada uno:",
-  "Which kind of care?": "¿Qué tipo de cuidado?",
-  "What's new": "Novedades",
-  "What we added to our three sites each week": "Lo que agregamos a nuestros tres sitios cada semana"
+  "Which kind of care?": "¿Qué tipo de cuidado?"
 };
