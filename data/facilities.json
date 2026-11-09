@@ -3534,7 +3534,8 @@
    "alz_scu_beds": 0,
    "dementia_scu_beds": null,
    "phone": "(401) 233-2880",
-   "nursing_home_colocated": true
+   "nursing_home_colocated": true,
+   "medicaid_source": "confirmed by ABC-RI, 2026"
   },
   "unlicensed_note": null,
   "website": "https://cherryhillbridge.com",
@@ -6004,7 +6005,8 @@
    "alz_scu_beds": 0,
    "dementia_scu_beds": null,
    "phone": "(401) 725-2400",
-   "nursing_home_colocated": false
+   "nursing_home_colocated": false,
+   "medicaid_source": "confirmed by ABC-RI, 2026"
   },
   "unlicensed_note": null,
   "website": "https://darlingtonliving.com",
@@ -6237,7 +6239,8 @@
    "alz_scu_beds": 0,
    "dementia_scu_beds": null,
    "phone": "(401) 725-0700",
-   "nursing_home_colocated": false
+   "nursing_home_colocated": false,
+   "medicaid_source": "confirmed by ABC-RI, 2026"
   },
   "unlicensed_note": null,
   "website": "https://darlingtonliving.com",
@@ -6709,7 +6712,8 @@
    "alz_scu_beds": 0,
    "dementia_scu_beds": 78,
    "phone": "(401) 475-1000 ",
-   "nursing_home_colocated": false
+   "nursing_home_colocated": false,
+   "medicaid_source": "confirmed by ABC-RI, 2026"
   },
   "unlicensed_note": null,
   "lat": 41.86843,
@@ -9124,7 +9128,8 @@
    "alz_scu_beds": 0,
    "dementia_scu_beds": null,
    "phone": "(401) 723-4314",
-   "nursing_home_colocated": true
+   "nursing_home_colocated": true,
+   "medicaid_source": "confirmed by ABC-RI, 2026"
   },
   "unlicensed_note": null,
   "website": null,
@@ -11985,7 +11990,8 @@
    "alz_scu_beds": 0,
    "dementia_scu_beds": 26,
    "phone": "(401) 849-3204",
-   "nursing_home_colocated": true
+   "nursing_home_colocated": true,
+   "medicaid_source": "confirmed by ABC-RI, 2026"
   },
   "unlicensed_note": null,
   "website": null,

@@ -352,4 +352,5 @@ window.RINH_ES = {
   "Yes, per ABLTC’s listing (October 2026):": "Sí, según la lista de ABLTC (octubre de 2026):",
   "Medicaid exceptions:": "Excepciones de Medicaid:",
   "Other ways to pay (ABLTC list):": "Otras formas de pago (lista de ABLTC):",
+  "Levels, per ABLTC’s listing (October 2026):": "Niveles, según la lista de ABLTC (octubre de 2026):",
 };
