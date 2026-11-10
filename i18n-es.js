@@ -2,6 +2,12 @@
    See the comment at the top of i18n.js for how placeholders work. The plain-language finding
    summaries, most report headlines, and residence names are not in this table and stay in English. */
 window.RINH_ES = {
+  "Pins show where each residence is located; their color doesn’t indicate quality. Point to a pin, or tap it, to see the residence’s name and ratings, then use": "Los marcadores muestran dónde está cada residencia; su color no indica su calidad. Señale un marcador, o tóquelo, para ver el nombre de la residencia y sus calificaciones. Luego use",
+  "for more. Prefer a list?": "para ver más. ¿Prefiere una lista?",
+  "{n} residences close together": "{n} residencias muy cerca entre sí",
+  "and {n} more": "y {n} más",
+  "Click to zoom in.": "Haga clic para acercar.",
+  "Click to see the list.": "Haga clic para ver la lista.",
   "Print a summary": "Imprimir un resumen",
   "Large print": "Letra grande",
   "Print": "Imprimir",
