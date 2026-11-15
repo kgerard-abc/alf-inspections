@@ -4,11 +4,11 @@
 window.RINH_ES = {
   // Rating key above the list (November 2026)
   "What the ratings mean": "Qué significan las calificaciones",
-  "A resident was seriously harmed, or a failure was likely to cause serious injury, harm, or death. This is the standard nursing home inspections call “immediate jeopardy.” Assisted living rules don't use that term, so this rating is our own judgment.": "Un residente sufrió un daño grave, o una falla probablemente causaría lesiones graves, daño o la muerte. Es el criterio que las inspecciones de hogares de ancianos llaman “peligro inmediato”. Las reglas de las residencias de vida asistida no usan ese término, así que esta calificación es nuestro propio juicio.",
-  "A finding serious enough to note specifically, but not at the immediate jeopardy level.": "Un hallazgo lo bastante grave como para señalarlo, pero no al nivel de peligro inmediato.",
-  "Inspectors documented problems, but none rose to a serious level.": "Los inspectores documentaron problemas, pero ninguno llegó a un nivel grave.",
-  "No deficiencies were identified in any inspection in the last 3 years.": "No se encontraron deficiencias en ninguna inspección de los últimos 3 años.",
-  "Red is most serious, orange is serious, gold is minor, and green is no concerns found.": "Rojo es lo más grave, naranja es grave, dorado es menor y verde es que no se encontraron problemas.",
+  "In the last 3 years, a resident was seriously harmed, or a failure was likely to cause serious injury, harm, or death. This is the same standard nursing home inspections call “immediate jeopardy.” Assisted living rules don't use that term, so this rating is our own judgment.": "En los últimos 3 años, un residente sufrió un daño grave, o una falla probablemente iba a causar una lesión grave, daño o la muerte. Es el mismo estándar que en las inspecciones de hogares de ancianos se llama “peligro inmediato” (“immediate jeopardy”). Las reglas de vida asistida no usan ese término, así que esta calificación es nuestro propio criterio.",
+  "In the last 3 years, inspectors found a real, specific risk to resident health or safety that fell short of the most serious level.": "En los últimos 3 años, los inspectores encontraron un riesgo real y concreto para la salud o la seguridad de los residentes, sin llegar al nivel más grave.",
+  "Findings in the last 3 years that inspectors cited but that were not serious.": "Hallazgos de los últimos 3 años que los inspectores citaron pero que no fueron graves.",
+  "No deficiencies in any inspection in the last 3 years.": "Ninguna deficiencia en ninguna inspección de los últimos 3 años.",
+  "The tag colors run from dark red for most serious to green for no concerns found.": "Los colores de las etiquetas van del rojo oscuro, lo más grave, al verde, cuando no se encontraron problemas.",
   "Pins show where each residence is located; their color doesn’t indicate quality. Point to a pin, or tap it, to see the residence’s name and ratings, then use": "Los marcadores muestran dónde está cada residencia; su color no indica su calidad. Señale un marcador, o tóquelo, para ver el nombre de la residencia y sus calificaciones. Luego use",
   "for more. Prefer a list?": "para ver más. ¿Prefiere una lista?",
   "{n} residences close together": "{n} residencias muy cerca entre sí",

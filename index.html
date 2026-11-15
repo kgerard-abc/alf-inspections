@@ -227,12 +227,13 @@
   /* touch targets at least 44px (colleague review, November 2026) */
   .filter-btn, .btn-quiet, .view-btn, #zipInput, #townSelect, .lang-toggle { min-height: 44px; }
   .check-label { min-height: 44px; }
-  .row-check-hit { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin: -11px -4px -11px -13px; cursor: pointer; }
-  .row-check-hit .row-check { width: 22px; height: 22px; }
+  .row-check { width: 24px !important; height: 24px !important; }   /* 24px: big enough to tap, without a wider tap area that could catch taps meant to open the residence */
+  #search { min-height: 44px; }
+  @media (max-width: 600px) { .town-row { row-gap: 0; } }
   .level-key { margin: 14px 0 18px; font-size: 13.5px; color: var(--ink-soft); max-width: 72ch; }
   .level-key-head { margin: 0 0 6px; color: var(--ink); cursor: pointer; min-height: 44px; display: flex; align-items: center; gap: 6px; }
   .level-key-head::-webkit-details-marker { display: none; }
-  .level-key-head::before { content: "\25B8"; font-size: 12px; }
+  .level-key-head::before { content: "\25B8"; font-size: 16px; }
   .level-key[open] > .level-key-head::before { content: "\25BE"; }
   .level-key ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
   .level-key li { display: grid; grid-template-columns: 13em 1fr; gap: 4px 12px; align-items: baseline; }
@@ -927,14 +928,14 @@
     <details class="level-key" id="levelKey">
       <summary class="level-key-head"><strong>What the ratings mean</strong></summary>
       <ul>
-        <li><span class="badge most_serious">Most serious concerns</span> <span>A resident was seriously harmed, or a failure was likely to cause serious injury, harm, or death. This is the standard nursing home inspections call &ldquo;immediate jeopardy.&rdquo; Assisted living rules don't use that term, so this rating is our own judgment.</span></li>
-        <li><span class="badge serious">Serious concerns</span> <span>A finding serious enough to note specifically, but not at the immediate jeopardy level.</span></li>
-        <li><span class="badge minor">Minor findings</span> <span>Inspectors documented problems, but none rose to a serious level.</span></li>
-        <li><span class="badge clean">No concerns found</span> <span>No deficiencies were identified in any inspection in the last 3 years.</span></li>
+        <li><span class="badge most_serious">Most serious concerns</span> <span>In the last 3&nbsp;years, a resident was seriously harmed, or a failure was likely to cause serious injury, harm, or death. This is the same standard nursing home inspections call &ldquo;immediate jeopardy.&rdquo; Assisted living rules don't use that term, so this rating is our own judgment.</span></li>
+        <li><span class="badge serious">Serious concerns</span> <span>In the last 3&nbsp;years, inspectors found a real, specific risk to resident health or safety that fell short of the most serious level.</span></li>
+        <li><span class="badge minor">Minor findings</span> <span>Findings in the last 3&nbsp;years that inspectors cited but that were not serious.</span></li>
+        <li><span class="badge clean">No concerns found</span> <span>No deficiencies in any inspection in the last 3&nbsp;years.</span></li>
       </ul>
-      <p class="level-key-colors">Red is most serious, orange is serious, gold is minor, and green is no concerns found.</p>
+      <p class="level-key-colors">The tag colors run from dark red for most serious to green for no concerns found.</p>
     </details>
-    <script>try { if (window.matchMedia && matchMedia('(min-width:701px)').matches) document.getElementById('levelKey').open = true; } catch (e) {}   /* open on wide screens, tap to open on phones */</script>
+    <script>try { if (window.matchMedia && matchMedia('(min-width:701px) and (min-height:600px)').matches) document.getElementById('levelKey').open = true; } catch (e) {}   /* open on wide screens, tap to open on phones */</script>
     <div class="town-row">
       <label for="townSelect">Town</label>
       <select id="townSelect"><option value="">All towns</option></select>
@@ -1572,7 +1573,7 @@
       var checked = state.selected[f.key] ? 'checked' : '';
       li.innerHTML =
         '<div class="row-main" role="button" tabindex="0" aria-expanded="false">' +
-          '<label class="row-check-hit"><input type="checkbox" class="row-check" aria-label="Select ' + escapeHtml(f.name) + ' to compare (up to 3)" title="Select to compare (up to 3)" ' + checked + '></label>' +
+          '<input type="checkbox" class="row-check" aria-label="Select ' + escapeHtml(f.name) + ' to compare (up to 3)" title="Select to compare (up to 3)" ' + checked + '>' +
           '<div class="row-name-block">' +
             '<div class="row-name">' + escapeHtml(f.name) + '</div>' +
             (f.name_note ? '<div class="row-sub row-name-note">' + escapeHtml(f.name_note) + '</div>' : '') +
@@ -1590,7 +1591,7 @@
       var detail = li.querySelector('.detail');
 
       function toggleRow(e) {
-        if (e.target === checkbox || (e.target.closest && e.target.closest('.row-check-hit'))) return;   // the compare box and the tap area around it
+        if (e.target === checkbox) return;
         var isOpen = li.classList.contains('open');
         if (!isOpen && typeof gcEvent === 'function') gcEvent(f.name);
         if (!isOpen && !detail.dataset.built) {
