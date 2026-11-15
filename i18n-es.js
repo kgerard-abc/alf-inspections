@@ -2,6 +2,13 @@
    See the comment at the top of i18n.js for how placeholders work. The plain-language finding
    summaries, most report headlines, and residence names are not in this table and stay in English. */
 window.RINH_ES = {
+  // Rating key above the list (November 2026)
+  "What the ratings mean": "Qué significan las calificaciones",
+  "A resident was seriously harmed, or a failure was likely to cause serious injury, harm, or death. This is the standard nursing home inspections call “immediate jeopardy.” Assisted living rules don't use that term, so this rating is our own judgment.": "Un residente sufrió un daño grave, o una falla probablemente causaría lesiones graves, daño o la muerte. Es el criterio que las inspecciones de hogares de ancianos llaman “peligro inmediato”. Las reglas de las residencias de vida asistida no usan ese término, así que esta calificación es nuestro propio juicio.",
+  "A finding serious enough to note specifically, but not at the immediate jeopardy level.": "Un hallazgo lo bastante grave como para señalarlo, pero no al nivel de peligro inmediato.",
+  "Inspectors documented problems, but none rose to a serious level.": "Los inspectores documentaron problemas, pero ninguno llegó a un nivel grave.",
+  "No deficiencies were identified in any inspection in the last 3 years.": "No se encontraron deficiencias en ninguna inspección de los últimos 3 años.",
+  "Red is most serious, orange is serious, gold is minor, and green is no concerns found.": "Rojo es lo más grave, naranja es grave, dorado es menor y verde es que no se encontraron problemas.",
   "Pins show where each residence is located; their color doesn’t indicate quality. Point to a pin, or tap it, to see the residence’s name and ratings, then use": "Los marcadores muestran dónde está cada residencia; su color no indica su calidad. Señale un marcador, o tóquelo, para ver el nombre de la residencia y sus calificaciones. Luego use",
   "for more. Prefer a list?": "para ver más. ¿Prefiere una lista?",
   "{n} residences close together": "{n} residencias muy cerca entre sí",
