@@ -224,6 +224,22 @@
     color: var(--paper);
   }
   .filter-btn .count { opacity: 0.6; margin-left: 4px; }
+  /* touch targets at least 44px (colleague review, November 2026) */
+  .filter-btn, .btn-quiet, .view-btn, #zipInput, #townSelect, .lang-toggle { min-height: 44px; }
+  .check-label { min-height: 44px; }
+  .row-check { width: 24px !important; height: 24px !important; }   /* 24px: big enough to tap, without a wider tap area that could catch taps meant to open the residence */
+  #search { min-height: 44px; }
+  @media (max-width: 600px) { .town-row { row-gap: 0; } }
+  .level-key { margin: 14px 0 18px; font-size: 13.5px; color: var(--ink-soft); max-width: 72ch; }
+  .level-key-head { margin: 0 0 6px; color: var(--ink); cursor: pointer; min-height: 44px; display: flex; align-items: center; gap: 6px; }
+  .level-key-head::-webkit-details-marker { display: none; }
+  .level-key-head::before { content: "\25B8"; font-size: 16px; }
+  .level-key[open] > .level-key-head::before { content: "\25BE"; }
+  .level-key ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .level-key li { display: grid; grid-template-columns: 13em 1fr; gap: 4px 12px; align-items: baseline; }
+  .level-key li .badge { justify-self: start; }
+  @media (max-width: 600px) { .level-key li { grid-template-columns: 1fr; } }
+  .level-key-colors { margin: 8px 0 0; }
   .filter-btn.active .count { opacity: 0.75; }
 
   .filter-note {
@@ -907,6 +923,19 @@
     <div class="filters" id="filters"></div>
     <p class="filter-note" id="filterNote">Ratings and filters use only inspection reports from the last 3 years. A residence with findings at more than one level shows a rating for each. The number next to a rating is how many violations in that time were at that level. The filter buttons use each residence's most serious rating. Older reports are still listed in each residence's timeline.</p>
     <p class="filter-note"><strong>Many residences have had a most serious finding.</strong> Before you rule one out, look at the date, and ask the residence what happened, what it changed afterward, and whether RIDOH has inspected since.</p>
+    <!-- What each rating means, visible above the list (colleague review, November 2026). Wording from the site's own
+         rating notes and the "All most serious findings" page; kg approves the wording. -->
+    <details class="level-key" id="levelKey">
+      <summary class="level-key-head"><strong>What the ratings mean</strong></summary>
+      <ul>
+        <li><span class="badge most_serious">Most serious concerns</span> <span>In the last 3&nbsp;years, a resident was seriously harmed, or a failure was likely to cause serious injury, harm, or death. This is the same standard nursing home inspections call &ldquo;immediate jeopardy.&rdquo; Assisted living rules don't use that term, so this rating is our own judgment.</span></li>
+        <li><span class="badge serious">Serious concerns</span> <span>In the last 3&nbsp;years, inspectors found a real, specific risk to resident health or safety that fell short of the most serious level.</span></li>
+        <li><span class="badge minor">Minor findings</span> <span>Findings in the last 3&nbsp;years that inspectors cited but that were not serious.</span></li>
+        <li><span class="badge clean">No concerns found</span> <span>No deficiencies in any inspection in the last 3&nbsp;years.</span></li>
+      </ul>
+      <p class="level-key-colors">The tag colors run from dark red for most serious to green for no concerns found.</p>
+    </details>
+    <script>try { if (window.matchMedia && matchMedia('(min-width:701px) and (min-height:600px)').matches) document.getElementById('levelKey').open = true; } catch (e) {}   /* open on wide screens, tap to open on phones */</script>
     <div class="town-row">
       <label for="townSelect">Town</label>
       <select id="townSelect"><option value="">All towns</option></select>
@@ -945,7 +974,7 @@
   <div class="empty" id="emptyState" style="display:none;">No facilities match your search.</div>
 
   <footer>
-    <p><strong><a href="https://www.abc-ri.org/">Advocates for Better Care in&nbsp;Rhode&nbsp;Island (ABC-RI)</a></strong> is an independent advocacy organization dedicated to protecting the rights and improving the care of long-term care residents in&nbsp;Rhode&nbsp;Island.</p>
+    <p><strong><a href="https://www.abc-ri.org/">Advocates for Better Care <span style="white-space:nowrap">in Rhode Island (ABC-RI)</span></a></strong> is an independent advocacy organization dedicated to protecting the rights and improving the care of long-term care residents in&nbsp;Rhode&nbsp;Island.</p>
     <p>Our public data sites: <a href="https://snfdashboard.abc-ri.org/">Nursing home dashboard</a> &middot; <a href="https://snfsales.abc-ri.org/">Nursing home sales</a> &middot; <strong>Assisted living inspections (this site)</strong> &middot; <a href="https://snfdashboard.abc-ri.org/#care">Nursing home vs assisted living</a></p>
     <p>This page is published by ABC-RI. It is not produced, reviewed, or endorsed by the Rhode&nbsp;Island Department of Health (RIDOH), or any state agency, and it is not a substitute for their records.</p>
     <p>Every entry is drawn from RIDOH's own publicly posted inspection reports for licensed assisted living residences. The plain-language summaries are our own paraphrasing, written to be easier to read than the original regulatory language. They are not verbatim, and paraphrasing can introduce errors. The linked PDF for each entry is the official record; if anything here conflicts with that PDF, the PDF governs. Findings are marked "most serious" when a resident was seriously harmed, or when a failure was likely to cause serious injury, harm, or death. This is the same standard nursing home inspections call "immediate jeopardy." Assisted living rules do not use that term, so this rating is our own judgment using that standard. Findings are marked "serious" when inspectors identified a real, specific risk to resident health or safety that fell short of it. The "most serious," "serious," and "minor" tags on each facility reflect only inspection reports from the last 3 years; older reports are still listed in each facility's timeline but do not change the tag. RIDOH generally removes reports from its own site after about three years, so links to older reports may no longer work; the report is still summarized here even after its original link goes dead.</p>
